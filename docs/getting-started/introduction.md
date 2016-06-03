@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Introduction
+title: 개요
 group: getting-started
 redirect_from: "/getting-started/"
 ---
@@ -9,12 +9,12 @@ Bootstrap is the world's most popular framework for building responsive, mobile-
 
 Here's how to quickly get started with the Bootstrap CDN and a template starter page.
 
-## Contents
+## 목차
 
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
 
-## Quick start
+## 빠른 시작
 
 Looking to quickly add Bootstrap to your project? Use the Bootstrap CDN, provided for free by the folks at MaxCDN. Using a package manager or need to download the source files? [Head to the downloads page.]({{ site.baseurl }}/getting-started/download)
 
@@ -34,7 +34,7 @@ Add our JavaScript plugins, jQuery, and Tether near the end of your pages, right
 
 And that's it—you're on your way to a fully Bootstrapped site. If you're at all unsure about the general page structure, keep reading for an example page template.
 
-## Starter template
+## 기본 템플릿
 
 Be sure to have your pages set up with the latest design and development standards. That means:
 
@@ -116,7 +116,7 @@ Learn more about [box model and sizing at CSS Tricks](https://css-tricks.com/box
 
 For improved cross-browser rendering, we use [Normalize.css](http://necolas.github.io/normalize.css/) to correct small inconsistencies across browsers and devices. We further build on this with our own, slightly more opinionated styles with [Reboot]({{ site.baseurl }}/content/reboot/).
 
-## Community
+## 커뮤니티
 
 Stay up to date on the development of Bootstrap and reach out to the community with these helpful resources.
 
