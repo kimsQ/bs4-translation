@@ -1,17 +1,18 @@
 ---
 layout: docs
-title: Overview
-description: Components and options for laying out your Bootstrap project, including wrapping containers, a powerful grid system, a flexible media object, and responsive utility classes.
+title: 개요
+description: 컨테이너 구성, 강력한 그리드 시스템, 유연한 미디어 객체 및 반응형 유틸리티 클래스를 포함하여 부트스트랩 프로젝트를 구성하는 컴포넌트 및 옵션.
 group: layout
 redirect_from: "/docs/4.0/layout/"
 toc: true
 ---
 
+
 ## Containers
 
-Containers are the most basic layout element in Bootstrap and are **required when using our default grid system**. Choose from a responsive, fixed-width container (meaning its `max-width` changes at each breakpoint) or fluid-width (meaning it's `100%` wide all the time).
+컨테이너는 부트스트랩에서 가장 기본적인 레이아웃 요소이며 **기본 그리드 시스템** 을 사용하려면 필요합니다. 반응형, 고정폭 컨테이너(각 중단점에서 최대 넓이 변경), 유동폭 컨테이너(항상 '100% 넓이') 중에서 선택할 수 있습니다.
 
-While containers *can* be nested, most layouts do not require a nested container.
+컨테이너는 중첩될 수 있지만 대부분의 레이아웃에는 중첩된 컨테이너가 필요하지 않습니다.
 
 <div class="bd-example">
   <div class="bd-example-container">
@@ -23,11 +24,12 @@ While containers *can* be nested, most layouts do not require a nested container
 
 {% highlight html %}
 <div class="container">
-  <!-- Content here -->
+  <!-- 내용은 여기에 -->
 </div>
 {% endhighlight %}
 
-Use `.container-fluid` for a full width container, spanning the entire width of the viewport.
+
+뷰포트(viewport)의 전체를 채우는 전체 폭 컨테이너가 필요한 경우 `.container-fluid` 를 사용하세요.
 
 <div class="bd-example">
   <div class="bd-example-container bd-example-container-fluid">
@@ -46,28 +48,28 @@ Use `.container-fluid` for a full width container, spanning the entire width of 
 
 ## Responsive breakpoints
 
-Since Bootstrap is developed to be mobile first, we use a handful of [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries) to create sensible breakpoints for our layouts and interfaces. These breakpoints are mostly based on minimum viewport widths and allow us to scale up elements as the viewport changes.
+부트스트랩은 모바일(우선)용으로 개발되었기 때문에 우리는 몇가지 [미디어 쿼리](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)를 사용하여 레이아웃과 인터페이스를 위한 현명한 브레이크 포인트를 만듭니다. 이러한 브레이크 포인트는 뷰포트의 최소너비를 기반으로 하며 뷰포트가 변경될때 요소의 크기를 조정할 수 있습니다.
 
-Bootstrap primarily uses the following media query ranges—or breakpoints—in our source Sass files for our layout, grid system, and components.
+부트스트랩은 주로 레이아웃, 그리드 시스템 및 컴포넌트에 대해 Sass 파일에서 다음과 같은 미디어 쿼리 범위(breakpoints)를 사용합니다.
 
 {% highlight scss %}
-// Extra small devices (portrait phones, less than 576px)
-// No media query since this is the default in Bootstrap
+// Extra small devices (portrait phones, 576px 미만)
+// 부트스트랩의 기본값이므로 미디어 쿼리가 없습니다.
 
-// Small devices (landscape phones, 576px and up)
+// Small devices (landscape phones, 576px 이상)
 @media (min-width: 576px) { ... }
 
-// Medium devices (tablets, 768px and up)
+// Medium devices (tablets, 768px 이상)
 @media (min-width: 768px) { ... }
 
-// Large devices (desktops, 992px and up)
+// Large devices (desktops, 992px 이상)
 @media (min-width: 992px) { ... }
 
-// Extra large devices (large desktops, 1200px and up)
+// Extra large devices (large desktops, 1200px 이상)
 @media (min-width: 1200px) { ... }
 {% endhighlight %}
 
-Since we write our source CSS in Sass, all our media queries are available via Sass mixins:
+Sass에서 CSS를 작성 했으므로 Sass mixins를 통해 모든 미디어쿼리를 사용할 수 있습니다.
 
 {% highlight scss %}
 @include media-breakpoint-up(xs) { ... }
@@ -76,7 +78,7 @@ Since we write our source CSS in Sass, all our media queries are available via S
 @include media-breakpoint-up(lg) { ... }
 @include media-breakpoint-up(xl) { ... }
 
-// Example usage:
+// 사용예:
 @include media-breakpoint-up(sm) {
   .some-class {
     display: block;
@@ -84,26 +86,27 @@ Since we write our source CSS in Sass, all our media queries are available via S
 }
 {% endhighlight %}
 
-We occasionally use media queries that go in the other direction (the given screen size *or smaller*):
+때때로 다른 방향으로 진행되는 미디어 쿼리를 사용합니다 (주어진 화면 크기 또는 *작은 크기*):
 
 {% highlight scss %}
-// Extra small devices (portrait phones, less than 576px)
+// Extra small devices (portrait phones, 576px 미만)
 @media (max-width: 575px) { ... }
 
-// Small devices (landscape phones, less than 768px)
+// Small devices (landscape phones, 768px 미만)
 @media (max-width: 767px) { ... }
 
-// Medium devices (tablets, less than 992px)
+// Medium devices (tablets, 992px 미만)
 @media (max-width: 991px) { ... }
 
-// Large devices (desktops, less than 1200px)
+// Large devices (desktops, 1200px 미만)
 @media (max-width: 1199px) { ... }
 
 // Extra large devices (large desktops)
-// No media query since the extra-large breakpoint has no upper bound on its width
+// extra-large 브레이크 포인트에는 너비의 상한이 없으므로 미디어쿼리를 적용하지 않습니다.
+
 {% endhighlight %}
 
-Once again, these media queries are also available via Sass mixins:
+다시 말해, 이러한 미디어 쿼리는 Sass 믹스인(mixins)을 통해서도 사용할 수 있습니다 :
 
 {% highlight scss %}
 @include media-breakpoint-down(xs) { ... }
@@ -112,26 +115,27 @@ Once again, these media queries are also available via Sass mixins:
 @include media-breakpoint-down(lg) { ... }
 {% endhighlight %}
 
-There are also media queries and mixins for targeting a single segment of screen sizes using the minimum and maximum breakpoint widths.
+최소 및 최대 브레이크 포인트의 너비를 사용하여 화면 크기를 단일 세그먼트로 지정하는 미디어 쿼리와 믹스인(mixins)도 있습니다.
 
 {% highlight scss %}
-// Extra small devices (portrait phones, less than 576px)
+// Extra small devices (portrait phones, 576px 미만)
 @media (max-width: 575px) { ... }
 
-// Small devices (landscape phones, 576px and up)
+// Small devices (landscape phones, 576px 이상)
 @media (min-width: 576px) and (max-width: 767px) { ... }
 
-// Medium devices (tablets, 768px and up)
+// Medium devices (tablets, 768px 이상)
 @media (min-width: 768px) and (max-width: 991px) { ... }
 
-// Large devices (desktops, 992px and up)
+// Large devices (desktops, 992px 이상)
 @media (min-width: 992px) and (max-width: 1199px) { ... }
 
-// Extra large devices (large desktops, 1200px and up)
+// Extra large devices (large desktops, 1200px 이상)
 @media (min-width: 1200px) { ... }
 {% endhighlight %}
 
-These media queries are also available via Sass mixins:
+
+이 미디어 쿼리는 Sass 믹스인(mixins)을 통해서도 얻을 수 있습니다.
 
 {% highlight scss %}
 @include media-breakpoint-only(xs) { ... }
@@ -141,15 +145,15 @@ These media queries are also available via Sass mixins:
 @include media-breakpoint-only(xl) { ... }
 {% endhighlight %}
 
-Similarly, media queries may span multiple breakpoint widths:
+마찬가지로 미디어 쿼리는 여러 브레이크 포인트 너비에 걸쳐 적용할수 있습니다.
 
 {% highlight scss %}
-// Example
-// Apply styles starting from medium devices and up to extra large devices
+// 사용예
+// medium devices부터 extra large devices까지 스타일 적용
 @media (min-width: 768px) and (max-width: 1199px) { ... }
 {% endhighlight %}
 
-The Sass mixin for targeting the same screen size range would be:
+동일한 화면 크기 범위를 타겟팅하는 Sass 믹스인은 다음과 같습니다.
 
 {% highlight scss %}
 @include media-breakpoint-between(md, xl) { ... }
@@ -157,9 +161,9 @@ The Sass mixin for targeting the same screen size range would be:
 
 ## Z-index
 
-Several Bootstrap components utilize `z-index`, the CSS property that helps control layout by providing a third axis to arrange content. We utilize a default z-index scale in Bootstrap that's been designed to properly layer navigation, tooltips and popovers, modals, and more.
+여러 부트스트랩 컴포넌트는 `z-index`를 사용합니다. 이 CSS 속성은 컨텐츠를 정렬하는 또 다른 축을 제공하여 레이아웃을 컨트롤 하는데 도움을 줍니다.  부트스트랩의 기본 z-index 스케일은 네이게이션, 툴팁 및 팝오버, 모달 등을 적절하게 구성하도록 설계 되었습니다.
 
-We don't encourage customization of these values; should you change one, you likely need to change them all.
+우리는 이 설정값의 커스터마이징을 권장하지 않습니다. 하나를 변경 할 경우, 모두 변경해야 하기 때문입니다.
 
 ```scss
 $zindex-dropdown:          1000 !default;
@@ -171,4 +175,4 @@ $zindex-popover:           1060 !default;
 $zindex-tooltip:           1070 !default;
 ```
 
-Background elements—like the backdrops that allow click-dismissing—tend to reside on a lower `z-index`s, while navigation and popovers utilize higher `z-index`s to ensure they overlay surrounding content.
+배경요소(백드롭)는 낮은 `z-index`를 적용하는 경향이 있는 반면, 네비게이션 및 팝오버는 높은 `z-index`를 사용하여 주변 콘텐츠에 상위에 배치(overlay) 합니다.
