@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Scrollspy
+title: 스크롤스파이
 description: Automatically update Bootstrap navigation or list group components based on scroll position to indicate which link is currently active in the viewport.
 group: components
 toc: true

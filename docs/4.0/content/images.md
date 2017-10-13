@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Images
+title: 이미지
 description: Documentation and examples for opting images into responsive behavior (so they never become larger than their parent elements) and add lightweight styles to them—all via classes.
 group: content
 toc: true

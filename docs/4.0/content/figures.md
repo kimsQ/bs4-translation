@@ -1,7 +1,7 @@
 ---
 layout: docs
-title: Figures
-description: Documentation and examples for displaying related images and text with the figure component in Bootstrap.
+title: Figures(피규어)
+description: 그림 구성요소를 가진 이미지 및 텍스트를 표시하는 문서 및 예제입니다.
 group: content
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Breadcrumb
+title: 경로 Breadcrumb
 description: Indicate the current page's location within a navigational hierarchy that automatically adds separators via CSS.
 group: components
 ---

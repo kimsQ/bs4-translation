@@ -1,38 +1,39 @@
 ---
 layout: docs
-title: Grid system
-description: Use our powerful mobile-first flexbox grid to build layouts of all shapes and sizes thanks to a twelve column system, five default responsive tiers, Sass variables and mixins, and dozens of predefined classes.
+title: 그리드 시스템
+description: 12개의 컬럼 시스템, 5개의 기본 반응형 계층, Sass 변수 및 믹스인 및 수십 개의 미리 정의 된 클래스를 사용하여 강력한 mobile-first 플렉스박스 그리드로 모든 형태의 레이아웃을 만듭니다.
 group: layout
 toc: true
 ---
 
-## How it works
+## 작동원리
 
-Bootstrap's grid system uses a series of containers, rows, and columns to layout and align content. It's built with [flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes) and is fully responsive. Below is an example and an in-depth look at how the grid comes together.
+부트스트랩의 그리드 시스템은 일련의 컨테이너, 행 및 열을 사용하여 내용을 정렬하고 구성합니다. 그것은 [플렉스 박스](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes)로 제작되었으며 완전히 반응형 입니다. 다음은 그리드가 어떻게 함께 나타나는지에 대한 심층예제 입니다.
 
-**New to or unfamiliar with flexbox?** [Read this CSS Tricks flexbox guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background) for background, terminology, guidelines, and code snippets.
+**플렉스 박스에 익숙하지 않은가요?**  등장배경,용어,가이드라인 및 스니핏을 알기 위해 [플렉스박스 가이드](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background)를 읽어보세요.
+
 
 <div class="bd-example-row">
 {% example html %}
 <div class="container">
   <div class="row">
     <div class="col-sm">
-      One of three columns
+      세개 칼럼 중 하나
     </div>
     <div class="col-sm">
-      One of three columns
+      세개 칼럼 중 하나
     </div>
     <div class="col-sm">
-      One of three columns
+      세개 칼럼 중 하나
     </div>
   </div>
 </div>
 {% endexample %}
 </div>
 
-The above example creates three equal-width columns on small, medium, large, and extra large devices using our predefined grid classes. Those columns are centered in the page with the parent `.container`.
+위의 예는 사전 정의 된 그리드 클래스를 사용하여 small, medium, large 및 extra large 디바이스를 고려하여 세개의 동일폭(equal-width) 칼럼으로 작성 되었습니다. 이 칼럼들은 부모에 `.container`가 적용된 페이지의 가운데에 배치 됩니다.
 
-Breaking it down, here's how it works:
+이것을 변경하는 방법은 다음과 같습니다.
 
 - Containers provide a means to center and horizontally pad your site's contents. Use `.container` for a responsive pixel width or `.container-fluid` for `width: 100%` across all viewport and device sizes.
 - Rows are wrappers for columns. Each column has horizontal `padding` (called a gutter) for controlling the space between them. This `padding` is then counteracted on the rows with negative margins. This way, all the content in your columns is visually aligned down the left side.
@@ -47,11 +48,11 @@ Breaking it down, here's how it works:
 
 Be aware of the limitations and [bugs around flexbox](https://github.com/philipwalton/flexbugs), like the [inability to use some HTML elements as flex containers](https://github.com/philipwalton/flexbugs#9-some-html-elements-cant-be-flex-containers).
 
-## Grid options
+## 그리드 옵션
 
-While Bootstrap uses `em`s or `rem`s for defining most sizes, `px`s are used for grid breakpoints and container widths. This is because the viewport width is in pixels and does not change with the [font size](https://drafts.csswg.org/mediaqueries-3/#units).
+부트스트랩은 대부분 크기를 정의 할 때 `em` 이나 `rem`을 사용하지만, `px`은 그리드 브레이크 포인트와 컨테이너의 폭에 사용됩니다. 이유는 뷰포트 너비가 픽셀 단위이며 [폰트 사이즈](https://drafts.csswg.org/mediaqueries-3/#units)에 따라 변하지 않기 때문입니다.
 
-See how aspects of the Bootstrap grid system work across multiple devices with a handy table.
+부트스트랩 그리드 시스템이 여러 디바이스에서 어떻게 작동하는지 표에서 확인해 보세요.
 
 <table class="table table-bordered table-striped table-responsive">
   <thead>
@@ -81,7 +82,7 @@ See how aspects of the Bootstrap grid system work across multiple devices with a
   </thead>
   <tbody>
     <tr>
-      <th class="text-nowrap" scope="row">Max container width</th>
+      <th class="text-nowrap" scope="row">컨테이너 최대폭</th>
       <td>None (auto)</td>
       <td>540px</td>
       <td>720px</td>
@@ -89,7 +90,7 @@ See how aspects of the Bootstrap grid system work across multiple devices with a
       <td>1140px</td>
     </tr>
     <tr>
-      <th class="text-nowrap" scope="row">Class prefix</th>
+      <th class="text-nowrap" scope="row">Class 접두사</th>
       <td><code>.col-</code></td>
       <td><code>.col-sm-</code></td>
       <td><code>.col-md-</code></td>
@@ -97,29 +98,29 @@ See how aspects of the Bootstrap grid system work across multiple devices with a
       <td><code>.col-xl-</code></td>
     </tr>
     <tr>
-      <th class="text-nowrap" scope="row"># of columns</th>
+      <th class="text-nowrap" scope="row">칼럼 갯수</th>
       <td colspan="5">12</td>
     </tr>
     <tr>
-      <th class="text-nowrap" scope="row">Gutter width</th>
-      <td colspan="5">30px (15px on each side of a column)</td>
+      <th class="text-nowrap" scope="row">여백(Gutter) 폭</th>
+      <td colspan="5">30px (각칼럼의 사이드는 15px)</td>
     </tr>
     <tr>
       <th class="text-nowrap" scope="row">Nestable</th>
       <td colspan="5">Yes</td>
     </tr>
     <tr>
-      <th class="text-nowrap" scope="row">Column ordering</th>
+      <th class="text-nowrap" scope="row">칼럼 순서지정</th>
       <td colspan="5">Yes</td>
     </tr>
   </tbody>
 </table>
 
-## Auto-layout columns
+## Auto-layout columns 칼럼 자동 배치
 
-Utilize breakpoint-specific column classes for easy column sizing without an explicit numbered class like `.col-sm-6`.
+`.col-sm-6` 과 같이 명시적으로 번호가 매겨진 클래스가 없으면  쉽게 칼럼폭 크기조절을 위해 브레이크 포인트 관련 칼럼 클래스를 활용하십시오.
 
-### Equal-width
+### Equal-width 동일폭
 
 For example, here are two grid layouts that apply to every device and viewport, from `xs` to `xl`. Add any number of unit-less classes for each breakpoint you need and every column will be the same width.
 

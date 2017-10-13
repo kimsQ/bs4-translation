@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Forms
+title: 폼
 description: Examples and usage guidelines for form control styles, layout options, and custom components for creating a wide variety of forms.
 group: components
 toc: true

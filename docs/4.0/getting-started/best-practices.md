@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Best practices
+title: 모범 사례
 description: Learn about some of the best practices we've gathered from years of working on and using Bootstrap.
 group: getting-started
 ---

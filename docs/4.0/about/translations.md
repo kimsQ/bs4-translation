@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Translations
+title: 번역
 description: Links to community-translated Bootstrap documentation sites.
 group: about
 ---

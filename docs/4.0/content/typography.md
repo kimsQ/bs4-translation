@@ -1,10 +1,12 @@
 ---
 layout: docs
-title: Typography
-description: Documentation and examples for Bootstrap typography, including global settings, headings, body text, lists, and more.
+title: 타이포그래피
+description: 글로벌 설정, 헤드라인, 본문, 목록 등을 포함한 타이포그래피에 대한 문서와 예제.
 group: content
 toc: true
 ---
+
+
 
 ## Global settings
 

@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Navs
+title: 네비게이션
 description: Documentation and examples for how to use Bootstrap's included navigation components.
 group: components
 toc: true

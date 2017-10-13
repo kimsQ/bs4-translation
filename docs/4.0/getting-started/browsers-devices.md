@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Browsers and devices
+title: 브라우저와 디바이스
 description: Learn about the browsers and devices, from modern to old, that are supported by Bootstrap, including known quirks and bugs for each.
 group: getting-started
 toc: true

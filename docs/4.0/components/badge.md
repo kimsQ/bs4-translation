@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Badges
+title: 배지 Badges
 description: Documentation and examples for badges, our small count and labeling component.
 group: components
 toc: true

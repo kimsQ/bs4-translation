@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Jumbotron
+title: 점보트론
 description: Lightweight, flexible component for showcasing hero unit style content.
 group: components
 ---

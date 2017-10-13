@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: JavaScript
+title: 자바스크립트
 description: Bring Bootstrap to life with our optional JavaScript plugins built on jQuery. Learn about each plugin, our data and programmatic API options, and more.
 group: getting-started
 toc: true

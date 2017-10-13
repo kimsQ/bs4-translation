@@ -1,10 +1,12 @@
 ---
 layout: docs
-title: Code
-description: Documentation and examples for displaying inline and multiline blocks of code with Bootstrap.
+title: 코드
+description: 인라인 및 멀티라인 코드블록을 표시 하기위한 문서 및 예제.
 group: content
 toc: true
 ---
+
+
 
 ## Inline code
 

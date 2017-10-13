@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Brand guidelines
+title: 브랜드 가이드 라인
 description: Documentation and examples for Bootstrap's logo and brand usage guidelines.
 group: about
 toc: true

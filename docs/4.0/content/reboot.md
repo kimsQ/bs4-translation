@@ -1,11 +1,14 @@
 ---
 layout: docs
-title: Reboot
-description: Reboot, a collection of element-specific CSS changes in a single file, kickstart Bootstrap to provide an elegant, consistent, and simple baseline to build upon.
+title: 리부트
+description: Reboot, a collection of element-specific CSS changes in a single file, kickstart Bootstrap to provide an elegant, consistent, and simple baseline to build upon. 단일파일에서 요소별 CSS 변경사항 모음 인 리부트는 구축 할 때 우아하고 일관되며 심플한 기초 가이드를 제공합니다.
 group: content
 redirect_from: "/docs/4.0/content/"
 toc: true
 ---
+
+
+
 
 ## Approach
 

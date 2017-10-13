@@ -1,10 +1,12 @@
 ---
 layout: docs
-title: Media object
-description: Documentation and examples for Bootstrap's media object to construct highly repetitive components like blog comments, tweets, and the like.
+title: 미디어 객체
+description: 블로그 코멘트, 트윗 등과 같은 반복적인 구성 요소를 구축할 수 있는 미디어 객체에 대한 문서와 예제
 group: layout
 toc: true
 ---
+
+
 
 ## Example
 

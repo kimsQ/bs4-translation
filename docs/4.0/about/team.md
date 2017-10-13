@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Team
+title: 팀
 description: An overview of the founding team and core contributors to Bootstrap.
 group: about
 ---
