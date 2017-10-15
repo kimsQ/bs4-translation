@@ -1,86 +1,156 @@
-- title: Getting started
+- title: 시작하기
+  link: Getting started
   pages:
-    - title: Introduction
-    - title: Download
-    - title: Contents
-    - title: Browsers & devices
-    - title: JavaScript
-    - title: Theming
-    - title: Build tools
+    - title: 소개
+      link: introduction
+    - title: 다운로드
+      link: download
+    - title: 컨텐츠
+      link: contents
+    - title: 브라우저 & 디바이스
+      link: browsers-devices
+    - title: 자바스크립트
+      link: javascript
+    - title: 사용자정의 옵션
+      link: options
+    - title: 개발도구
+      link: build-tools
     # - title: Best practices # TODO: Write this content
-    - title: Webpack
-    - title: Accessibility
+    - title: 웹팩
+      link: Webpack
+    - title: 접근성
+      link: Accessibility
 
-- title: Layout
+- title: 레이아웃
+  link: layout
   pages:
-    - title: Overview
-    - title: Grid
-    - title: Media object
-    - title: Utilities for layout
+    - title: 개요
+      link: overview
+    - title: 그리드
+      link: grid
+    - title: 미디어 객체
+      link: media-object
+    - title: 레이아웃 유틸리티
+      link: utilities-for-layout
 
-- title: Content
+- title: 컨텐츠
+  link: content
   pages:
-    - title: Reboot
-    - title: Typography
-    - title: Code
-    - title: Images
-    - title: Tables
-    - title: Figures
+    - title: 리부트
+      link: reboot
+    - title: 타이포그래피
+      link: typography
+    - title: 코드
+      link: code
+    - title: 이미지
+      link: images
+    - title: 테이블
+      link: tables
+    - title: 이미지 구성요소
+      link: figures
 
-- title: Components
+- title: 컴포넌트
+  link: Components
   pages:
-    - title: Alerts
-    - title: Badge
-    - title: Breadcrumb
-    - title: Buttons
-    - title: Button group
-    - title: Card
-    - title: Carousel
-    - title: Collapse
-    - title: Dropdowns
-    - title: Forms
-    - title: Input group
-    - title: Jumbotron
-    - title: List group
-    - title: Modal
-    - title: Navs
-    - title: Navbar
-    - title: Pagination
-    - title: Popovers
-    - title: Progress
-    - title: Scrollspy
-    - title: Tooltips
+    - title: 알림
+      link: alerts
+    - title: 배지
+      link: badge
+    - title: 경로
+      link: breadcrumb
+    - title: 버튼
+      link: buttons
+    - title: 버튼 그룹
+      link: button-group
+    - title: 카드
+      link: card
+    - title: 캐러셀
+      link: carousel
+    - title: 컬랩스
+      link: collapse
+    - title: 드롭다운
+      link: dropdowns
+    - title: 폼
+      link: forms
+    - title: 입력 그룹
+      link: input-group
+    - title: 점보트론
+      link: jumbotron
+    - title: 목록 그룹
+      link: list-group
+    - title: 모달
+      link: modal
+    - title: 네비게이션
+      link: navs
+    - title: 네비게이션 바
+      link: navbar
+    - title: 페이지네이션
+      link: pagination
+    - title: 팝오버
+      link: popovers
+    - title: 진행바
+      link: progress
+    - title: 스크롤스파이
+      link: scrollspy
+    - title: 툴팁
+      link: tooltips
 
-- title: Utilities
+- title: 유틸리티
+  link: utilities
   pages:
-    - title: Borders
-    - title: Clearfix
-    - title: Close icon
-    - title: Colors
-    - title: Display
-    - title: Embed
-    - title: Flex
-    - title: Float
-    - title: Image replacement
-    - title: Position
-    - title: Screenreaders
-    - title: Sizing
-    - title: Spacing
-    - title: Text
-    - title: Vertical align
-    - title: Visibility
+    - title: 테두리
+      link: borders
+    - title: 클리어 픽스
+      link: clearfix
+    - title: 닫기 아이콘
+      link: close-icon
+    - title: 칼라
+      link: colors
+    - title: 디스플레이
+      link: display
+    - title: 임베드
+      link: embed
+    - title: 플렉스
+      link: flex
+    - title: 플로트
+      link: float
+    - title: 이미지 대체
+      link: image-replacement
+    - title: 포지션
+      link: position
+    - title: 스크린리더
+      link: screenreaders
+    - title: 크기 조정
+      link: sizing
+    - title: 간격
+      link: spacing
+    - title: 텍스트
+      link: text
+    - title: 세로 정렬
+      link: vertical-align
+    - title: 가시성
+      link: visibility
 
-- title: Extend
+- title: 확장
+  link: extend
   pages:
     # - title: Approach
-    - title: Icons
+    - title: 아이콘
+      link: icons
 
-- title: Migration
+- title: 마이그레이션
+  link: migration
 
-- title: About
+- title: 소개
+  link: about
   pages:
-    - title: History
-    - title: Team
-    - title: Brand
-    - title: License
-    - title: Translations
+    - title: 히스토리
+      link: history
+    - title: 팀
+      link: team
+    - title: 브랜드
+      link: brand
+    - title: 라이센스
+      link: license
+    - title: 번역
+      link: translations

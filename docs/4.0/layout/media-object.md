@@ -8,7 +8,7 @@ toc: true
 
 
 
-## Example
+## 예제
 
 The [media object](http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/) helps build complex and repetitive components where some media is positioned alongside content that doesn't wrap around said media. Plus, it does this with only two required classes thanks to flexbox.
 
@@ -32,7 +32,7 @@ Internet Explorer 10-11 do not render inline elements like links or images (or `
 **Source:** [Flexbugs on GitHub](https://github.com/philipwalton/flexbugs#12-inline-elements-are-not-treated-as-flex-items)
 {% endcallout %}
 
-## Nesting
+## 중첩
 
 Media objects can be infinitely nested, though we suggest you stop at some point. Place nested `.media` within the `.media-body` of a parent media object.
 
@@ -56,7 +56,7 @@ Media objects can be infinitely nested, though we suggest you stop at some point
 </div>
 {% endexample %}
 
-## Alignment
+## 정렬
 
 Media in a media object can be aligned with flexbox utilities to the top (default), middle, or end of your `.media-body` content.
 
@@ -93,7 +93,7 @@ Media in a media object can be aligned with flexbox utilities to the top (defaul
 </div>
 {% endexample %}
 
-## Order
+## 순서
 
 Change the order of content in media objects by modifying the HTML itself, or by adding some custom flexbox CSS to set the `order` property (to an integer of your choosing).
 
@@ -107,7 +107,7 @@ Change the order of content in media objects by modifying the HTML itself, or by
 </div>
 {% endexample %}
 
-## Media list
+## 미디어 리스트
 
 Because the media object has so few structural requirements, you can also use these classes on list HTML elements. On your `<ul>` or `<ol>`, add the `.list-unstyled` to remove any browser default list styles, and then apply `.media` to your `<li>`s. As always, use spacing utilities wherever needed to fine tune.
 

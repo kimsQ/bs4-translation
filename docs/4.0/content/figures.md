@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Figures(피규어)
+title: 이미지 구성요소 Figures
 description: 그림 구성요소를 가진 이미지 및 텍스트를 표시하는 문서 및 예제입니다.
 group: content
 ---

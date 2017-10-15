@@ -1,20 +1,24 @@
 ---
 layout: docs
 title: 브라우저와 디바이스
-description: Learn about the browsers and devices, from modern to old, that are supported by Bootstrap, including known quirks and bugs for each.
+description: Learn about the browsers and devices, from modern to old, that are supported by Bootstrap, including known quirks and bugs for each. 부트스트랩이 지원하는 브라우저와 디바이스에 대한 최신 정보를 제공합니다. 여기에는 알려진 각서와 버그가 포함됩니다.
 group: getting-started
 toc: true
 ---
 
-## Supported browsers
 
-Bootstrap supports the **latest, stable releases** of all major browsers and platforms. On Windows, **we support Internet Explorer 10-11 / Microsoft Edge**.
+
+## 지원 브라우저
+
+부트스트랩은 모든 주요 브라우저와 플랫폼의 **최신, stable 버전** 을 지원합니다. Windows에서는 **Internet Explorer 10-11 / Microsoft Edge** 를 지원합니다.
 
 Alternative browsers which use the latest version of WebKit, Blink, or Gecko, whether directly or via the platform's web view API, are not explicitly supported. However, Bootstrap should (in most cases) display and function correctly in these browsers as well. More specific support information is provided below.
 
-### Mobile devices
+최신 버전의 Webkit, Blink또는 Gecko, 또는 플랫폼의 웹뷰 API를 사용하는 대체 브라우저는 명확하게 지원되지 않습니다. 그러나 부트스트랩은 대부분의 경우 이 브라우저에서도 올바르게 표시되고 작동 해야합니다. 보다 구체적인 지원 정보는 아래에 제공됩니다.
 
-Generally speaking, Bootstrap supports the latest versions of each major platform's default browsers. Note that proxy browsers (such as Opera Mini, Opera Mobile's Turbo mode, UC Browser Mini, Amazon Silk) are not supported.
+### 모바일 디바이스
+
+일반적으로 부트스트랩은 각 주요 플랫폼의 기본 브라우저의 최신 버전을 지원합니다. Opera Mini, Opera Mobile의 Turbo 모드, UC Browser Mini, Amazon Silk와 같은 프록시 브라우저는 지원되지 않습니다.
 
 <table class="table table-bordered table-striped table-responsive">
   <thead>
@@ -30,34 +34,34 @@ Generally speaking, Bootstrap supports the latest versions of each major platfor
   <tbody>
     <tr>
       <th scope="row">Android</th>
-      <td class="text-success">Supported</td>
-      <td class="text-success">Supported</td>
-      <td class="text-muted">N/A</td>
-      <td class="text-success">Android v5.0+ supported</td>
-      <td class="text-muted">N/A</td>
+      <td class="text-success">지원됨</td>
+      <td class="text-success">지원됨</td>
+      <td class="text-muted">해당없음</td>
+      <td class="text-success">Android v5.0 이상 지원됨</td>
+      <td class="text-muted">해당없음</td>
     </tr>
     <tr>
       <th scope="row">iOS</th>
-      <td class="text-success">Supported</td>
-      <td class="text-success">Supported</td>
-      <td class="text-success">Supported</td>
-      <td class="text-muted">N/A</td>
-      <td class="text-muted">N/A</td>
+      <td class="text-success">지원됨</td>
+      <td class="text-success">지원됨</td>
+      <td class="text-success">지원됨</td>
+      <td class="text-muted">해당없음</td>
+      <td class="text-muted">해당없음</td>
     </tr>
     <tr>
       <th scope="row">Windows 10 Mobile</th>
-      <td class="text-muted">N/A</td>
-      <td class="text-muted">N/A</td>
-      <td class="text-muted">N/A</td>
-      <td class="text-muted">N/A</td>
-      <td class="text-success">Supported</td>
+      <td class="text-muted">해당없음</td>
+      <td class="text-muted">해당없음</td>
+      <td class="text-muted">해당없음</td>
+      <td class="text-muted">해당없음</td>
+      <td class="text-success">지원됨</td>
     </tr>
   </tbody>
 </table>
 
-### Desktop browsers
+### 데스크탑 브라우저
 
-Similarly, the latest versions of most desktop browsers are supported.
+마찬가지로 대부분의 데스크톱 브라우저의 최신 버전이 지원됩니다.
 
 <table class="table table-bordered table-striped table-responsive">
   <thead>
@@ -74,53 +78,55 @@ Similarly, the latest versions of most desktop browsers are supported.
   <tbody>
     <tr>
       <th scope="row">Mac</th>
-      <td class="text-success">Supported</td>
-      <td class="text-success">Supported</td>
-      <td class="text-muted">N/A</td>
-      <td class="text-muted">N/A</td>
-      <td class="text-success">Supported</td>
-      <td class="text-success">Supported</td>
+      <td class="text-success">지원됨</td>
+      <td class="text-success">지원됨</td>
+      <td class="text-muted">해당없음</td>
+      <td class="text-muted">해당없음</td>
+      <td class="text-success">지원됨</td>
+      <td class="text-success">지원됨</td>
     </tr>
     <tr>
       <th scope="row">Windows</th>
-      <td class="text-success">Supported</td>
-      <td class="text-success">Supported</td>
-      <td class="text-success">Supported, IE10+</td>
-      <td class="text-success">Supported</td>
-      <td class="text-success">Supported</td>
-      <td class="text-danger">Not supported</td>
+      <td class="text-success">지원됨</td>
+      <td class="text-success">지원됨</td>
+      <td class="text-success">지원됨, IE10 이상</td>
+      <td class="text-success">지원됨</td>
+      <td class="text-success">지원됨</td>
+      <td class="text-danger">지원되지 않음</td>
     </tr>
   </tbody>
 </table>
 
-For Firefox, in addition to the latest normal stable release, we also support the latest [Extended Support Release (ESR)](https://www.mozilla.org/en-US/firefox/organizations/faq/) version of Firefox.
 
-Unofficially, Bootstrap should look and behave well enough in Chromium and Chrome for Linux, Firefox for Linux, and Internet Explorer 9, though they are not officially supported.
+Firefox의 경우 최신 표준 안정 버전 외에도 최신 ESR ([Extended Support Release](https://www.mozilla.org/en-US/firefox/organizations/faq/)) 버전을 지원합니다.
 
-For a list of some of the browser bugs that Bootstrap has to grapple with, see our [Wall of browser bugs]({{ site.baseurl }}/docs/{{ site.docs_version }}/browser-bugs/).
+공식적으로 지원되지는 않지만 비공식적으로 부트스트랩은 Chromium 및 Linux 용 Chrome, Linux 용 Firefox 및 Internet Explorer 9에서 충분히 보이고 작동될수 있습니다.
 
-## Internet Explorer
-
-Internet Explorer 10+ is supported; IE9 and down is not. Please be aware that some CSS3 properties and HTML5 elements are not fully supported in IE10, or require prefixed properties for full functionality. Visit [Can I use...](https://caniuse.com/) for details on browser support of CSS3 and HTML5 features.
-
-**If you require IE8-9 support, use Bootstrap 3.** It's the most stable version of our code and is still supported by our team for critical bugfixes and documentation changes. However, no new features will be added to it.
+부트스트랩이 해결해야하는 브라우저 버그 목록은 브라우저 [Wall of browser bugs]({{ site.baseurl }}/docs/{{ site.docs_version }}/browser-bugs/)을 참조하십시오.
 
 
-## Modals and dropdowns on mobile
+## 인터넷 익스플로러
 
-### Overflow and scrolling
+Internet Explorer 10 이상이 지원 됩니다. IE9 이하는 지원되지 않습니다. 일부 CSS3 속성 및 HTML5 요소는 IE10 에서 완전히 지원되지 않으며  전체 기능에 대해 미리 정의된 속성이 필요 하다는 점을 유념해 주시기 바랍니다. CSS3 및 HTML5 기능의 브라우저 지원에 대한 자세한 내용은 [Can I use...](https://caniuse.com/)를 참조하십시오.
+
+**IE8-9 지원이 필요한 경우 부트 스트랩 v3을 사용하십시오.** 가장 안정적인 코드 버전이며 중요한 버그 수정 및 문서 변경 사항에 대해서는 팀에서 지원합니다. 그러나 새로운 기능은 추가되지 않습니다.
+
+
+## 모바일에서 모달과 드롭다운
+
+### Overflow 와 scrolling
 
 Support for `overflow: hidden;` on the `<body>` element is quite limited in iOS and Android. To that end, when you scroll past the top or bottom of a modal in either of those devices' browsers, the `<body>` content will begin to scroll. See [Chrome bug #175502](https://bugs.chromium.org/p/chromium/issues/detail?id=175502) (fixed in Chrome v40) and [WebKit bug #153852](https://bugs.webkit.org/show_bug.cgi?id=153852).
 
-### iOS text fields and scrolling
+### iOS text fields 와 scrolling
 
 As of iOS 9.2, while a modal is open, if the initial touch of a scroll gesture is within the boundary of a textual `<input>` or a `<textarea>`, the `<body>` content underneath the modal will be scrolled instead of the modal itself. See [WebKit bug #153856](https://bugs.webkit.org/show_bug.cgi?id=153856).
 
-### Navbar Dropdowns
+### 네비게이션바 드롭다운
 
 The `.dropdown-backdrop` element isn't used on iOS in the nav because of the complexity of z-indexing. Thus, to close dropdowns in navbars, you must directly click the dropdown element (or [any other element which will fire a click event in iOS](https://developer.mozilla.org/en-US/docs/Web/Events/click#Safari_Mobile)).
 
-## Browser zooming
+## 브라우저 zooming
 
 Page zooming inevitably presents rendering artifacts in some components, both in Bootstrap and the rest of the web. Depending on the issue, we may be able to fix it (search first and then open an issue if need be). However, we tend to ignore these as they often have no direct solution other than hacky workarounds.
 
@@ -130,11 +136,12 @@ Even though real hovering isn't possible on most touchscreens, most mobile brows
 
 Bootstrap includes a workaround for this, although it is disabled by default. By setting `$enable-hover-media-query` to `true` when compiling from Sass, Bootstrap will use [mq4-hover-shim](https://github.com/twbs/mq4-hover-shim) to disable `:hover` styles in browsers that emulate hovering, thus preventing sticky `:hover` styles. There are some caveats to this workaround; see the shim's documentation for details.
 
-## Printing
+## 프린팅
 
 Even in some modern browsers, printing can be quirky.
+일부 모던 브라우저에서도 인쇄가 기발합니다.
 
-As of Safari v8.0, use of the fixed-width `.container` class can cause Safari to use an unusually small font size when printing. See [issue #14868]({{ site.repo }}/issues/14868) and [WebKit bug #138192](https://bugs.webkit.org/show_bug.cgi?id=138192) for more details. One potential workaround is the following CSS:
+Safari v8.0부터 고정폭(fixed-width) `.container` 클래스를 사용하면 Safari에서 인쇄 할 때 글꼴 크기가 비정상적으로 작아 질 수 있습니다. 자세한 내용은 [issue #14868]({{ site.repo }}/issues/14868) 및 [WebKit bug #138192](https://bugs.webkit.org/show_bug.cgi?id=138192) 를 참조하십시오. 잠재적 해결 방법중 하나는 아래의 CSS 입니다.
 
 {% highlight css %}
 @media print {

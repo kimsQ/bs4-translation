@@ -1,15 +1,17 @@
 ---
 layout: docs
-title: Borders
-description: Use border utilities to quickly style the border and border-radius of an element. Great for images, buttons, or any other element.
+title: 테두리 Borders
+description: 테두리 유틸리티를 사용하여 요소의 테두리 및 테두리 반경의 스타일을 빠르게 지정합니다. 이미지, 버튼 또는 기타 요소에 적합합니다.
 group: utilities
 redirect_from: "/docs/4.0/utilities/"
 toc: true
 ---
 
-## Border
 
-Add classes to an element to remove all borders or some borders.
+
+## 테두리
+
+모든 테두리 또는 일부 테두리를 제거하려면 요소에 아래의 클래스를 추가 하십시오.
 
 <div class="bd-example-border-utils">
 {% example html %}
@@ -22,9 +24,9 @@ Add classes to an element to remove all borders or some borders.
 {% endexample %}
 </div>
 
-## Border color
+## 테두리 칼라
 
-Change the border color using utilities built on our theme colors.
+테마 색상을 기반으로한 유틸리티를 사용하여 테두리 색상을 변경하십시오.
 
 <div class="bd-example-border-utils">
 {% example html %}
@@ -34,9 +36,9 @@ Change the border color using utilities built on our theme colors.
 {% endexample %}
 </div>
 
-## Border-radius
+## 둥근 테두리 처리
 
-Add classes to an element to easily round its corners.
+요소에 클래스를 추가하여 모서리를 쉽게 둥글게 만듭니다.
 
 <div class="bd-example bd-example-images">
   <img data-src="holder.js/75x75" class="rounded" alt="Example rounded image">

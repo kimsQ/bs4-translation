@@ -1,10 +1,11 @@
 ---
 layout: docs
 title: 칼라
-description: Convey meaning through color with a handful of color utility classes. Includes support for styling links with hover states, too.
+description: 몇가지 컬러 유틸리티 클래스를 사용하여 색상을 통해 의미를 전달합니다. 또한 마우스 오버 상태가 있는 링크 스타일도 지원도 포함됩니다.
 group: utilities
 toc: true
 ---
+
 
 {% example html %}
 {% for color in site.data.theme-colors %}

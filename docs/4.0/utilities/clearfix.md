@@ -1,19 +1,19 @@
 ---
 layout: docs
-title: Clearfix
-description: Quickly and easily clear floated content within a container by adding a clearfix utility.
+title: 클리어 픽스 Clearfix
+description: clearfix 유틸리티를 추가하여 컨테이너 내에서 플로팅 된 내용을 쉽고 빠르게 초기화 할 수 있습니다.
 group: utilities
 toc: true
 ---
 
-Easily clear `float`s by adding `.clearfix` **to the parent element**. Can also be used as a mixin.
+**부모 요소** 에 `.clearfix`를 추가하여 쉽게 `float` 를 초기화 하세요. 믹스인(mixin) 으로 사용할 수도 있습니다.
 
 {% highlight html %}
 <div class="clearfix">...</div>
 {% endhighlight %}
 
 {% highlight scss %}
-// Mixin itself
+// 믹스인(mixin) 정의
 @mixin clearfix() {
   &::after {
     display: block;
@@ -22,17 +22,17 @@ Easily clear `float`s by adding `.clearfix` **to the parent element**. Can also 
   }
 }
 
-// Usage as a mixin
+// 믹스인(mixin)의 적용
 .element {
   @include clearfix;
 }
 {% endhighlight %}
 
-The following example shows how the clearfix can be used. Without the clearfix the wrapping div would not span around the buttons which would cause a broken layout.
+다음 예제에서는 clearfix를 사용하는 방법을 보여줍니다. `.clearfix`가 없으면 버튼 상위의 div가 버튼들을 감싸지 못해, 레이아웃이 깨질 수 있습니다.
 
 {% example html %}
 <div class="bg-info clearfix">
-  <button type="button" class="btn btn-secondary float-left">Example Button floated left</button>
-  <button type="button" class="btn btn-secondary float-right">Example Button floated right</button>
+  <button type="button" class="btn btn-secondary float-left">왼쪽으로 플로팅된 예제 버튼</button>
+  <button type="button" class="btn btn-secondary float-right">오른쪽으로 플로팅된 예제 버튼</button>
 </div>
 {% endexample %}

@@ -1,5 +1,5 @@
 <form class="bd-search d-flex align-items-center">
-  <input type="search" class="form-control" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off">
+  <input type="search" class="form-control" id="search-input" placeholder="검색..." aria-label="검색..." autocomplete="off">
   <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
     {% include icons/menu.svg class="" width="30" height="30" %}
   </button>
@@ -9,8 +9,8 @@
   {%- assign page_slug = page.url | split: '/' | last -%}
   {%- for group in site.data.nav -%}
   {%- assign link = group.pages | first -%}
-  {%- assign link_slug = link.title | slugify -%}
-  {%- assign group_slug = group.title | slugify -%}
+  {%- assign link_slug = link.link | slugify -%}
+  {%- assign group_slug = group.link | slugify -%}
   {%- assign active = nil -%}
 
   {%- if page.group == group_slug -%}
@@ -27,12 +27,12 @@
           {%- assign doc_slug = doc.title | slugify -%}
           {%- assign active = nil -%}
 
-          {%- if page.group == group_slug and page_slug == doc_slug -%}
+          {%- if page.group == group_slug and page_slug == doc.link -%}
             {%- assign active = 'active bd-sidenav-active' -%}
           {%- endif -%}
 
           <li{% unless active == nil %} class="{{ active }}"{% endunless %}>
-            <a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/{{ group_slug }}/{{ doc_slug }}/">
+            <a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/{{ group_slug }}/{{ doc.link }}/">
               {{ doc.title }}
             </a>
 
