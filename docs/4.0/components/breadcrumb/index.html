@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="generator" content="Jekyll v3.6.0">
 
-<title>경로 Breadcrumb &middot; Bootstrap</title>
+<title>경로 Breadcrumb &middot; 부트스트랩</title>
 
 <!-- Bootstrap core CSS -->
 
@@ -30,7 +30,7 @@
 
 
 <!-- Meta -->
-<meta name="description" content="The most popular HTML, CSS, and JS library in the world.">
+<meta name="description" content="전 세계에서 가장 인기있는 HTML, CSS 및 JS 라이브러리 입니다.">
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 
 <!-- Twitter -->
@@ -40,7 +40,7 @@
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="경로 Breadcrumb">
-  <meta name="twitter:description" content="Indicate the current page's location within a navigational hierarchy that automatically adds separators via CSS.">
+  <meta name="twitter:description" content="CSS를 통해 자동으로 추가된 구분기호로 현재 페이지의 위치를 나타냅니다.">
   <meta name="twitter:image" content="http://bootstrap4.kr/assets/brand/bootstrap-social-logo.png">
 
 
@@ -48,7 +48,7 @@
 
   <meta property="og:url" content="http://bootstrap4.kr/docs/4.0/components/breadcrumb/">
   <meta property="og:title" content="경로 Breadcrumb">
-  <meta property="og:description" content="Indicate the current page's location within a navigational hierarchy that automatically adds separators via CSS.">
+  <meta property="og:description" content="CSS를 통해 자동으로 추가된 구분기호로 현재 페이지의 위치를 나타냅니다.">
   <meta property="og:type" content="website">
 
 <meta property="og:image" content="http://bootstrap4.kr/assets/brand/bootstrap-social.png">
@@ -584,57 +584,57 @@
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
           <h1 class="bd-title" id="content">경로 Breadcrumb</h1>
-          <p class="bd-lead">Indicate the current page's location within a navigational hierarchy that automatically adds separators via CSS.</p>
+          <p class="bd-lead">CSS를 통해 자동으로 추가된 구분기호로 현재 페이지의 위치를 나타냅니다.</p>
           
 
-          <h2 id="overview">Overview</h2>
+          <h2 id="개요">개요</h2>
 
-<p>Separators are automatically added in CSS through <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::before"><code class="highlighter-rouge">::before</code></a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/content"><code class="highlighter-rouge">content</code></a>.</p>
+<p>구분 기호는 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::before"><code class="highlighter-rouge">::before</code></a> 와 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/content"><code class="highlighter-rouge">content</code></a>를 통해 CSS에 자동으로 추가됩니다.</p>
 
 <div class="bd-example">
 <nav aria-label="breadcrumb" role="navigation">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item active" aria-current="page">Home</li>
+    <li class="breadcrumb-item active" aria-current="page">홈</li>
   </ol>
 </nav>
 
 <nav aria-label="breadcrumb" role="navigation">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="#">Home</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Library</li>
+    <li class="breadcrumb-item"><a href="#">홈</a></li>
+    <li class="breadcrumb-item active" aria-current="page">자료실</li>
   </ol>
 </nav>
 
 <nav aria-label="breadcrumb" role="navigation">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="#">Home</a></li>
-    <li class="breadcrumb-item"><a href="#">Library</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Data</li>
+    <li class="breadcrumb-item"><a href="#">홈</a></li>
+    <li class="breadcrumb-item"><a href="#">자료실</a></li>
+    <li class="breadcrumb-item active" aria-current="page">데이터</li>
   </ol>
 </nav>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">aria-label=</span><span class="s">"breadcrumb"</span> <span class="na">role=</span><span class="s">"navigation"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span> <span class="na">aria-current=</span><span class="s">"page"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span> <span class="na">aria-current=</span><span class="s">"page"</span><span class="nt">&gt;</span>홈<span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;/ol&gt;</span>
 <span class="nt">&lt;/nav&gt;</span>
 
 <span class="nt">&lt;nav</span> <span class="na">aria-label=</span><span class="s">"breadcrumb"</span> <span class="na">role=</span><span class="s">"navigation"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span> <span class="na">aria-current=</span><span class="s">"page"</span><span class="nt">&gt;</span>Library<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>홈<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span> <span class="na">aria-current=</span><span class="s">"page"</span><span class="nt">&gt;</span>자료실<span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;/ol&gt;</span>
 <span class="nt">&lt;/nav&gt;</span>
 
 <span class="nt">&lt;nav</span> <span class="na">aria-label=</span><span class="s">"breadcrumb"</span> <span class="na">role=</span><span class="s">"navigation"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Library<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span> <span class="na">aria-current=</span><span class="s">"page"</span><span class="nt">&gt;</span>Data<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>홈<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>자료실<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span> <span class="na">aria-current=</span><span class="s">"page"</span><span class="nt">&gt;</span>데이터<span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;/ol&gt;</span>
 <span class="nt">&lt;/nav&gt;</span></code></pre></div>
 
-<h2 id="accessibility">Accessibility</h2>
+<h2 id="접근성">접근성</h2>
 
 <p>Since breadcrumbs provide a navigation, it’s a good idea to add a meaningful label such as <code class="highlighter-rouge">aria-label="breadcrumb"</code> to describe the type of navigation provided in the <code class="highlighter-rouge">&lt;nav&gt;</code> element, as well as applying an <code class="highlighter-rouge">aria-current="page"</code> to the last item of the set to indicate that it represents the current page.</p>
 

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="generator" content="Jekyll v3.6.0">
 
-<title>버튼 그룹 &middot; Bootstrap</title>
+<title>버튼 그룹 &middot; 부트스트랩</title>
 
 <!-- Bootstrap core CSS -->
 
@@ -30,7 +30,7 @@
 
 
 <!-- Meta -->
-<meta name="description" content="The most popular HTML, CSS, and JS library in the world.">
+<meta name="description" content="전 세계에서 가장 인기있는 HTML, CSS 및 JS 라이브러리 입니다.">
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 
 <!-- Twitter -->
@@ -40,7 +40,7 @@
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="버튼 그룹">
-  <meta name="twitter:description" content="Group a series of buttons together on a single line with the button group, and super-power them with JavaScript.">
+  <meta name="twitter:description" content="버튼 그룹으로 한줄에 버튼을 그룹화 하고, 자바스크립트를 사용하여 슈퍼 파워를 부여합니다.">
   <meta name="twitter:image" content="http://bootstrap4.kr/assets/brand/bootstrap-social-logo.png">
 
 
@@ -48,7 +48,7 @@
 
   <meta property="og:url" content="http://bootstrap4.kr/docs/4.0/components/button-group/">
   <meta property="og:title" content="버튼 그룹">
-  <meta property="og:description" content="Group a series of buttons together on a single line with the button group, and super-power them with JavaScript.">
+  <meta property="og:description" content="버튼 그룹으로 한줄에 버튼을 그룹화 하고, 자바스크립트를 사용하여 슈퍼 파워를 부여합니다.">
   <meta property="og:type" content="website">
 
 <meta property="og:image" content="http://bootstrap4.kr/assets/brand/bootstrap-social.png">
@@ -583,14 +583,14 @@
         
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#basic-example">Basic example</a>
+<li class="toc-entry toc-h2"><a href="#기본-예제">기본 예제</a>
 <ul>
 <li class="toc-entry toc-h4"><a href="#ensure-correct-role-and-provide-a-label">Ensure correct role and provide a label</a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h2"><a href="#button-toolbar">Button toolbar</a></li>
-<li class="toc-entry toc-h2"><a href="#sizing">Sizing</a></li>
-<li class="toc-entry toc-h2"><a href="#nesting">Nesting</a></li>
+<li class="toc-entry toc-h2"><a href="#버튼-툴바">버튼 툴바</a></li>
+<li class="toc-entry toc-h2"><a href="#크기-조정">크기 조정</a></li>
+<li class="toc-entry toc-h2"><a href="#중첩">중첩</a></li>
 <li class="toc-entry toc-h2"><a href="#vertical-variation">Vertical variation</a></li>
 </ul>
           </div>
@@ -598,24 +598,24 @@
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
           <h1 class="bd-title" id="content">버튼 그룹</h1>
-          <p class="bd-lead">Group a series of buttons together on a single line with the button group, and super-power them with JavaScript.</p>
+          <p class="bd-lead">버튼 그룹으로 한줄에 버튼을 그룹화 하고, 자바스크립트를 사용하여 슈퍼 파워를 부여합니다.</p>
           
 
-          <h2 id="basic-example">Basic example</h2>
+          <h2 id="기본-예제">기본 예제</h2>
 
-<p>Wrap a series of buttons with <code class="highlighter-rouge">.btn</code> in <code class="highlighter-rouge">.btn-group</code>. Add on optional JavaScript radio and checkbox style behavior with <a href="/docs/4.0/components/buttons/#button-plugin">our buttons plugin</a>.</p>
+<p><code class="highlighter-rouge">.btn-group</code> 으로 <code class="highlighter-rouge">.btn</code>이 있는 일련의 버튼을 감싸세요. <a href="/docs/4.0/components/buttons/#버튼-플러그인">버튼 플러그인</a>으로 자바스크립트 라디오 및 체크박스 스타일 동작을 선택적으로 추가 할 수도 있습니다.</p>
 
 <div class="bd-example">
 <div class="btn-group" role="group" aria-label="Basic example">
-  <button type="button" class="btn btn-secondary">Left</button>
-  <button type="button" class="btn btn-secondary">Middle</button>
-  <button type="button" class="btn btn-secondary">Right</button>
+  <button type="button" class="btn btn-secondary">좌측</button>
+  <button type="button" class="btn btn-secondary">가운데</button>
+  <button type="button" class="btn btn-secondary">우측</button>
 </div>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"Basic example"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>Left<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>Middle<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>Right<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>좌측<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>가운데<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>우측<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
 
 <div class="bd-callout bd-callout-warning">
@@ -626,7 +626,7 @@
 <p>In addition, groups and toolbars should be given an explicit label, as most assistive technologies will otherwise not announce them, despite the presence of the correct role attribute. In the examples provided here, we use <code class="highlighter-rouge">aria-label</code>, but alternatives such as <code class="highlighter-rouge">aria-labelledby</code> can also be used.</p>
 </div>
 
-<h2 id="button-toolbar">Button toolbar</h2>
+<h2 id="버튼-툴바">버튼 툴바</h2>
 
 <p>Combine sets of button groups into button toolbars for more complex components. Use utility classes as needed to space out groups, buttons, and more.</p>
 
@@ -720,7 +720,7 @@
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
 
-<h2 id="sizing">Sizing</h2>
+<h2 id="크기-조정">크기 조정</h2>
 
 <p>Instead of applying button sizing classes to every button in a group, just add <code class="highlighter-rouge">.btn-group-*</code> to each <code class="highlighter-rouge">.btn-group</code>, including each one when nesting multiple groups.</p>
 
@@ -748,7 +748,7 @@
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"..."</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group btn-group-sm"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"..."</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<h2 id="nesting">Nesting</h2>
+<h2 id="중첩">중첩</h2>
 
 <p>Place a <code class="highlighter-rouge">.btn-group</code> within another <code class="highlighter-rouge">.btn-group</code> when you want dropdown menus mixed with a series of buttons.</p>
 

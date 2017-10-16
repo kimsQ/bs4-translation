@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="generator" content="Jekyll v3.6.0">
 
-<title>팝오버 &middot; Bootstrap</title>
+<title>팝오버 &middot; 부트스트랩</title>
 
 <!-- Bootstrap core CSS -->
 
@@ -30,7 +30,7 @@
 
 
 <!-- Meta -->
-<meta name="description" content="The most popular HTML, CSS, and JS library in the world.">
+<meta name="description" content="전 세계에서 가장 인기있는 HTML, CSS 및 JS 라이브러리 입니다.">
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 
 <!-- Twitter -->
@@ -40,7 +40,7 @@
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="팝오버">
-  <meta name="twitter:description" content="Documentation and examples for adding Bootstrap popovers, like those found in iOS, to any element on your site.">
+  <meta name="twitter:description" content="iOS에서와 유사한 부트스트랩 팝오버를 사이트의 모든 요소에 추가하는 데 필요한 문서와 예제.">
   <meta name="twitter:image" content="http://bootstrap4.kr/assets/brand/bootstrap-social-logo.png">
 
 
@@ -48,7 +48,7 @@
 
   <meta property="og:url" content="http://bootstrap4.kr/docs/4.0/components/popovers/">
   <meta property="og:title" content="팝오버">
-  <meta property="og:description" content="Documentation and examples for adding Bootstrap popovers, like those found in iOS, to any element on your site.">
+  <meta property="og:description" content="iOS에서와 유사한 부트스트랩 팝오버를 사이트의 모든 요소에 추가하는 데 필요한 문서와 예제.">
   <meta property="og:type" content="website">
 
 <meta property="og:image" content="http://bootstrap4.kr/assets/brand/bootstrap-social.png">
@@ -583,10 +583,10 @@
         
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#overview">Overview</a></li>
-<li class="toc-entry toc-h2"><a href="#example-enable-popovers-everywhere">Example: Enable popovers everywhere</a></li>
-<li class="toc-entry toc-h2"><a href="#example-using-the-container-option">Example: Using the container option</a></li>
-<li class="toc-entry toc-h2"><a href="#static-popover">Static popover</a>
+<li class="toc-entry toc-h2"><a href="#개요">개요</a></li>
+<li class="toc-entry toc-h2"><a href="#예제-어디서나-팝업-활성화">예제: 어디서나 팝업 활성화</a></li>
+<li class="toc-entry toc-h2"><a href="#예제-container-옵션-사용">예제: container 옵션 사용</a></li>
+<li class="toc-entry toc-h2"><a href="#정적인-팝오버">정적인 팝오버</a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#popover-top">Popover top</a></li>
 <li class="toc-entry toc-h3"><a href="#popover-right">Popover right</a></li>
@@ -594,24 +594,24 @@
 <li class="toc-entry toc-h3"><a href="#popover-left">Popover left</a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h2"><a href="#live-demo">Live demo</a>
+<li class="toc-entry toc-h2"><a href="#라이브-데코">라이브 데코</a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#four-directions">Four directions</a></li>
-<li class="toc-entry toc-h3"><a href="#dismiss-on-next-click">Dismiss on next click</a>
+<li class="toc-entry toc-h3"><a href="#네가지-방향">네가지 방향</a></li>
+<li class="toc-entry toc-h3"><a href="#다음-클릭시-닫기">다음 클릭시 닫기</a>
 <ul>
 <li class="toc-entry toc-h4"><a href="#specific-markup-required-for-dismiss-on-next-click">Specific markup required for dismiss-on-next-click</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toc-entry toc-h2"><a href="#usage">Usage</a>
+<li class="toc-entry toc-h2"><a href="#사용법">사용법</a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#options">Options</a>
+<li class="toc-entry toc-h3"><a href="#옵션">옵션</a>
 <ul>
 <li class="toc-entry toc-h4"><a href="#data-attributes-for-individual-popovers">Data attributes for individual popovers</a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h3"><a href="#methods">Methods</a>
+<li class="toc-entry toc-h3"><a href="#메소드-methods">메소드 Methods</a>
 <ul>
 <li class="toc-entry toc-h4"><a href="#asynchronous-methods-and-transitions">Asynchronous methods and transitions</a></li>
 <li class="toc-entry toc-h4"><a href="#popoveroptions">$().popover(options)</a></li>
@@ -625,7 +625,7 @@
 <li class="toc-entry toc-h4"><a href="#popoverupdate">.popover('update')</a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h3"><a href="#events">Events</a></li>
+<li class="toc-entry toc-h3"><a href="#이벤트-events">이벤트 Events</a></li>
 </ul>
 </li>
 </ul>
@@ -634,10 +634,10 @@
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
           <h1 class="bd-title" id="content">팝오버</h1>
-          <p class="bd-lead">Documentation and examples for adding Bootstrap popovers, like those found in iOS, to any element on your site.</p>
+          <p class="bd-lead">iOS에서와 유사한 부트스트랩 팝오버를 사이트의 모든 요소에 추가하는 데 필요한 문서와 예제.</p>
           
 
-          <h2 id="overview">Overview</h2>
+          <h2 id="개요">개요</h2>
 
 <p>Things to know when using the popover plugin:</p>
 
@@ -656,7 +656,7 @@
 
 <p>Got all that? Great, let’s see how they work with some examples.</p>
 
-<h2 id="example-enable-popovers-everywhere">Example: Enable popovers everywhere</h2>
+<h2 id="예제-어디서나-팝업-활성화">예제: 어디서나 팝업 활성화</h2>
 
 <p>One way to initialize all popovers on a page would be to select them by their <code class="highlighter-rouge">data-toggle</code> attribute:</p>
 
@@ -664,7 +664,7 @@
   <span class="nx">$</span><span class="p">(</span><span class="s1">'[data-toggle="popover"]'</span><span class="p">).</span><span class="nx">popover</span><span class="p">()</span>
 <span class="p">})</span></code></pre></figure>
 
-<h2 id="example-using-the-container-option">Example: Using the <code class="highlighter-rouge">container</code> option</h2>
+<h2 id="예제-container-옵션-사용">예제: <code class="highlighter-rouge">container</code> 옵션 사용</h2>
 
 <p>When you have some styles on a parent element that interfere with a popover, you’ll want to specify a custom <code class="highlighter-rouge">container</code> so that the popover’s HTML appears within that element instead.</p>
 
@@ -674,7 +674,7 @@
   <span class="p">})</span>
 <span class="p">})</span></code></pre></figure>
 
-<h2 id="static-popover">Static popover</h2>
+<h2 id="정적인-팝오버">정적인 팝오버</h2>
 
 <p>Four options are available: top, right, bottom, and left aligned.</p>
 
@@ -714,14 +714,14 @@
   <div class="clearfix"></div>
 </div>
 
-<h2 id="live-demo">Live demo</h2>
+<h2 id="라이브-데코">라이브 데코</h2>
 
 <div class="bd-example">
 <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-lg btn-danger"</span> <span class="na">data-toggle=</span><span class="s">"popover"</span> <span class="na">title=</span><span class="s">"Popover title"</span> <span class="na">data-content=</span><span class="s">"And here's some amazing content. It's very engaging. Right?"</span><span class="nt">&gt;</span>Click to toggle popover<span class="nt">&lt;/button&gt;</span></code></pre></div>
 
-<h3 id="four-directions">Four directions</h3>
+<h3 id="네가지-방향">네가지 방향</h3>
 
 <div class="bd-example popover-demo">
   <div class="bd-example-popovers">
@@ -757,7 +757,7 @@ sagittis lacus vel augue laoreet rutrum faucibus."</span><span class="nt">&gt;</
   Popover on left
 <span class="nt">&lt;/button&gt;</span></code></pre></figure>
 
-<h3 id="dismiss-on-next-click">Dismiss on next click</h3>
+<h3 id="다음-클릭시-닫기">다음 클릭시 닫기</h3>
 
 <p>Use the <code class="highlighter-rouge">focus</code> trigger to dismiss popovers on the next click that the user makes.</p>
 
@@ -776,13 +776,13 @@ sagittis lacus vel augue laoreet rutrum faucibus."</span><span class="nt">&gt;</
   <span class="na">trigger</span><span class="p">:</span> <span class="s1">'focus'</span>
 <span class="p">})</span></code></pre></figure>
 
-<h2 id="usage">Usage</h2>
+<h2 id="사용법">사용법</h2>
 
 <p>Enable popovers via JavaScript:</p>
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#example'</span><span class="p">).</span><span class="nx">popover</span><span class="p">(</span><span class="nx">options</span><span class="p">)</span></code></pre></figure>
 
-<h3 id="options">Options</h3>
+<h3 id="옵션">옵션</h3>
 
 <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code class="highlighter-rouge">data-</code>, as in <code class="highlighter-rouge">data-animation=""</code>.</p>
 
@@ -899,7 +899,7 @@ sagittis lacus vel augue laoreet rutrum faucibus."</span><span class="nt">&gt;</
 <p>Options for individual popovers can alternatively be specified through the use of data attributes, as explained above.</p>
 </div>
 
-<h3 id="methods">Methods</h3>
+<h3 id="메소드-methods">메소드 Methods</h3>
 
 <div class="bd-callout bd-callout-danger">
 <h4 id="asynchronous-methods-and-transitions">Asynchronous methods and transitions</h4>
@@ -961,7 +961,7 @@ sagittis lacus vel augue laoreet rutrum faucibus."</span><span class="nt">&gt;</
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#element'</span><span class="p">).</span><span class="nx">popover</span><span class="p">(</span><span class="s1">'update'</span><span class="p">)</span></code></pre></figure>
 
-<h3 id="events">Events</h3>
+<h3 id="이벤트-events">이벤트 Events</h3>
 
 <table class="table table-bordered table-striped table-responsive">
   <thead>

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="generator" content="Jekyll v3.6.0">
 
-<title>미디어 객체 &middot; Bootstrap</title>
+<title>미디어 객체 &middot; 부트스트랩</title>
 
 <!-- Bootstrap core CSS -->
 
@@ -30,7 +30,7 @@
 
 
 <!-- Meta -->
-<meta name="description" content="The most popular HTML, CSS, and JS library in the world.">
+<meta name="description" content="전 세계에서 가장 인기있는 HTML, CSS 및 JS 라이브러리 입니다.">
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 
 <!-- Twitter -->
@@ -585,33 +585,33 @@
             <ul class="section-nav">
 <li class="toc-entry toc-h2"><a href="#예제">예제</a>
 <ul>
-<li class="toc-entry toc-h5"><a href="#media-heading">Media heading</a></li>
+<li class="toc-entry toc-h5"><a href="#미디어-헤드라인">미디어 헤드라인</a></li>
 <li class="toc-entry toc-h5"><a href="#flexbug-12-inline-elements-arent-treated-as-flex-items">Flexbug #12: Inline elements aren’t treated as flex items</a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#중첩">중첩</a>
 <ul>
-<li class="toc-entry toc-h5"><a href="#media-heading-1">Media heading</a></li>
-<li class="toc-entry toc-h5"><a href="#media-heading-2">Media heading</a></li>
+<li class="toc-entry toc-h5"><a href="#미디어-헤드라인-1">미디어 헤드라인</a></li>
+<li class="toc-entry toc-h5"><a href="#미디어-헤드라인-2">미디어 헤드라인</a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#정렬">정렬</a>
 <ul>
-<li class="toc-entry toc-h5"><a href="#top-aligned-media">Top-aligned media</a></li>
-<li class="toc-entry toc-h5"><a href="#center-aligned-media">Center-aligned media</a></li>
-<li class="toc-entry toc-h5"><a href="#bottom-aligned-media">Bottom-aligned media</a></li>
+<li class="toc-entry toc-h5"><a href="#상단-정렬-미디어">상단 정렬 미디어</a></li>
+<li class="toc-entry toc-h5"><a href="#가운데-정렬-미디어">가운데 정렬 미디어</a></li>
+<li class="toc-entry toc-h5"><a href="#하단-정렬-미디어">하단 정렬 미디어</a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#순서">순서</a>
 <ul>
-<li class="toc-entry toc-h5"><a href="#media-object">Media object</a></li>
+<li class="toc-entry toc-h5"><a href="#미디어-객체">미디어 객체</a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#미디어-리스트">미디어 리스트</a>
 <ul>
-<li class="toc-entry toc-h5"><a href="#list-based-media-object">List-based media object</a></li>
-<li class="toc-entry toc-h5"><a href="#list-based-media-object-1">List-based media object</a></li>
-<li class="toc-entry toc-h5"><a href="#list-based-media-object-2">List-based media object</a></li>
+<li class="toc-entry toc-h5"><a href="#리스트-기반-미디어-객체">리스트 기반 미디어 객체</a></li>
+<li class="toc-entry toc-h5"><a href="#리스트-기반-미디어-객체-1">리스트 기반 미디어 객체</a></li>
+<li class="toc-entry toc-h5"><a href="#리스트-기반-미디어-객체-2">리스트 기반 미디어 객체</a></li>
 </ul>
 </li>
 </ul>
@@ -627,22 +627,26 @@
 
 <p>The <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">media object</a> helps build complex and repetitive components where some media is positioned alongside content that doesn’t wrap around said media. Plus, it does this with only two required classes thanks to flexbox.</p>
 
+<p><a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">미디어 객체</a>는 일부 미디어가 상기 미디어를 둘러싸지 않는 콘텐트와 나란히 배치되는 복잡하고 반복적인 구성 요소를 구축하는 것을 돕습니다. 또한 flexbox 덕분에 두 가지 필수 클래스 만으로 이 작업을 수행 할 수 있습니다.</p>
+
 <p>Below is an example of a single media object. Only two classes are required—the wrapping <code class="highlighter-rouge">.media</code> and the <code class="highlighter-rouge">.media-body</code> around your content. Optional padding and margin can be controlled through <a href="/docs/4.0/utilities/spacing/">spacing utilities</a>.</p>
+
+<p>다음은 단일 미디어 객체의 예제 입니다. 콘텐츠를 주변에 <code class="highlighter-rouge">.media</code> 와 <code class="highlighter-rouge">.media-body</code> 라는 두 가지 클래스 만 있으면 됩니다. 선택적으로 padding 및 margin은 <a href="/docs/4.0/utilities/spacing/">간격 유틸리티</a>를 통해 제어 할수 있습니다.</p>
 
 <div class="bd-example">
 <div class="media">
-  <img class="mr-3" data-src="holder.js/64x64" alt="Generic placeholder image" />
+  <img class="mr-3" data-src="holder.js/64x64" alt="임시 이미지" />
   <div class="media-body">
-    <h5 class="mt-0">Media heading</h5>
-    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+    <h5 class="mt-0">미디어 헤드라인</h5>
+    동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세 남산 위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리 기상일세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.
   </div>
 </div>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"mr-3"</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"Generic placeholder image"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"mr-3"</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"임시 이미지"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-body"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"mt-0"</span><span class="nt">&gt;</span>Media heading<span class="nt">&lt;/h5&gt;</span>
-    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"mt-0"</span><span class="nt">&gt;</span>미디어 헤드라인<span class="nt">&lt;/h5&gt;</span>
+    동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세 남산 위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리 기상일세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
 
@@ -660,36 +664,36 @@
 
 <div class="bd-example">
 <div class="media">
-  <img class="mr-3" data-src="holder.js/64x64" alt="Generic placeholder image" />
+  <img class="mr-3" data-src="holder.js/64x64" alt="임시 이미지" />
   <div class="media-body">
-    <h5 class="mt-0">Media heading</h5>
-    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+    <h5 class="mt-0">미디어 헤드라인</h5>
+    동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세 남산 위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리 기상일세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.
 
     <div class="media mt-3">
       <a class="pr-3" href="#">
-        <img data-src="holder.js/64x64" alt="Generic placeholder image" />
+        <img data-src="holder.js/64x64" alt="임시 이미지" />
       </a>
       <div class="media-body">
-        <h5 class="mt-0">Media heading</h5>
-        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+        <h5 class="mt-0">미디어 헤드라인</h5>
+        동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세 남산 위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리 기상일세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.
       </div>
     </div>
   </div>
 </div>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"mr-3"</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"Generic placeholder image"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"mr-3"</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"임시 이미지"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-body"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"mt-0"</span><span class="nt">&gt;</span>Media heading<span class="nt">&lt;/h5&gt;</span>
-    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"mt-0"</span><span class="nt">&gt;</span>미디어 헤드라인<span class="nt">&lt;/h5&gt;</span>
+    동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세 남산 위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리 기상일세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.
 
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media mt-3"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"pr-3"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"Generic placeholder image"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"임시 이미지"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;/a&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-body"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"mt-0"</span><span class="nt">&gt;</span>Media heading<span class="nt">&lt;/h5&gt;</span>
-        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"mt-0"</span><span class="nt">&gt;</span>미디어 헤드라인<span class="nt">&lt;/h5&gt;</span>
+        동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세 남산 위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리 기상일세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
@@ -701,58 +705,58 @@
 
 <div class="bd-example">
 <div class="media">
-  <img class="align-self-start mr-3" data-src="holder.js/64x64" alt="Generic placeholder image" />
+  <img class="align-self-start mr-3" data-src="holder.js/64x64" alt="임시 이미지" />
   <div class="media-body">
-    <h5 class="mt-0">Top-aligned media</h5>
-    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-    <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+    <h5 class="mt-0">상단 정렬 미디어</h5>
+    <p>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세 남산 위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리 기상일세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.</p>
+    <p>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세. 남산 위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리 기상일세.</p>
   </div>
 </div>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"align-self-start mr-3"</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"Generic placeholder image"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"align-self-start mr-3"</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"임시 이미지"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-body"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"mt-0"</span><span class="nt">&gt;</span>Top-aligned media<span class="nt">&lt;/h5&gt;</span>
-    <span class="nt">&lt;p&gt;</span>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;p&gt;</span>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"mt-0"</span><span class="nt">&gt;</span>상단 정렬 미디어<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p&gt;</span>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세 남산 위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리 기상일세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p&gt;</span>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세. 남산 위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리 기상일세.<span class="nt">&lt;/p&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
 
 <div class="bd-example">
 <div class="media">
-  <img class="align-self-center mr-3" data-src="holder.js/64x64" alt="Generic placeholder image" />
+  <img class="align-self-center mr-3" data-src="holder.js/64x64" alt="임시 이미지" />
   <div class="media-body">
-    <h5 class="mt-0">Center-aligned media</h5>
-    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-    <p class="mb-0">Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+    <h5 class="mt-0">가운데 정렬 미디어</h5>
+    <p>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세 남산 위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리 기상일세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.</p>
+    <p class="mb-0">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세. 남산 위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리 기상일세.</p>
   </div>
 </div>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"align-self-center mr-3"</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"Generic placeholder image"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"align-self-center mr-3"</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"임시 이미지"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-body"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"mt-0"</span><span class="nt">&gt;</span>Center-aligned media<span class="nt">&lt;/h5&gt;</span>
-    <span class="nt">&lt;p&gt;</span>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mb-0"</span><span class="nt">&gt;</span>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"mt-0"</span><span class="nt">&gt;</span>가운데 정렬 미디어<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p&gt;</span>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세 남산 위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리 기상일세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mb-0"</span><span class="nt">&gt;</span>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세. 남산 위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리 기상일세.<span class="nt">&lt;/p&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
 
 <div class="bd-example">
 <div class="media">
-  <img class="align-self-end mr-3" data-src="holder.js/64x64" alt="Generic placeholder image" />
+  <img class="align-self-end mr-3" data-src="holder.js/64x64" alt="임시 이미지" />
   <div class="media-body">
-    <h5 class="mt-0">Bottom-aligned media</h5>
-    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-    <p class="mb-0">Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+    <h5 class="mt-0">하단 정렬 미디어</h5>
+    <p>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세 남산 위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리 기상일세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.</p>
+    <p class="mb-0">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세. 남산 위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리 기상일세.</p>
   </div>
 </div>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"align-self-end mr-3"</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"Generic placeholder image"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"align-self-end mr-3"</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"임시 이미지"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-body"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"mt-0"</span><span class="nt">&gt;</span>Bottom-aligned media<span class="nt">&lt;/h5&gt;</span>
-    <span class="nt">&lt;p&gt;</span>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mb-0"</span><span class="nt">&gt;</span>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"mt-0"</span><span class="nt">&gt;</span>하단 정렬 미디어<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p&gt;</span>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세 남산 위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리 기상일세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mb-0"</span><span class="nt">&gt;</span>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세. 남산 위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리 기상일세.<span class="nt">&lt;/p&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
 
@@ -763,18 +767,18 @@
 <div class="bd-example">
 <div class="media">
   <div class="media-body">
-    <h5 class="mt-0 mb-1">Media object</h5>
-    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+    <h5 class="mt-0 mb-1">미디어 객체</h5>
+    동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세 남산 위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리 기상일세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.
   </div>
-  <img class="ml-3" data-src="holder.js/64x64" alt="Generic placeholder image" />
+  <img class="ml-3" data-src="holder.js/64x64" alt="임시 이미지" />
 </div>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-body"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"mt-0 mb-1"</span><span class="nt">&gt;</span>Media object<span class="nt">&lt;/h5&gt;</span>
-    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"mt-0 mb-1"</span><span class="nt">&gt;</span>미디어 객체<span class="nt">&lt;/h5&gt;</span>
+    동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세 남산 위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리 기상일세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.
   <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"ml-3"</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"Generic placeholder image"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"ml-3"</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"임시 이미지"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
 
 <h2 id="미디어-리스트">미디어 리스트</h2>
@@ -784,48 +788,48 @@
 <div class="bd-example">
 <ul class="list-unstyled">
   <li class="media">
-    <img class="mr-3" data-src="holder.js/64x64" alt="Generic placeholder image" />
+    <img class="mr-3" data-src="holder.js/64x64" alt="임시 이미지" />
     <div class="media-body">
-      <h5 class="mt-0 mb-1">List-based media object</h5>
-      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+      <h5 class="mt-0 mb-1">리스트 기반 미디어 객체</h5>
+      동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세 남산 위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리 기상일세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.
     </div>
   </li>
   <li class="media my-4">
-    <img class="mr-3" data-src="holder.js/64x64" alt="Generic placeholder image" />
+    <img class="mr-3" data-src="holder.js/64x64" alt="임시 이미지" />
     <div class="media-body">
-      <h5 class="mt-0 mb-1">List-based media object</h5>
-      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+      <h5 class="mt-0 mb-1">리스트 기반 미디어 객체</h5>
+      동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세 남산 위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리 기상일세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.
     </div>
   </li>
   <li class="media">
-    <img class="mr-3" data-src="holder.js/64x64" alt="Generic placeholder image" />
+    <img class="mr-3" data-src="holder.js/64x64" alt="임시 이미지" />
     <div class="media-body">
-      <h5 class="mt-0 mb-1">List-based media object</h5>
-      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+      <h5 class="mt-0 mb-1">리스트 기반 미디어 객체</h5>
+      동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세 남산 위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리 기상일세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.
     </div>
   </li>
 </ul>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-unstyled"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"media"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"mr-3"</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"Generic placeholder image"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"mr-3"</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"임시 이미지"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-body"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"mt-0 mb-1"</span><span class="nt">&gt;</span>List-based media object<span class="nt">&lt;/h5&gt;</span>
-      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+      <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"mt-0 mb-1"</span><span class="nt">&gt;</span>리스트 기반 미디어 객체<span class="nt">&lt;/h5&gt;</span>
+      동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세 남산 위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리 기상일세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"media my-4"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"mr-3"</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"Generic placeholder image"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"mr-3"</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"임시 이미지"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-body"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"mt-0 mb-1"</span><span class="nt">&gt;</span>List-based media object<span class="nt">&lt;/h5&gt;</span>
-      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+      <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"mt-0 mb-1"</span><span class="nt">&gt;</span>리스트 기반 미디어 객체<span class="nt">&lt;/h5&gt;</span>
+      동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세 남산 위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리 기상일세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"media"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"mr-3"</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"Generic placeholder image"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"mr-3"</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"임시 이미지"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-body"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"mt-0 mb-1"</span><span class="nt">&gt;</span>List-based media object<span class="nt">&lt;/h5&gt;</span>
-      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+      <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"mt-0 mb-1"</span><span class="nt">&gt;</span>리스트 기반 미디어 객체<span class="nt">&lt;/h5&gt;</span>
+      동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세 남산 위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리 기상일세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/li&gt;</span>
 <span class="nt">&lt;/ul&gt;</span></code></pre></div>
