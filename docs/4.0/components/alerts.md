@@ -1,14 +1,17 @@
 ---
 layout: docs
 title: 알림 Alerts
-description: Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.
+description: 유연한 알림 메시지를 통해 일반적 사용자 작업에 대한 상황별 피드백 메시지를 제공하십시오.
 group: components
 toc: true
 ---
 
+
+
 ## 예제
 
-Alerts are available for any length of text, as well as an optional dismiss button. For proper styling, use one of the eight **required** contextual classes (e.g., `.alert-success`). For inline dismissal, use the [alerts jQuery plugin](#dismissing).
+알림은 임의의 텍스트 길이를 사용할 뿐만 아니라 닫기 버튼도 사용할 수 있습니다. 올바른 스타일링을 위해서는 8가지 상황별 클래스 중 하나를 사용 하십시오 (예 : `.alert-success`). 닫기를 원할 경우, [alerts jQuery plugin](#dismissing)을 사용하십시오.
+
 
 {% example html %}
 {% for color in site.data.theme-colors %}

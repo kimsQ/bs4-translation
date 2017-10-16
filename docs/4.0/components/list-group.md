@@ -1,26 +1,26 @@
 ---
 layout: docs
-title: 목록 그룹 List group
-description: List groups are a flexible and powerful component for displaying a series of content. Modify and extend them to support just about any content within.
+title: 목록 그룹
+description: 목록 그룹은 시리즈 컨텐츠를 보여 주는 유연하고 강력한 구성 요소입니다. Modify and extend them to support just about any content within.
 group: components
 toc: true
 ---
 
-## Basic example
+## 기본 예제
 
-The most basic list group is an unordered list with list items and the proper classes. Build upon it with the options that follow, or with your own CSS as needed.
+가장 기본적인 목록그룹은 목록항목과 적절한 클래스가 있는 `<ul>` 목록 입니다. 필요에 따라 다음 옵션을 사용하거나 직접 CSS를 사용하여 빌드 하십시오.
 
 {% example html %}
 <ul class="list-group">
-  <li class="list-group-item">Cras justo odio</li>
-  <li class="list-group-item">Dapibus ac facilisis in</li>
-  <li class="list-group-item">Morbi leo risus</li>
-  <li class="list-group-item">Porta ac consectetur ac</li>
-  <li class="list-group-item">Vestibulum at eros</li>
+  <li class="list-group-item">동해물과 백두산이</li>
+  <li class="list-group-item">마르고 닳도록 하느님이</li>
+  <li class="list-group-item">보우하사 우리 나라만세</li>
+  <li class="list-group-item">무궁화 삼천리 화려 강산</li>
+  <li class="list-group-item">대한사람 대한으로 길이 보전하세</li>
 </ul>
 {% endexample %}
 
-## Active items
+## 활성 항목
 
 Add `.active` to a `.list-group-item` to indicate the current active selection.
 
@@ -34,7 +34,7 @@ Add `.active` to a `.list-group-item` to indicate the current active selection.
 </ul>
 {% endexample %}
 
-## Disabled items
+## 비활성 항목
 
 Add `.disabled` to a `.list-group-item` to make it _appear_ disabled. Note that some elements with `.disabled` will also require custom JavaScript to fully disable their click events (e.g., links).
 
@@ -48,7 +48,7 @@ Add `.disabled` to a `.list-group-item` to make it _appear_ disabled. Note that 
 </ul>
 {% endexample %}
 
-## Links and buttons
+## 링크와 버튼
 
 Use `<a>`s or `<button>`s to create _actionable_ list group items with hover, disabled, and active states by adding `.list-group-item-action`. We separate these pseudo-classes to ensure list groups made of non-interactive elements (like `<li>`s or `<div>`s) don't provide a click or tap affordance.
 

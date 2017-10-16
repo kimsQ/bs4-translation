@@ -1,12 +1,14 @@
 ---
 layout: docs
 title: 네비게이션 바
-description: Documentation and examples for Bootstrap's powerful, responsive navigation header, the navbar. Includes support for branding, navigation, and more, including support for our collapse plugin.
+description: 부트스트랩의 강력하고 반응형 네비게이션 헤더 인 navbar에 대한 문서와 예제. 컬랩스 플러그인에 대한 지원을 포함하여 브랜딩, 네비게이션 등을 포함 합니다.
 group: components
 toc: true
 ---
 
-## How it works
+
+
+## 작동원리
 
 Here's what you need to know before getting started with the navbar:
 
@@ -18,7 +20,7 @@ Here's what you need to know before getting started with the navbar:
 
 Read on for an example and list of supported sub-components.
 
-## Supported content
+## 지원되는 콘텐츠
 
 Navbars come with built-in support for a handful of sub-components. Choose from the following as needed:
 
@@ -58,7 +60,7 @@ Here's an example of all the sub-components included in a responsive light-theme
 </nav>
 {% endexample %}
 
-### Brand
+### 브랜드
 
 The `.navbar-brand` can be applied to most elements, but an anchor works best as some elements might require utility classes or custom styles.
 
@@ -95,7 +97,7 @@ Adding images to the `.navbar-brand` will likely always require custom styles or
 </nav>
 {% endexample %}
 
-### Nav
+### 네비게이션
 
 Navbar navigation links build on our `.nav` options with their own modifier class and require the use of [toggler classes](#toggler) for proper responsive styling. **Navigation in navbars will also grow to occupy as much horizontal space as possible** to keep your navbar contents securely aligned.
 
@@ -179,7 +181,7 @@ You may also utilize dropdowns in your navbar nav. Dropdown menus require a wrap
 </nav>
 {% endexample %}
 
-### Forms
+### 폼
 
 Place various form controls and components within a navbar with `.form-inline`.
 
@@ -228,7 +230,7 @@ Various buttons are supported as part of these navbar forms, too. This is also a
 </nav>
 {% endexample %}
 
-### Text
+### 텍스트
 
 Navbars may contain bits of text with the help of `.navbar-text`. This class adjusts vertical alignment and horizontal spacing for strings of text.
 
@@ -267,7 +269,7 @@ Mix and match with other components and utilities as needed.
 </nav>
 {% endexample %}
 
-## Color schemes
+## 색 구성표
 
 Theming the navbar has never been easier thanks to the combination of theming classes and `background-color` utilities. Choose from `.navbar-light` for use with light background colors, or `.navbar-dark` for dark background colors. Then, customize with `.bg-*` utilities.
 
@@ -371,7 +373,7 @@ Theming the navbar has never been easier thanks to the combination of theming cl
 </nav>
 {% endhighlight %}
 
-## Containers
+## 컨테이너
 
 Although it's not required, you can wrap a navbar in a `.container` to center it on a page or add one within to only center the contents of a [fixed or static top navbar](#placement).
 
@@ -393,7 +395,7 @@ When the container is within your navbar, its horizontal padding is removed at b
 </nav>
 {% endexample %}
 
-## Placement
+## 배치 Placement
 
 Use our position utilities to place navbars in non-static positions. Choose from fixed to the top, fixed to the bottom, or stickied to the top. **Note that `position: sticky`, used for `.sticky-top`, [isn't fully supported in every browser](https://caniuse.com/#feat=css-sticky).**
 
@@ -421,7 +423,7 @@ Use our position utilities to place navbars in non-static positions. Choose from
 </nav>
 {% endexample %}
 
-## Responsive behaviors
+## 반응형 동작 Responsive behaviors
 
 Navbars can utilize `.navbar-toggler`, `.navbar-collapse`, and `.navbar-expand{-sm|-md|-lg|-xl}` classes to change when their content collapses behind a button. In combination with other utilities, you can easily choose when to show or hide particular elements.
 
@@ -517,7 +519,7 @@ With a toggler on the left and brand name on the right:
 </nav>
 {% endexample %}
 
-### External content
+### 외부 콘텐츠
 
 Sometimes you want to use the collapse plugin to trigger hidden content elsewhere on the page. Because our plugin works on the `id` and `data-target` matching, that's easily done!
 

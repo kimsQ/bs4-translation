@@ -1,20 +1,21 @@
 ---
 layout: docs
 title: 버튼 그룹
-description: Group a series of buttons together on a single line with the button group, and super-power them with JavaScript.
+description: 버튼 그룹으로 한줄에 버튼을 그룹화 하고, 자바스크립트를 사용하여 슈퍼 파워를 부여합니다.
 group: components
 toc: true
 ---
 
-## Basic example
+## 기본 예제
 
-Wrap a series of buttons with `.btn` in `.btn-group`. Add on optional JavaScript radio and checkbox style behavior with [our buttons plugin]({{ site.baseurl }}/docs/{{ site.docs_version }}/components/buttons/#button-plugin).
+ `.btn-group` 으로 `.btn`이 있는 일련의 버튼을 감싸세요. [버튼 플러그인]({{ site.baseurl }}/docs/{{ site.docs_version }}/components/buttons/#버튼-플러그인)으로 자바스크립트 라디오 및 체크박스 스타일 동작을 선택적으로 추가 할 수도 있습니다.
+
 
 {% example html %}
 <div class="btn-group" role="group" aria-label="Basic example">
-  <button type="button" class="btn btn-secondary">Left</button>
-  <button type="button" class="btn btn-secondary">Middle</button>
-  <button type="button" class="btn btn-secondary">Right</button>
+  <button type="button" class="btn btn-secondary">좌측</button>
+  <button type="button" class="btn btn-secondary">가운데</button>
+  <button type="button" class="btn btn-secondary">우측</button>
 </div>
 {% endexample %}
 
@@ -26,7 +27,7 @@ In order for assistive technologies (such as screen readers) to convey that a se
 In addition, groups and toolbars should be given an explicit label, as most assistive technologies will otherwise not announce them, despite the presence of the correct role attribute. In the examples provided here, we use `aria-label`, but alternatives such as `aria-labelledby` can also be used.
 {% endcallout %}
 
-## Button toolbar
+## 버튼 툴바
 
 Combine sets of button groups into button toolbars for more complex components. Use utility classes as needed to space out groups, buttons, and more.
 
@@ -79,7 +80,7 @@ Feel free to mix input groups with button groups in your toolbars. Similar to th
 </div>
 {% endexample %}
 
-## Sizing
+## 크기 조정
 
 Instead of applying button sizing classes to every button in a group, just add `.btn-group-*` to each `.btn-group`, including each one when nesting multiple groups.
 
@@ -109,7 +110,7 @@ Instead of applying button sizing classes to every button in a group, just add `
 <div class="btn-group btn-group-sm" role="group" aria-label="...">...</div>
 {% endhighlight %}
 
-## Nesting
+## 중첩
 
 Place a `.btn-group` within another `.btn-group` when you want dropdown menus mixed with a series of buttons.
 

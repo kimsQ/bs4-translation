@@ -1,12 +1,14 @@
 ---
 layout: docs
 title: 페이지네이션
-description: Documentation and examples for showing pagination to indicate a series of related content exists across multiple pages.
+description: 여러 페이지에 일련의 관련 콘텐츠가 있음을 나타내는 페이지 번호 매김을 보여주는 문서와 예제.
 group: components
 toc: true
 ---
 
-## Overview
+
+
+## 개요
 
 We use a large block of connected links for our pagination, making links hard to miss and easily scalable—all while providing large hit areas. Pagination is built with list HTML elements so screen readers can announce the number of available links. Use a wrapping `<nav>` element to identify it as a navigation section to screen readers and other assistive technologies.
 
@@ -24,7 +26,7 @@ In addition, as pages likely have more than one such navigation section, it's ad
 </nav>
 {% endexample %}
 
-## Working with icons
+## 아이콘 작업
 
 Looking to use an icon or symbol in place of text for some pagination links? Be sure to provide proper screen reader support with `aria` attributes and the `.sr-only` utility.
 
@@ -50,7 +52,7 @@ Looking to use an icon or symbol in place of text for some pagination links? Be 
 </nav>
 {% endexample %}
 
-## Disabled and active states
+## 비활성 상태 및 활성 상태
 
 Pagination links are customizable for different circumstances. Use `.disabled` for links that appear un-clickable and `.active` to indicate the current page.
 
@@ -97,7 +99,7 @@ You can optionally swap out active or disabled anchors for `<span>`, or omit the
 </nav>
 {% endexample %}
 
-## Sizing
+## 크기 조정
 
 Fancy larger or smaller pagination? Add `.pagination-lg` or `.pagination-sm` for additional sizes.
 
@@ -133,7 +135,7 @@ Fancy larger or smaller pagination? Add `.pagination-lg` or `.pagination-sm` for
 </nav>
 {% endexample %}
 
-## Alignment
+## 정렬
 
 Change the alignment of pagination components with [flexbox utilities]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/flex/).
 

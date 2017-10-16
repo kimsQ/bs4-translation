@@ -1,22 +1,24 @@
 ---
 layout: docs
 title: 캐러셀 Carousel
-description: A slideshow component for cycling through elements—images or slides of text—like a carousel.
+description: 회전목마와 같이 순환하는 슬라이드 쇼(이미지 또는 텍스트 슬라이드)를 구성하는 컴포넌트.
 group: components
 toc: true
 ---
 
-## How it works
 
-The carousel is a slideshow for cycling through a series of content, built with CSS 3D transforms and a bit of JavaScript. It works with a series of images, text, or custom markup. It also includes support for previous/next controls and indicators.
 
-In browsers where the [Page Visibility API](https://www.w3.org/TR/page-visibility/) is supported, the carousel will avoid sliding when the webpage is not visible to the user (such as when the browser tab is inactive, the browser window is minimized, etc.).
+## 작동원리
 
-Please be aware that nested carousels are not supported, and carousels are generally not compliant with accessibility standards.
+캐러셀은 CSS 3D 트랜스폼과 약간의 자바스크립트로 제작된 시리즈 콘텐츠를 순환하는 슬라이드 쇼 입니다. 일련의 이미지, 텍스트 또는 커스텀 마크업과 함께 작동합니다. 또한 이전/다음 컨트롤 및 인디케이터를 포함합니다.
 
-Lastly, if you're building our JS from source, it [requires `util.js`]({{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/javascript/#util).
+[Page Visibility API](https://www.w3.org/TR/page-visibility/)가 지원되는 브라우저에서 브라우저 탭이 비활성 상태이거나 브라우저 창이 최소화 된 경우와 같이 웹 페이지가 사용자에게 표시되지 않으면 슬라이드가 진행되지 않습니다.
 
-## Example
+중첩된 캐러셀은 지원되지 않으며 캐러셀은 일반적으로 웹접근성 표준을 준수하지 않습니다.
+
+마지막으로 소스에서 JS를 빌드하는 경우 [`util.js`]({{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/javascript/#util)가 필요합니다.
+
+## 예제
 
 Carousels don't automatically normalize slide dimensions. As such, you may need to use additional utilities or custom styles to appropriately size content. While carousels support previous/next controls and indicators, they're not explicitly required. Add and customize as you see fit.
 
@@ -164,7 +166,7 @@ Add captions to your slides easily with the `.carousel-caption` element within a
 </div>
 {% endhighlight %}
 
-## Usage
+## 사용법
 
 ### Via data attributes
 
@@ -180,7 +182,7 @@ Call carousel manually with:
 $('.carousel').carousel()
 {% endhighlight %}
 
-### Options
+### 옵션
 
 Options can be passed via data attributes or JavaScript. For data attributes, append the option name to `data-`, as in `data-interval=""`.
 
@@ -228,7 +230,7 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
   </tbody>
 </table>
 
-### Methods
+### 메소드 Methods
 
 {% capture callout-include %}{% include callout-danger-async-methods.md %}{% endcapture %}
 {{ callout-include | markdownify }}
@@ -263,7 +265,7 @@ Cycles to the previous item. **Returns to the caller before the previous item ha
 
 Cycles to the next item. **Returns to the caller before the next item has been shown** (i.e. before the `slid.bs.carousel` event occurs).
 
-### Events
+### 이벤트 Events
 
 Bootstrap's carousel class exposes two events for hooking into carousel functionality. Both events have the following additional properties:
 

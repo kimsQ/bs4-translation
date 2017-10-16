@@ -1,12 +1,14 @@
 ---
 layout: docs
 title: 폼
-description: Examples and usage guidelines for form control styles, layout options, and custom components for creating a wide variety of forms.
+description: 폼 컨트롤 스타일, 레이아웃 옵션 및 다양한 폼양식을 만들기 위한 사용자 지정 컴포넌트 대한 예제 및 사용 가이드.
 group: components
 toc: true
 ---
 
-## Overview
+
+
+## 개요
 
 Bootstrap's form controls expand on [our Rebooted form styles]({{ site.baseurl }}/docs/{{ site.docs_version }}/content/reboot/#forms) with classes. Use these classes to opt into their customized displays for a more consistent rendering across browsers and devices.
 
@@ -35,7 +37,7 @@ Here's a quick example to demonstrate Bootstrap's form styles. Keep reading for 
 </form>
 {% endexample %}
 
-## Form controls
+## 폼 컨트롤
 
 Textual form controls—like `<input>`s, `<select>`s, and `<textarea>`s—are styled with the `.form-control` class. Included are styles for general appearance, focus state, sizing, and more.
 
@@ -85,7 +87,7 @@ For file inputs, swap the `.form-control` for `.form-control-file`.
 </form>
 {% endexample %}
 
-### Sizing
+### 크기조정
 
 Set heights using classes like `.form-control-lg` and `.form-control-sm`.
 
@@ -107,7 +109,7 @@ Set heights using classes like `.form-control-lg` and `.form-control-sm`.
 </select>
 {% endexample %}
 
-### Readonly
+### 읽기전용 Readonly
 
 Add the `readonly` boolean attribute on an input to prevent modification of the input's value. Read-only inputs appear lighter (just like disabled inputs), but retain the standard cursor.
 
@@ -150,7 +152,7 @@ If you want to have `<input readonly>` elements in your form styled as plain tex
 </form>
 {% endexample %}
 
-## Checkboxes and radios
+## 체크박스와 라디오
 
 Default checkboxes and radios are improved upon with the help of `.form-check`, **a single class for both input types that improves the layout and behavior of their HTML elements**. Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many.
 

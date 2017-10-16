@@ -1,10 +1,12 @@
 ---
 layout: docs
 title: 네비게이션
-description: Documentation and examples for how to use Bootstrap's included navigation components.
+description: 부트스트랩에 포함된 네비게이션 컴포넌트를 사용하는 방법에 대한 문서 및 예제.
 group: components
 toc: true
 ---
+
+
 
 ## Base nav
 

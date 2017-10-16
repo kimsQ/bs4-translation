@@ -1,12 +1,14 @@
 ---
 layout: docs
 title: 모달
-description: Use Bootstrap's JavaScript modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content.
+description: 부트스트랩의 자바스크립트 모달 플러그인을 사용하여 라이트 박스, 사용자 알림 또는 사용자 정의 컨텐츠 대화상자를 사이트에 추가하십시오.
 group: components
 toc: true
 ---
 
-## How it works
+
+
+## 작동 원리
 
 Before getting started with Bootstrap's modal component, be sure to read the following as our menu options have recently changed.
 
@@ -25,9 +27,9 @@ $('#myModal').on('shown.bs.modal', function () {
 
 Keep reading for demos and usage guidelines.
 
-## Examples
+## 예제
 
-### Modal components
+### 모달 컨포넌트
 
 Below is a _static_ modal example (meaning its `position` and `display` have been overridden). Included are the modal header, modal body (required for `padding`), and modal footer (optional). We ask that you include modal headers with dismiss actions whenever possible, or provide another explicit dismiss action.
 
@@ -75,7 +77,7 @@ Below is a _static_ modal example (meaning its `position` and `display` have bee
 </div>
 {% endhighlight %}
 
-### Live demo
+### 라이브 데모
 
 Toggle a working modal demo by clicking the button below. It will slide down and fade in from the top of the page.
 

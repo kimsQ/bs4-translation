@@ -1,22 +1,23 @@
 ---
 layout: docs
 title: 카드
-description: Bootstrap's cards provide a flexible and extensible content container with multiple variants and options.
+description: 부트스트랩 카드는 다양한 변형과 옵션을 갖춘 유연하고 확장 가능한 콘텐츠 컨테이너를 제공합니다.
 group: components
 toc: true
 ---
 
-## About
 
-A **card** is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options.
+## 소개
 
-If you're familiar with Bootstrap 3, cards replace our old panels, wells, and thumbnails. Similar functionality to those components is available as modifier classes for cards.
+**카드** 는 유연하고 확장 가능한 콘텐츠 컨테이너 입니다. 여기에는 헤더와 풋터, 다양한 컨텐트, 상황별 배경색 및 강력한 표시 옵션이 포함되어 있습니다.
 
-## Example
+부트스트랩 v3에 익숙하다면 panel, well 및 thumbnails로 대체 할 수 있습니다. 이러한 구성 요소와 유사한 기능은 카드의 수정자 클래스로 사용할 수 있습니다.
 
-Cards are built with as little markup and styles as possible, but still manage to deliver a ton of control and customization. Built with flexbox, they offer easy alignment and mix well with other Bootstrap components.
+## 예제
 
-Below is an example of a basic card with mixed content and a fixed width. Cards have no fixed width to start, so they'll naturally fill the full width of its parent element. This is easily customized with our various [sizing options](#sizing).
+카드는 가능한 적은 마크업과 스타일로 제작 되지만 여전히 적지않은 제어와 사용자 정의를 제공합니다. Flexbox로 제작되어 쉽게 정렬 할 수 있으며 다른 부트스트랩 컴포넌트와 잘 섞일 수 있습니다.
+
+다음은 혼합된 컨텐츠와 고정 너비가 있는 기본 카드의 예제 입니다. 카드는 시작할 때 고정 너비가 없으므로 부모 요소의 전체 너비를 자연스럽게 채웁니다. 다양한 [크기 조정](#크기-조정) 옵션으로 쉽게 사용자 정의를 할 수 있습니다.
 
 {% example html %}
 <div class="card" style="width: 20rem;">
@@ -29,7 +30,7 @@ Below is an example of a basic card with mixed content and a fixed width. Cards 
 </div>
 {% endexample %}
 
-## Content types
+## 컨텐츠 타입
 
 Cards support a wide variety of content, including images, text, list groups, links, and more. Below are examples of what's supported.
 
@@ -45,7 +46,7 @@ The building block of a card is the `.card-body`. Use it whenever you need a pad
 </div>
 {% endexample %}
 
-### Titles, text, and links
+### 타이틀, 텍스트, 그리고 링크
 
 Card titles are used by adding `.card-title` to a `<h*>` tag. In the same way, links are added and placed next to each other by adding `.card-link` to an `<a>` tag.
 
@@ -63,7 +64,7 @@ Subtitles are used by adding a `.card-subtitle` to a `<h*>` tag. If the `.card-t
 </div>
 {% endexample %}
 
-### Images
+### 이미지
 
 `.card-img-top` places an image to the top of the card. With `.card-text`, text can be added to the card. Text within `.card-text` can also be styled with the standard HTML tags.
 
@@ -76,7 +77,7 @@ Subtitles are used by adding a `.card-subtitle` to a `<h*>` tag. If the `.card-t
 </div>
 {% endexample %}
 
-### List groups
+### 목록 그룹
 
 Create lists of content in a card with a flush list group.
 
@@ -113,7 +114,7 @@ Mix and match multiple content types to create the card you need, or throw every
 </div>
 {% endexample %}
 
-### Header and footer
+### 헤더와 풋터
 
 Add an optional header and/or footer within a card.
 
@@ -173,11 +174,11 @@ Card headers can be styled by adding `.card-header` to `<h*>` elements.
 </div>
 {% endexample %}
 
-## Sizing
+## 크기 조정
 
 Cards assume no specific `width` to start, so they'll be 100% wide unless otherwise stated. You can change this as needed with custom CSS, grid classes, grid Sass mixins, or utilities.
 
-### Using grid markup
+### 그리드 마크업 사용
 
 Using the grid, wrap cards in columns and rows as needed.
 
@@ -204,7 +205,7 @@ Using the grid, wrap cards in columns and rows as needed.
 </div>
 {% endexample %}
 
-### Using utilities
+### 유틸리티 사용
 
 Use our handful of [available sizing utilities]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/sizing/) to quickly set a card's width.
 
@@ -226,7 +227,7 @@ Use our handful of [available sizing utilities]({{ site.baseurl }}/docs/{{ site.
 </div>
 {% endexample %}
 
-### Using custom CSS
+### 사용자 정의 CSS
 
 Use custom CSS in your stylesheets or as inline styles to set a width.
 
@@ -240,7 +241,7 @@ Use custom CSS in your stylesheets or as inline styles to set a width.
 </div>
 {% endexample %}
 
-## Text alignment
+## 텍스트 정렬
 
 You can quickly change the text alignment of any card—in its entirety or specific parts—with our [text align classes]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/text/#text-alignment).
 
@@ -270,7 +271,7 @@ You can quickly change the text alignment of any card—in its entirety or speci
 </div>
 {% endexample %}
 
-## Navigation
+## 네비게이션
 
 Add some navigation to a card's header (or block) with Bootstrap's [nav components]({{ site.baseurl }}/docs/{{ site.docs_version }}/components/navs/).
 
@@ -320,11 +321,11 @@ Add some navigation to a card's header (or block) with Bootstrap's [nav componen
 </div>
 {% endexample %}
 
-## Images
+## 이미지
 
 Cards include a few options for working with images. Choose from appending "image caps" at either end of a card, overlaying images with card content, or simply embedding the image in a card.
 
-### Image caps
+### 이미지 캡션
 
 Similar to headers and footers, cards can include top and bottom "image caps"—images at the top or bottom of a card.
 
@@ -347,7 +348,7 @@ Similar to headers and footers, cards can include top and bottom "image caps"—
 </div>
 {% endexample %}
 
-### Image overlays
+### 이미지 오버레이 (overlays)
 
 Turn an image into a card background and overlay your card's text. Depending on the image, you may or may not need additional styles or utilities.
 
@@ -362,11 +363,11 @@ Turn an image into a card background and overlay your card's text. Depending on 
 </div>
 {% endexample %}
 
-## Card styles
+## 카드 스타일
 
 Cards include various options for customizing their backgrounds, borders, and color.
 
-### Background and color
+### 백그라운드와 칼라
 
 Use [text and background utilities]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/colors/) to change the appearance of a card.
 
@@ -384,7 +385,7 @@ Use [text and background utilities]({{ site.baseurl }}/docs/{{ site.docs_version
 {% capture callout-include %}{% include callout-warning-color-assistive-technologies.md %}{% endcapture %}
 {{ callout-include | markdownify }}
 
-### Border
+### 테두리
 
 Use [border utilities]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/borders/) to change just the `border-color` of a card. Note that you can put `.text-{color}` classes on the parent `.card` or a subset of the card's contents as shown below.
 
@@ -399,7 +400,7 @@ Use [border utilities]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities
 </div>{% endfor %}
 {% endexample %}
 
-### Mixins utilities
+### 믹스인(Mixins) 유틸리티
 
 You can also change the borders on the card header and footer as needed, and even remove their `background-color` with `.bg-transparent`.
 
@@ -414,11 +415,11 @@ You can also change the borders on the card header and footer as needed, and eve
 </div>
 {% endexample %}
 
-## Card layout
+## 카드 레이아웃
 
 In addition to styling the content within cards, Bootstrap includes a few options for laying out series of cards. For the time being, **these layout options are not yet responsive**.
 
-### Card groups
+### 카드 그룹
 
 Use card groups to render cards as a single, attached element with equal width and height columns. Card groups use `display: flex;` to achieve their uniform sizing.
 
@@ -488,7 +489,7 @@ When using card groups with footers, their content will automatically line up.
 </div>
 {% endexample %}
 
-### Card decks
+### 카드 테크 (decks)
 
 Need a set of equal width and height cards that aren't attached to one another? Use card decks.
 
@@ -558,7 +559,7 @@ Just like with card groups, card footers in decks will automatically line up.
 </div>
 {% endexample %}
 
-### Card columns
+### 카드 칼럼 (columns)
 
 Cards can be organized into [Masonry](https://masonry.desandro.com/)-like columns with just CSS by wrapping them in `.card-columns`. Cards are built with CSS `column` properties instead of flexbox for easier alignment. Cards are ordered from top to bottom and left to right.
 

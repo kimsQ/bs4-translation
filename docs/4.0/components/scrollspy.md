@@ -1,12 +1,14 @@
 ---
 layout: docs
 title: 스크롤스파이
-description: Automatically update Bootstrap navigation or list group components based on scroll position to indicate which link is currently active in the viewport.
+description: 뷰포트에서 현재 활성화된 링크를 표시하기 위해 스크롤 위치를 기반으로 부트스트랩 네비게이션 또는 목록 그룹 컴포넌트를 자동 업데이트 합니다.
 group: components
 toc: true
 ---
 
-## How it works
+
+
+## 작동원리
 
 Scrollspy has a few requirements to function properly:
 
@@ -18,7 +20,7 @@ Scrollspy has a few requirements to function properly:
 
 When successfully implemented, your nav or list group will update accordingly, moving the `.active` class from one item to the next based on their associated targets.
 
-## Example in navbar
+## navbar의 예시
 
 Scroll the area below the navbar and watch the active class change. The dropdown items will be highlighted as well.
 
@@ -94,7 +96,7 @@ Scroll the area below the navbar and watch the active class change. The dropdown
 </div>
 {% endhighlight %}
 
-## Example with nested nav
+## 중첩된 nav 예제
 
 Scrollspy also works with nested `.nav`s. If a nested `.nav` is `.active`, its parents will also be `.active`. Scroll the area next to the navbar and watch the active class change.
 
@@ -175,7 +177,7 @@ Scrollspy also works with nested `.nav`s. If a nested `.nav` is `.active`, its p
 </div>
 {% endhighlight %}
 
-## Example with list-group
+## 목록그룹 예제
 
 Scrollspy also works with `.list-group`s. Scroll the area next to the list group and watch the active class change.
 
@@ -224,7 +226,7 @@ Scrollspy also works with `.list-group`s. Scroll the area next to the list group
 {% endhighlight %}
 
 
-## Usage
+## 사용법
 
 ### Via data attributes
 
@@ -268,7 +270,7 @@ Navbar links must have resolvable id targets. For example, a `<a href="#home">ho
 Target elements that are not [`:visible` according to jQuery](https://api.jquery.com/visible-selector/) will be ignored and their corresponding nav items will never be highlighted.
 {% endcallout %}
 
-### Methods
+### 메소드 Methods
 
 #### `.scrollspy('refresh')`
 
@@ -281,7 +283,7 @@ $('[data-spy="scroll"]').each(function () {
 {% endhighlight %}
 
 
-### Options
+### 옵션 Options
 
 Options can be passed via data attributes or JavaScript. For data attributes, append the option name to `data-`, as in `data-offset=""`.
 
@@ -304,7 +306,7 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
   </tbody>
 </table>
 
-### Events
+### 이벤트 Events
 
 <table class="table table-bordered table-striped table-responsive">
   <thead>

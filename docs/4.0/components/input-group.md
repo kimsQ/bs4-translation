@@ -1,12 +1,14 @@
 ---
 layout: docs
 title: 입력 그룹
-description: Easily extend form controls by adding text, buttons, or button groups on either side of textual inputs.
+description: 입력폼 양쪽에 텍스트, 버튼 또는 버튼 그룹을 추가하여 폼 컨트롤을 쉽게 확장 할 수 있습니다.
 group: components
 toc: true
 ---
 
-## Basic example
+
+
+## 기본 예제
 
 Place one add-on or button on either side of an input. You may also place one on both sides of an input. **We do not support multiple form-controls in a single input group** and `<label>`s must come outside the input group.
 
@@ -40,7 +42,7 @@ Place one add-on or button on either side of an input. You may also place one on
 </div>
 {% endexample %}
 
-## Sizing
+## 크기조정
 
 Add the relative form sizing classes to the `.input-group` itself and contents within will automatically resize—no need for repeating the form control size classes on each element.
 
@@ -56,7 +58,7 @@ Add the relative form sizing classes to the `.input-group` itself and contents w
 </div>
 {% endexample %}
 
-## Checkboxes and radio addons
+## 체크박스와 라디오 추가
 
 Place any checkbox or radio option within an input group's addon instead of text.
 

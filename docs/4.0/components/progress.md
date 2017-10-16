@@ -1,12 +1,14 @@
 ---
 layout: docs
 title: 진행바
-description: Documentation and examples for using Bootstrap custom progress bars featuring support for stacked bars, animated backgrounds, and text labels.
+description: 누적막대, 애니메이션 배경 및 텍스트 레이블을 지원하는 부트스트랩 사용자 정의 진행률 표시 바 사용에 대한 설명서 및 예제.
 group: components
 toc: true
 ---
 
-## How it works
+
+
+## 작동원리
 
 Progress components are built with two HTML elements, some CSS to set the width, and a few attributes. We don't use [the HTML5 `<progress>` element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress), ensuring you can stack progress bars, animate them, and place text labels over them.
 
@@ -43,7 +45,7 @@ Bootstrap provides a handful of [utilities for setting width]({{ site.baseurl }}
 </div>
 {% endexample %}
 
-## Labels
+## 라벨
 
 Add labels to your progress bars by placing text within the `.progress-bar`.
 
@@ -53,7 +55,7 @@ Add labels to your progress bars by placing text within the `.progress-bar`.
 </div>
 {% endexample %}
 
-## Height
+## 높이
 
 We only set a `height` value on the `.progress`, so if you change that value the inner `.progress-bar` will automatically resize accordingly.
 
@@ -66,7 +68,7 @@ We only set a `height` value on the `.progress`, so if you change that value the
 </div>
 {% endexample %}
 
-## Backgrounds
+## 백그라운드
 
 Use background utility classes to change the appearance of individual progress bars.
 
@@ -85,7 +87,7 @@ Use background utility classes to change the appearance of individual progress b
 </div>
 {% endexample %}
 
-## Multiple bars
+## 여러개의 막대 Multiple bars
 
 Include multiple progress bars in a progress component if you need.
 
@@ -97,7 +99,7 @@ Include multiple progress bars in a progress component if you need.
 </div>
 {% endexample %}
 
-## Striped
+## 줄무늬 Striped
 
 Add `.progress-bar-striped` to any `.progress-bar` to apply a stripe via CSS gradient over the progress bar's background color.
 
@@ -119,7 +121,7 @@ Add `.progress-bar-striped` to any `.progress-bar` to apply a stripe via CSS gra
 </div>
 {% endexample %}
 
-## Animated stripes
+## 애니메이션 줄무늬 Animated stripes
 
 The striped gradient can also be animated. Add `.progress-bar-animated` to `.progress-bar` to animate the stripes right to left via CSS3 animations.
 

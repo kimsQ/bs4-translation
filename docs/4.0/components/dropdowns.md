@@ -1,12 +1,14 @@
 ---
 layout: docs
 title: 다롭다운
-description: Toggle contextual overlays for displaying lists of links and more with the Bootstrap dropdown plugin.
+description: 부트스트랩 드롭다운 플러그인을 사용하여 링크 목록 등을 표시하기 위한 관련 오버레이를 토글합니다.
 group: components
 toc: true
 ---
 
-## Overview
+
+
+## 개요
 
 Dropdowns are toggleable, contextual overlays for displaying lists of links and more. They're made interactive with the included Bootstrap dropdown JavaScript plugin. They're toggled by clicking, not by hovering; this is [an intentional design decision.](http://markdotto.com/2012/02/27/bootstrap-explained-dropdowns/)
 
@@ -14,7 +16,7 @@ Dropdowns are built on a third party library, [Popper.js](https://popper.js.org/
 
 If you're building our JS from source, it [requires `util.js`]({{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/javascript/#util).
 
-## Accessibility
+## 접근성
 
 The [<abbr title="Web Accessibility Initiative">WAI</abbr> <abbr title="Accessible Rich Internet Applications">ARIA</abbr>](https://www.w3.org/TR/wai-aria/) standard defines an actual [`role="menu"` widget](https://www.w3.org/TR/wai-aria/roles#menu), but this is specific to application-like menus which trigger actions or functions. <abbr title="Accessible Rich Internet Applications">ARIA</abbr> menus can only contain menu items, checkbox menu items, radio button menu items, radio button groups, and sub-menus.
 
@@ -22,7 +24,7 @@ Bootstrap's dropdowns, on the other hand, are designed to be generic and applica
 
 However, Bootstrap does add built-in support for most standard keyboard menu interactions, such as the ability to move through individual `.dropdown-item` elements using the cursor keys and close the menu with the <kbd>ESC</kbd> key.
 
-## Examples
+## 예제
 
 Wrap the dropdown's toggle (your button or link) and the dropdown menu within `.dropdown`, or another element that declares `position: relative;`. Dropdowns can be triggered from `<a>` or `<button>` elements to better fit your potential needs.
 

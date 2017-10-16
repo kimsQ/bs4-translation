@@ -1,12 +1,14 @@
 ---
 layout: docs
 title: 팝오버
-description: Documentation and examples for adding Bootstrap popovers, like those found in iOS, to any element on your site.
+description: iOS에서와 유사한 부트스트랩 팝오버를 사이트의 모든 요소에 추가하는 데 필요한 문서와 예제.
 group: components
 toc: true
 ---
 
-## Overview
+
+
+## 개요
 
 Things to know when using the popover plugin:
 
@@ -24,7 +26,7 @@ Things to know when using the popover plugin:
 
 Got all that? Great, let's see how they work with some examples.
 
-## Example: Enable popovers everywhere
+## 예제: 어디서나 팝업 활성화
 
 One way to initialize all popovers on a page would be to select them by their `data-toggle` attribute:
 
@@ -34,7 +36,7 @@ $(function () {
 })
 {% endhighlight %}
 
-## Example: Using the `container` option
+## 예제: `container` 옵션 사용
 
 When you have some styles on a parent element that interfere with a popover, you'll want to specify a custom `container` so that the popover's HTML appears within that element instead.
 
@@ -46,7 +48,7 @@ $(function () {
 })
 {% endhighlight %}
 
-## Static popover
+## 정적인 팝오버
 
 Four options are available: top, right, bottom, and left aligned.
 
@@ -86,13 +88,13 @@ Four options are available: top, right, bottom, and left aligned.
   <div class="clearfix"></div>
 </div>
 
-## Live demo
+## 라이브 데코
 
 {% example html %}
 <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
 {% endexample %}
 
-### Four directions
+### 네가지 방향
 
 <div class="bd-example popover-demo">
   <div class="bd-example-popovers">
@@ -130,7 +132,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
 </button>
 {% endhighlight %}
 
-### Dismiss on next click
+### 다음 클릭시 닫기
 
 Use the `focus` trigger to dismiss popovers on the next click that the user makes.
 
@@ -151,13 +153,13 @@ $('.popover-dismiss').popover({
 {% endhighlight %}
 
 
-## Usage
+## 사용법
 
 Enable popovers via JavaScript:
 
 {% highlight js %}$('#example').popover(options){% endhighlight %}
 
-### Options
+### 옵션
 
 Options can be passed via data attributes or JavaScript. For data attributes, append the option name to `data-`, as in `data-animation=""`.
 
@@ -274,7 +276,7 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
 Options for individual popovers can alternatively be specified through the use of data attributes, as explained above.
 {% endcallout %}
 
-### Methods
+### 메소드 Methods
 
 {% capture callout-include %}{% include callout-danger-async-methods.md %}{% endcapture %}
 {{ callout-include | markdownify }}
@@ -331,7 +333,7 @@ Updates the position of an element's popover.
 
 {% highlight js %}$('#element').popover('update'){% endhighlight %}
 
-### Events
+### 이벤트 Events
 
 <table class="table table-bordered table-striped table-responsive">
   <thead>

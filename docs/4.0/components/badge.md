@@ -1,38 +1,40 @@
 ---
 layout: docs
 title: 배지 Badges
-description: Documentation and examples for badges, our small count and labeling component.
+description: 카운터 숫자 및 라벨 구성요소인 배지에 대한 문서 및 예제
 group: components
 toc: true
 ---
 
-## Example
 
-Badges scale to match the size of the immediate parent element by using relative font sizing and `em` units.
+
+## 예제
+
+배지는 상대 글꼴 크기 및 `em` 단위를 사용하여 직계 부모 요소의 크기와 일치하도록 배율을 조정합니다.
 
 <div class="bd-example">
-<div class="h1">Example heading <span class="badge badge-secondary">New</span></div>
-<div class="h2">Example heading <span class="badge badge-secondary">New</span></div>
-<div class="h3">Example heading <span class="badge badge-secondary">New</span></div>
-<div class="h4">Example heading <span class="badge badge-secondary">New</span></div>
-<div class="h5">Example heading <span class="badge badge-secondary">New</span></div>
-<div class="h6">Example heading <span class="badge badge-secondary">New</span></div>
+<div class="h1">헤드라인 예제 <span class="badge badge-secondary">New</span></div>
+<div class="h2">헤드라인 예제 <span class="badge badge-secondary">New</span></div>
+<div class="h3">헤드라인 예제 <span class="badge badge-secondary">New</span></div>
+<div class="h4">헤드라인 예제 <span class="badge badge-secondary">New</span></div>
+<div class="h5">헤드라인 예제 <span class="badge badge-secondary">New</span></div>
+<div class="h6">헤드라인 예제 <span class="badge badge-secondary">New</span></div>
 </div>
 
 {% highlight html %}
-<h1>Example heading <span class="badge badge-secondary">New</span></h1>
-<h2>Example heading <span class="badge badge-secondary">New</span></h2>
-<h3>Example heading <span class="badge badge-secondary">New</span></h3>
-<h4>Example heading <span class="badge badge-secondary">New</span></h4>
-<h5>Example heading <span class="badge badge-secondary">New</span></h5>
-<h6>Example heading <span class="badge badge-secondary">New</span></h6>
+<h1>헤드라인 예제 <span class="badge badge-secondary">New</span></h1>
+<h2>헤드라인 예제 <span class="badge badge-secondary">New</span></h2>
+<h3>헤드라인 예제 <span class="badge badge-secondary">New</span></h3>
+<h4>헤드라인 예제 <span class="badge badge-secondary">New</span></h4>
+<h5>헤드라인 예제 <span class="badge badge-secondary">New</span></h5>
+<h6>헤드라인 예제 <span class="badge badge-secondary">New</span></h6>
 {% endhighlight %}
 
-Badges can be used as part of links or buttons to provide a counter.
+배지는 링크 또는 버튼의 일부로 사용하여 카운터를 제공 할 수 있습니다.
 
 {% example html %}
 <button type="button" class="btn btn-primary">
-  Notifications <span class="badge badge-light">4</span>
+  알림 <span class="badge badge-light">4</span>
 </button>
 {% endexample %}
 
@@ -42,7 +44,7 @@ Unless the context is clear (as with the "Notifications" example, where it is un
 
 {% example html %}
 <button type="button" class="btn btn-primary">
-  Profile <span class="badge badge-light">9</span>
+  프로필 <span class="badge badge-light">9</span>
   <span class="sr-only">unread messages</span>
 </button>
 {% endexample %}
@@ -68,7 +70,7 @@ Use the `.badge-pill` modifier class to make badges more rounded (with a larger 
 <span class="badge badge-pill badge-{{ color.name }}">{{ color.name | capitalize }}</span>{% endfor %}
 {% endexample %}
 
-## Links
+## 링크
 
 Using the `.badge` classes with the `<a>` element quickly provide _actionable_ badges with hover and focus states.
 

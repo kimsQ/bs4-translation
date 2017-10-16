@@ -1,12 +1,14 @@
 ---
 layout: docs
 title: 툴팁
-description: Documentation and examples for adding custom Bootstrap tooltips with CSS and JavaScript using CSS3 for animations and data-attributes for local title storage.
+description: Documentation and examples for adding custom Bootstrap tooltips with CSS and JavaScript using CSS3 for animations and data-attributes for local title storage.CSS3를 사용하여 CSS 및 JavaScript로 사용자 정의 부트스트랩 툴팁을 추가하는데 필요한 설명서 및 예제. 그리고 로컬 타이틀 저장을 위한 애니메이션 및 데이터 속성.
 group: components
 toc: true
 ---
 
-## Overview
+
+
+## 개요
 
 Things to know when using the tooltip plugin:
 
@@ -22,7 +24,7 @@ Things to know when using the tooltip plugin:
 
 Got all that? Great, let's see how they work with some examples.
 
-## Example: Enable tooltips everywhere
+## 예제: 어디에서나 툴팁 사용
 
 One way to initialize all tooltips on a page would be to select them by their `data-toggle` attribute:
 
@@ -32,7 +34,7 @@ $(function () {
 })
 {% endhighlight %}
 
-## Examples
+## 예제
 
 Hover over the links below to see tooltips:
 
@@ -41,7 +43,7 @@ Hover over the links below to see tooltips:
   </p>
 </div>
 
-### Static demo
+### 정적 데모 Static demo
 
 Four options are available: top, right, bottom, and left aligned.
 
@@ -72,7 +74,7 @@ Four options are available: top, right, bottom, and left aligned.
   </div>
 </div>
 
-### Interactive demo
+### 대화형 데모 Interactive demo
 
 Hover over the buttons below to see their tooltips.
 
@@ -109,7 +111,7 @@ And with custom HTML added:
 </button>
 {% endhighlight %}
 
-## Usage
+## 사용법
 
 The tooltip plugin generates content and markup on demand, and by default places tooltips after their trigger element.
 
@@ -119,7 +121,7 @@ Trigger the tooltip via JavaScript:
 $('#example').tooltip(options)
 {% endhighlight %}
 
-### Markup
+### 마크업
 
 The required markup for a tooltip is only a `data` attribute and `title` on the HTML element you wish to have a tooltip. The generated markup of a tooltip is rather simple, though it does require a position (by default, set to `top` by the plugin).
 
@@ -142,7 +144,7 @@ You should only add tooltips to HTML elements that are traditionally keyboard-fo
 </div>
 {% endhighlight %}
 
-### Options
+### 옵션
 
 Options can be passed via data attributes or JavaScript. For data attributes, append the option name to `data-`, as in `data-animation=""`.
 
@@ -253,7 +255,7 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
 Options for individual tooltips can alternatively be specified through the use of data attributes, as explained above.
 {% endcallout %}
 
-### Methods
+### 메소드 Methods
 
 {% capture callout-include %}{% include callout-danger-async-methods.md %}{% endcapture %}
 {{ callout-include | markdownify }}
@@ -310,7 +312,7 @@ Updates the position of an element's tooltip.
 
 {% highlight js %}$('#element').tooltip('update'){% endhighlight %}
 
-### Events
+### 이벤트 Events
 
 <table class="table table-bordered table-striped table-responsive">
   <thead>

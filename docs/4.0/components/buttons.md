@@ -1,15 +1,16 @@
 ---
 layout: docs
 title: 버튼
-description: Use Bootstrap's custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.
+description: 폼 액션, 대화상자 등의 작업에 다양한 크기, 상태 등을 지원하는 부트스트랩의 사용자 정의 버튼 스타일을 사용하십시오.
 group: components
 redirect_from: "/docs/4.0/components/"
 toc: true
 ---
 
-## Examples
 
-Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control.
+## 예제
+
+Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control.부트스트랩에는 몇가지 미리 정의 된 버튼 스타일이 포함되어 있으며 각 스타일은 자체 의미론적 목적을 제공하며 더 많은 제어를 위해 몇가지 추가 기능이 포함되어 있습니다.
 
 {% example html %}
 {% for color in site.data.theme-colors %}
@@ -21,7 +22,7 @@ Bootstrap includes several predefined button styles, each serving its own semant
 {% capture callout-include %}{% include callout-warning-color-assistive-technologies.md %}{% endcapture %}
 {{ callout-include | markdownify }}
 
-## Button tags
+## 버튼 태그
 
 The `.btn` classes are designed to be used with the `<button>` element. However, you can also use these classes on `<a>` or `<input>` elements (though some browsers may apply a slightly different rendering).
 
@@ -35,7 +36,7 @@ When using button classes on `<a>` elements that are used to trigger in-page fun
 <input class="btn btn-primary" type="reset" value="Reset">
 {% endexample %}
 
-## Outline buttons
+## 아웃라인 버튼
 
 In need of a button, but not the hefty background colors they bring? Replace the default modifier classes with the `.btn-outline-*` ones to remove all background images and colors on any button.
 
@@ -44,7 +45,7 @@ In need of a button, but not the hefty background colors they bring? Replace the
 <button type="button" class="btn btn-outline-{{ color.name }}">{{ color.name | capitalize }}</button>{% endfor %}
 {% endexample %}
 
-## Sizes
+## 사이즈
 
 Fancy larger or smaller buttons? Add `.btn-lg` or `.btn-sm` for additional sizes.
 
@@ -65,7 +66,7 @@ Create block level buttons—those that span the full width of a parent—by add
 <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
 {% endexample %}
 
-## Active state
+## 활성 상태 (Active state)
 
 Buttons will appear pressed (with a darker background, darker border, and inset shadow) when active. **There's no need to add a class to `<button>`s as they use a pseudo-class**. However, you can still force the same active appearance with `.active` (and include the <code>aria-pressed="true"</code> attribute) should you need to replicate the state programmatically.
 
@@ -74,7 +75,7 @@ Buttons will appear pressed (with a darker background, darker border, and inset 
 <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
 {% endexample %}
 
-## Disabled state
+## 비활성 상태 (Disabled state)
 
 Make buttons look inactive by adding the `disabled` boolean attribute to any `<button>` element.
 
@@ -100,11 +101,11 @@ Disabled buttons using the `<a>` element behave a bit different:
 The `.disabled` class uses `pointer-events: none` to try to disable the link functionality of `<a>`s, but that CSS property is not yet standardized. In addition, even in browsers that do support `pointer-events: none`, keyboard navigation remains unaffected, meaning that sighted keyboard users and users of assistive technologies will still be able to activate these links. So to be safe, add a `tabindex="-1"` attribute on these links (to prevent them from receiving keyboard focus) and use custom JavaScript to disable their functionality.
 {% endcallout %}
 
-## Button plugin
+## 버튼 플러그인
 
 Do more with buttons. Control button states or create groups of buttons for more components like toolbars.
 
-### Toggle states
+### 토글 상태
 
 Add `data-toggle="button"` to toggle a button's `active` state. If you're pre-toggling a button, you must manually add the `.active` class **and** `aria-pressed="true"` to the `<button>`.
 
@@ -114,7 +115,7 @@ Add `data-toggle="button"` to toggle a button's `active` state. If you're pre-to
 </button>
 {% endexample %}
 
-### Checkbox and radio buttons
+### 체크박스와 라디오 버튼
 
 Bootstrap's `.button` styles can be applied to other elements, such as `<label>`s, to provide checkbox or radio style button toggling. Add `data-toggle="buttons"` to a `.btn-group` containing those modified buttons to enable toggling in their respective styles.
 
@@ -150,7 +151,7 @@ Note that pre-checked buttons require you to manually add the `.active` class to
 </div>
 {% endexample %}
 
-### Methods
+### 메소드 (Methods)
 
 | Method | Description |
 | --- | --- |

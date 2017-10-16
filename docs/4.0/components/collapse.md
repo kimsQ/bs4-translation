@@ -1,38 +1,40 @@
 ---
 layout: docs
 title: 컬랩스 Collapse
-description: Toggle the visibility of content across your project with a few classes and our JavaScript plugins.
+description: 몇개의 클래스와 자바스크립트 플러그인을 사용하여 프로젝트 전체에 콘텐츠 가시성을 토글합니다.
 group: components
 toc: true
 ---
 
-## Example
 
-Click the buttons below to show and hide another element via class changes:
 
-- `.collapse` hides content
-- `.collapsing` is applied during transitions
-- `.collapse.show` shows content
+## 예제
 
-You can use a link with the `href` attribute, or a button with the `data-target` attribute. In both cases, the `data-toggle="collapse"` is required.
+클래스 변경을 통해 다른 요소를 표시하거나 숨기려면 아래 버튼을 클릭하세요.
+
+- `.collapse` 는 내용을 숨깁니다.
+- `.collapsing` 는 전환되는 동안 적용됩니다.
+- `.collapse.show` 는 내용을 보여줍니다.
+
+`href` 속성이 있는 링크 나 `data-target` 속성이 있는 버튼에 사용할 수 있습니다. 두 경우 모두 `data-toggle="collapse"` 가 필요합니다.
 
 {% example html %}
 <p>
   <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-    Link with href
+    href 링크
   </a>
   <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-    Button with data-target
+    data-target 버튼
   </button>
 </p>
 <div class="collapse" id="collapseExample">
   <div class="card card-body">
-    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+    동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세. 남산 위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리 기상일세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세 가을 하늘 공활한데 높고 구름 없이 밝은 달은 우리 가슴 일편단심일세
   </div>
 </div>
 {% endexample %}
 
-## Multiple targets
+## 멀티 타켓 Multiple targets
 
 A `<button>` or `<a>` can show and hide multiple elements by referencing them with a JQuery selector in its `href` or `data-target` attribute.
 Multiple `<button>` or `<a>` can show and hide an element if they each reference it with their `href` or `data-target` attribute
@@ -61,7 +63,7 @@ Multiple `<button>` or `<a>` can show and hide an element if they each reference
 </div>
 {% endexample %}
 
-## Accordion example
+## 아코디언 예제 Accordion example
 
 Using the [card]({{ site.baseurl }}/docs/{{ site.docs_version }}/components/card/) component, you can extend the default collapse behavior to create an accordion.
 
@@ -140,13 +142,13 @@ You can also create accordions with custom markup. Add the `data-children` attri
 </div>
 {% endexample %}
 
-## Accessibility
+## 접근성
 
 Be sure to add `aria-expanded` to the control element. This attribute explicitly conveys the current state of the collapsible element tied to the control to screen readers and similar assistive technologies. If the collapsible element is closed by default, the attribute on the control element should have a value of `aria-expanded="false"`. If you've set the collapsible element to be open by default using the `show` class, set `aria-expanded="true"` on the control instead. The plugin will automatically toggle this attribute on the control based on whether or not the collapsible element has been opened or closed (via JavaScript, or because the user triggered another control element also tied to the same collapsbile element).
 
 Additionally, if your control element is targeting a single collapsible element – i.e. the `data-target` attribute is pointing to an `id` selector – you may add an additional `aria-controls` attribute to the control element, containing the `id` of the collapsible element. Modern screen readers and similar assistive technologies make use of this attribute to provide users with additional shortcuts to navigate directly to the collapsible element itself.
 
-## Usage
+## 사용법
 
 The collapse plugin utilizes a few classes to handle the heavy lifting:
 
@@ -170,7 +172,7 @@ Enable manually with:
 $('.collapse').collapse()
 {% endhighlight %}
 
-### Options
+### 옵션
 
 Options can be passed via data attributes or JavaScript. For data attributes, append the option name to `data-`, as in `data-parent=""`.
 
@@ -199,7 +201,7 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
   </tbody>
 </table>
 
-### Methods
+### 메소드 Methods
 
 {% capture callout-include %}{% include callout-danger-async-methods.md %}{% endcapture %}
 {{ callout-include | markdownify }}
@@ -226,7 +228,7 @@ Shows a collapsible element. **Returns to the caller before the collapsible elem
 
 Hides a collapsible element. **Returns to the caller before the collapsible element has actually been hidden** (i.e. before the `hidden.bs.collapse` event occurs).
 
-### Events
+### 이벤트 Events
 
 Bootstrap's collapse class exposes a few events for hooking into collapse functionality.
 
