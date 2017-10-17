@@ -283,7 +283,7 @@
             
           </li><li>
             <a href="/docs/4.0/content/figures/">
-              이미지 구성요소
+              피규어
             </a>
 
             
@@ -583,18 +583,18 @@
         
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#global-settings">Global settings</a></li>
-<li class="toc-entry toc-h2"><a href="#headings">Headings</a>
+<li class="toc-entry toc-h2"><a href="#전역-설정">전역 설정</a></li>
+<li class="toc-entry toc-h2"><a href="#제목-headings">제목 Headings</a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#customizing-headings">Customizing headings</a></li>
+<li class="toc-entry toc-h3"><a href="#제목-사용자-정의-customizing-headings">제목 사용자 정의 Customizing headings</a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#display-headings">Display headings</a></li>
-<li class="toc-entry toc-h2"><a href="#lead">Lead</a></li>
-<li class="toc-entry toc-h2"><a href="#inline-text-elements">Inline text elements</a></li>
-<li class="toc-entry toc-h2"><a href="#text-utilities">Text utilities</a></li>
-<li class="toc-entry toc-h2"><a href="#abbreviations">Abbreviations</a></li>
-<li class="toc-entry toc-h2"><a href="#blockquotes">Blockquotes</a>
+<li class="toc-entry toc-h2"><a href="#리드">리드</a></li>
+<li class="toc-entry toc-h2"><a href="#인라인-텍스트-요소">인라인 텍스트 요소</a></li>
+<li class="toc-entry toc-h2"><a href="#텍스트-유틸리티">텍스트 유틸리티</a></li>
+<li class="toc-entry toc-h2"><a href="#약어-abbreviations">약어 Abbreviations</a></li>
+<li class="toc-entry toc-h2"><a href="#인용구-blockquotes">인용구 Blockquotes</a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#naming-a-source">Naming a source</a></li>
 <li class="toc-entry toc-h3"><a href="#alignment">Alignment</a></li>
@@ -617,29 +617,29 @@
           <p class="bd-lead">글로벌 설정, 헤드라인, 본문, 목록 등을 포함한 타이포그래피에 대한 문서와 예제.</p>
           
 
-          <h2 id="global-settings">Global settings</h2>
+          <h2 id="전역-설정">전역 설정</h2>
 
-<p>Bootstrap sets basic global display, typography, and link styles. When more control is needed, check out the <a href="/docs/4.0/utilities/text/">textual utility classes</a>.</p>
+<p>부트스트랩은 기본적으로 전역 display, typography 및 link 스타일을 설정 합니다. 더 많은 제어가 필요하면 <a href="/docs/4.0/utilities/text/">텍스트 유틸리티 클래스</a>를 확인 하십시오.</p>
 
 <ul>
-  <li>Use a <a href="/docs/4.0/content/reboot/#native-font-stack">native font stack</a> that selects the best <code class="highlighter-rouge">font-family</code> for each OS and device.</li>
-  <li>For a more inclusive and accessible type scale, we assume the browser default root <code class="highlighter-rouge">font-size</code> (typically 16px) so visitors can customize their browser defaults as needed.</li>
-  <li>Use the <code class="highlighter-rouge">$font-family-base</code>, <code class="highlighter-rouge">$font-size-base</code>, and <code class="highlighter-rouge">$line-height-base</code> attributes as our typographic base applied to the <code class="highlighter-rouge">&lt;body&gt;</code>.</li>
-  <li>Set the global link color via <code class="highlighter-rouge">$link-color</code> and apply link underlines only on <code class="highlighter-rouge">:hover</code>.</li>
-  <li>Use <code class="highlighter-rouge">$body-bg</code> to set a <code class="highlighter-rouge">background-color</code> on the <code class="highlighter-rouge">&lt;body&gt;</code> (<code class="highlighter-rouge">#fff</code> by default).</li>
+  <li>각 OS 및 디바이스에 가장 적합한 <code class="highlighter-rouge">font-family</code>을 선택하는 <a href="/docs/4.0/content/reboot/#기본-폰트-스택">기본 폰트 스택</a>을 사용하십시오.</li>
+  <li>더 포괄적이고 이해하기 쉬운 폰트 크기조정을 위해 우리는 방문자가 필요에 따라 브라우저 기본값을 사용자 정의를 할 수 있도록 브라우저의 기본 루트 <code class="highlighter-rouge">font-size</code> (일반적으로 16 픽셀)를 사용합니다.</li>
+  <li><code class="highlighter-rouge">$font-family-base</code>, <code class="highlighter-rouge">$font-size-base</code>, 그리고 <code class="highlighter-rouge">$line-height-base</code> 속성을 폰트 기본 설정으로 <code class="highlighter-rouge">&lt;body&gt;</code> 적용하여 사용하세요.</li>
+  <li><code class="highlighter-rouge">$link-color</code>로 전역 링크 칼라를 설정하고 <code class="highlighter-rouge">:hover</code> 에만 링크 밑줄(underline)을 적용 하세요.</li>
+  <li><code class="highlighter-rouge">&lt;body&gt;</code>에 <code class="highlighter-rouge">background-color</code>을 설정하려면 <code class="highlighter-rouge">$body-bg</code>를 사용 하십시오 (기본적으로 <code class="highlighter-rouge">#fff</code>).</li>
 </ul>
 
-<p>These styles can be found within <code class="highlighter-rouge">_reboot.scss</code>, and the global variables are defined in <code class="highlighter-rouge">_variables.scss</code>. Make sure to set <code class="highlighter-rouge">$font-size-base</code> in <code class="highlighter-rouge">rem</code>.</p>
+<p>이러한 스타일은 <code class="highlighter-rouge">_reboot.scss</code>에서 찾을 수 있으며 전역 변수는 <code class="highlighter-rouge">_variables.scss</code>에서 정의됩니다. <code class="highlighter-rouge">rem</code>으로 <code class="highlighter-rouge">$font-size-base</code>를 설정 해야합니다.</p>
 
-<h2 id="headings">Headings</h2>
+<h2 id="제목-headings">제목 Headings</h2>
 
-<p>All HTML headings, <code class="highlighter-rouge">&lt;h1&gt;</code> through <code class="highlighter-rouge">&lt;h6&gt;</code>, are available.</p>
+<p>모든 HTML 제목요소 <code class="highlighter-rouge">&lt;h1&gt;</code>부터 <code class="highlighter-rouge">&lt;h6&gt;</code>까지 사용할 수 있습니다.</p>
 
 <table>
   <thead>
     <tr>
-      <th>Heading</th>
-      <th>Example</th>
+      <th>제목</th>
+      <th>예제</th>
     </tr>
   </thead>
   <tbody>
@@ -648,89 +648,89 @@
         <p><code class="highlighter-rouge">&lt;h1&gt;&lt;/h1&gt;</code></p>
 
       </td>
-      <td><span class="h1">h1. Bootstrap heading</span></td>
+      <td><span class="h1">h1. 부트스트랩 제목</span></td>
     </tr>
     <tr>
       <td>
         <p><code class="highlighter-rouge">&lt;h2&gt;&lt;/h2&gt;</code></p>
 
       </td>
-      <td><span class="h2">h2. Bootstrap heading</span></td>
+      <td><span class="h2">h2. 부트스트랩 제목</span></td>
     </tr>
     <tr>
       <td>
         <p><code class="highlighter-rouge">&lt;h3&gt;&lt;/h3&gt;</code></p>
 
       </td>
-      <td><span class="h3">h3. Bootstrap heading</span></td>
+      <td><span class="h3">h3. 부트스트랩 제목</span></td>
     </tr>
     <tr>
       <td>
         <p><code class="highlighter-rouge">&lt;h4&gt;&lt;/h4&gt;</code></p>
 
       </td>
-      <td><span class="h4">h4. Bootstrap heading</span></td>
+      <td><span class="h4">h4. 부트스트랩 제목</span></td>
     </tr>
     <tr>
       <td>
         <p><code class="highlighter-rouge">&lt;h5&gt;&lt;/h5&gt;</code></p>
 
       </td>
-      <td><span class="h5">h5. Bootstrap heading</span></td>
+      <td><span class="h5">h5. 부트스트랩 제목</span></td>
     </tr>
     <tr>
       <td>
         <p><code class="highlighter-rouge">&lt;h6&gt;&lt;/h6&gt;</code></p>
 
       </td>
-      <td><span class="h6">h6. Bootstrap heading</span></td>
+      <td><span class="h6">h6. 부트스트랩 제목</span></td>
     </tr>
   </tbody>
 </table>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1&gt;</span>h1. Bootstrap heading<span class="nt">&lt;/h1&gt;</span>
-<span class="nt">&lt;h2&gt;</span>h2. Bootstrap heading<span class="nt">&lt;/h2&gt;</span>
-<span class="nt">&lt;h3&gt;</span>h3. Bootstrap heading<span class="nt">&lt;/h3&gt;</span>
-<span class="nt">&lt;h4&gt;</span>h4. Bootstrap heading<span class="nt">&lt;/h4&gt;</span>
-<span class="nt">&lt;h5&gt;</span>h5. Bootstrap heading<span class="nt">&lt;/h5&gt;</span>
-<span class="nt">&lt;h6&gt;</span>h6. Bootstrap heading<span class="nt">&lt;/h6&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1&gt;</span>h1. 부트스트랩 제목<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h2&gt;</span>h2. 부트스트랩 제목<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;h3&gt;</span>h3. 부트스트랩 제목<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;h4&gt;</span>h4. 부트스트랩 제목<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;h5&gt;</span>h5. 부트스트랩 제목<span class="nt">&lt;/h5&gt;</span>
+<span class="nt">&lt;h6&gt;</span>h6. 부트스트랩 제목<span class="nt">&lt;/h6&gt;</span></code></pre></figure>
 
-<p><code class="highlighter-rouge">.h1</code> through <code class="highlighter-rouge">.h6</code> classes are also available, for when you want to match the font styling of a heading but cannot use the associated HTML element.</p>
+<p>제목 폰트 스타일을 일치시키고 관련 HTML 요소를 사용할 수 없는 경우 <code class="highlighter-rouge">.h1</code>에서 <code class="highlighter-rouge">.h6</code> 까지의 클래스도 사용할 수 있습니다.</p>
 
 <div class="bd-example">
-<p class="h1">h1. Bootstrap heading</p>
-<p class="h2">h2. Bootstrap heading</p>
-<p class="h3">h3. Bootstrap heading</p>
-<p class="h4">h4. Bootstrap heading</p>
-<p class="h5">h5. Bootstrap heading</p>
-<p class="h6">h6. Bootstrap heading</p>
+<p class="h1">h1. 부트스트랩 제목</p>
+<p class="h2">h2. 부트스트랩 제목</p>
+<p class="h3">h3. 부트스트랩 제목</p>
+<p class="h4">h4. 부트스트랩 제목</p>
+<p class="h5">h5. 부트스트랩 제목</p>
+<p class="h6">h6. 부트스트랩 제목</p>
 </div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h1"</span><span class="nt">&gt;</span>h1. Bootstrap heading<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h2"</span><span class="nt">&gt;</span>h2. Bootstrap heading<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h3"</span><span class="nt">&gt;</span>h3. Bootstrap heading<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h4"</span><span class="nt">&gt;</span>h4. Bootstrap heading<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>h5. Bootstrap heading<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h6"</span><span class="nt">&gt;</span>h6. Bootstrap heading<span class="nt">&lt;/p&gt;</span></code></pre></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h1"</span><span class="nt">&gt;</span>h1. 부트스트랩 제목<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h2"</span><span class="nt">&gt;</span>h2. 부트스트랩 제목<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h3"</span><span class="nt">&gt;</span>h3. 부트스트랩 제목<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h4"</span><span class="nt">&gt;</span>h4. 부트스트랩 제목<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>h5. 부트스트랩 제목<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h6"</span><span class="nt">&gt;</span>h6. 부트스트랩 제목<span class="nt">&lt;/p&gt;</span></code></pre></div>
 
-<h3 id="customizing-headings">Customizing headings</h3>
+<h3 id="제목-사용자-정의-customizing-headings">제목 사용자 정의 Customizing headings</h3>
 
-<p>Use the included utility classes to recreate the small secondary heading text from Bootstrap 3.</p>
+<p>포함된 유틸리티 클래스를 사용하여 부트스트랩 3의 작은 보조 제목을 재구성 하십시오.</p>
 
 <div class="bd-example">
   <span class="h3">
-    Fancy display heading
-    <small class="text-muted">With faded secondary text</small>
+    멋진 제목 표시
+    <small class="text-muted">희미한 보조 텍스트 사용</small>
   </span>
 </div>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h3&gt;</span>
-  Fancy display heading
-  <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>With faded secondary text<span class="nt">&lt;/small&gt;</span>
+  멋진 제목 표시
+  <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>희미한 보조 텍스트 사용<span class="nt">&lt;/small&gt;</span>
 <span class="nt">&lt;/h3&gt;</span></code></pre></figure>
 
 <h2 id="display-headings">Display headings</h2>
 
-<p>Traditional heading elements are designed to work best in the meat of your page content. When you need a heading to stand out, consider using a <strong>display heading</strong>—a larger, slightly more opinionated heading style.</p>
+<p>전통적인 헤딩 요소들은 페이지 콘텐츠에서 가장 잘 작동하도록 설계 되었습니다. 눈이 띄는 제목이 필요할 때는 <strong>display heading</strong> 으로 더 크고 좀더 독창적인 제목 스타일을 적용하는 사용하는 것을 고려해 보세요.</p>
 
 <div class="bd-example bd-example-type">
   <table class="table">
@@ -756,55 +756,59 @@
 <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"display-3"</span><span class="nt">&gt;</span>Display 3<span class="nt">&lt;/h1&gt;</span>
 <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"display-4"</span><span class="nt">&gt;</span>Display 4<span class="nt">&lt;/h1&gt;</span></code></pre></figure>
 
-<h2 id="lead">Lead</h2>
+<h2 id="리드">리드</h2>
 
-<p>Make a paragraph stand out by adding <code class="highlighter-rouge">.lead</code>.</p>
+<p>단락에 <code class="highlighter-rouge">.lead</code>를 추가하여 눈에 띄게 만드십시오.</p>
 
 <div class="bd-example">
 <p class="lead">
-  Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+  동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.
 </p>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"lead"</span><span class="nt">&gt;</span>
-  Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+  동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.
 <span class="nt">&lt;/p&gt;</span></code></pre></div>
 
-<h2 id="inline-text-elements">Inline text elements</h2>
+<h2 id="인라인-텍스트-요소">인라인 텍스트 요소</h2>
 
-<p>Styling for common inline HTML5 elements.</p>
+<p>일반적인 인라인 HTML5 요소의 스타일.</p>
 
 <div class="bd-example">
-<p>You can use the mark tag to <mark>highlight</mark> text.</p>
-<p><del>This line of text is meant to be treated as deleted text.</del></p>
-<p><s>This line of text is meant to be treated as no longer accurate.</s></p>
-<p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
-<p><u>This line of text will render as underlined</u></p>
-<p><small>This line of text is meant to be treated as fine print.</small></p>
-<p><strong>This line rendered as bold text.</strong></p>
-<p><em>This line rendered as italicized text.</em></p>
+<p>mark 태그를 사용하여 텍스트를 <mark>강조</mark> 표시 할 수 있습니다.</p>
+<p><del>삭제된 텍스트로 간주됩니다.</del></p>
+<p><s>더 이상 정확하지 않은 것으로 간주됩니다.</s></p>
+<p><ins>문서에 추가되는 것으로 간주됩니다.</ins></p>
+<p><u>언더라인 형태로 렌더링 됩니다.</u></p>
+<p><small>작은 글자로 취급 됩니다.</small></p>
+<p><strong>굵게 표시 됩니다.</strong></p>
+<p><em>기울임 텍스트로 표시 됩니다.</em></p>
 </div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p&gt;</span>You can use the mark tag to <span class="nt">&lt;mark&gt;</span>highlight<span class="nt">&lt;/mark&gt;</span> text.<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p&gt;&lt;del&gt;</span>This line of text is meant to be treated as deleted text.<span class="nt">&lt;/del&gt;&lt;/p&gt;</span>
-<span class="nt">&lt;p&gt;&lt;s&gt;</span>This line of text is meant to be treated as no longer accurate.<span class="nt">&lt;/s&gt;&lt;/p&gt;</span>
-<span class="nt">&lt;p&gt;&lt;ins&gt;</span>This line of text is meant to be treated as an addition to the document.<span class="nt">&lt;/ins&gt;&lt;/p&gt;</span>
-<span class="nt">&lt;p&gt;&lt;u&gt;</span>This line of text will render as underlined<span class="nt">&lt;/u&gt;&lt;/p&gt;</span>
-<span class="nt">&lt;p&gt;&lt;small&gt;</span>This line of text is meant to be treated as fine print.<span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
-<span class="nt">&lt;p&gt;&lt;strong&gt;</span>This line rendered as bold text.<span class="nt">&lt;/strong&gt;&lt;/p&gt;</span>
-<span class="nt">&lt;p&gt;&lt;em&gt;</span>This line rendered as italicized text.<span class="nt">&lt;/em&gt;&lt;/p&gt;</span></code></pre></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p&gt;</span>mark 태그를 사용하여 텍스트를 <span class="nt">&lt;mark&gt;</span>강조<span class="nt">&lt;/mark&gt;</span> 표시 할 수 있습니다.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;&lt;del&gt;</span>삭제된 텍스트로 간주됩니다.<span class="nt">&lt;/del&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;&lt;s&gt;</span>더 이상 정확하지 않은 것으로 간주됩니다.<span class="nt">&lt;/s&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;&lt;ins&gt;</span>문서에 추가되는 것으로 간주됩니다.<span class="nt">&lt;/ins&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;&lt;u&gt;</span>언더라인 형태로 렌더링 됩니다.<span class="nt">&lt;/u&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;&lt;small&gt;</span>작은 글자로 취급 됩니다.<span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;&lt;strong&gt;</span>굵게 표시 됩니다.<span class="nt">&lt;/strong&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;&lt;em&gt;</span>기울임 텍스트로 표시 됩니다.<span class="nt">&lt;/em&gt;&lt;/p&gt;</span></code></pre></div>
 
-<p><code class="highlighter-rouge">.mark</code> and <code class="highlighter-rouge">.small</code> classes are also available to apply the same styles as <code class="highlighter-rouge">&lt;mark&gt;</code> and <code class="highlighter-rouge">&lt;small&gt;</code> while avoiding any unwanted semantic implications that the tags would bring.</p>
+<p><code class="highlighter-rouge">.mark</code>와 <code class="highlighter-rouge">.small</code> 클래스는 <code class="highlighter-rouge">&lt;mark&gt;</code>와 <code class="highlighter-rouge">&lt;small&gt;</code>와 같은 스타일을 적용하는 동시에 태그가 가진 원치않는 의미적용을 피할 수 있습니다.</p>
 
-<p>While not shown above, feel free to use <code class="highlighter-rouge">&lt;b&gt;</code> and <code class="highlighter-rouge">&lt;i&gt;</code> in HTML5. <code class="highlighter-rouge">&lt;b&gt;</code> is meant to highlight words or phrases without conveying additional importance while <code class="highlighter-rouge">&lt;i&gt;</code> is mostly for voice, technical terms, etc.</p>
+<p>위에 표시되지 않았지만 HTML5의 <code class="highlighter-rouge">&lt;b&gt;</code> 및<code class="highlighter-rouge">&lt;i&gt;</code>를 자유롭게 사용하십시오. <code class="highlighter-rouge">&lt;b&gt;</code>은 중요성 의미를 부여하지 않고 단어나 문구를 강조표시 하기 위한 것이고 <code class="highlighter-rouge">&lt;i&gt;</code>는 주로 음성, 기술용어 등에 사용 됩니다.</p>
 
-<h2 id="text-utilities">Text utilities</h2>
+<h2 id="텍스트-유틸리티">텍스트 유틸리티</h2>
 
-<p>Change text alignment, transform, style, weight, and color with our <a href="/docs/4.0/utilities/text/#text-alignment">text utilities</a>.</p>
+<p>텍스트 정렬, 변환, 스타일, 굵기 및 색상을 <a href="/docs/4.0/utilities/text/#text-alignment">텍스트 유틸리티</a>로 변경하십시오.</p>
 
-<h2 id="abbreviations">Abbreviations</h2>
+<h2 id="약어-abbreviations">약어 Abbreviations</h2>
 
 <p>Stylized implementation of HTML’s <code class="highlighter-rouge">&lt;abbr&gt;</code> element for abbreviations and acronyms to show the expanded version on hover. Abbreviations have a default underline and gain a help cursor to provide additional context on hover and to users of assistive technologies.</p>
 
 <p>Add <code class="highlighter-rouge">.initialism</code> to an abbreviation for a slightly smaller font-size.</p>
+
+<p>호버에 확장 된 버전을 표시하기위한 약어 및 머리 글자에 대한 HTML의 <code class="highlighter-rouge">&lt;abbr&gt;</code> 요소의 양식화 된 구현입니다. 약어에는 기본 밑줄이 있으며 hover와 보조 기술 사용자에 대한 추가 컨텍스트를 제공하는 도움말 커서가 있습니다.</p>
+
+<p>조금 더 작은 글꼴 크기의 약어에 <code class="highlighter-rouge">.initialism</code>을 추가하십시오.</p>
 
 <div class="bd-example">
 <p><abbr title="attribute">attr</abbr></p>
@@ -813,9 +817,11 @@
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p&gt;&lt;abbr</span> <span class="na">title=</span><span class="s">"attribute"</span><span class="nt">&gt;</span>attr<span class="nt">&lt;/abbr&gt;&lt;/p&gt;</span>
 <span class="nt">&lt;p&gt;&lt;abbr</span> <span class="na">title=</span><span class="s">"HyperText Markup Language"</span> <span class="na">class=</span><span class="s">"initialism"</span><span class="nt">&gt;</span>HTML<span class="nt">&lt;/abbr&gt;&lt;/p&gt;</span></code></pre></div>
 
-<h2 id="blockquotes">Blockquotes</h2>
+<h2 id="인용구-blockquotes">인용구 Blockquotes</h2>
 
 <p>For quoting blocks of content from another source within your document. Wrap <code class="highlighter-rouge">&lt;blockquote class="blockquote"&gt;</code> around any <abbr title="HyperText Markup Language">HTML</abbr> as the quote.</p>
+
+<p>문서 내의 다른 소스에서 내용 인용하기. 인용 부호로 <abbr title="HyperText Markup Language">HTML</abbr> 주위에 <code class="highlighter-rouge">&lt;blockquote class="blockquote"&gt;</code>를 둘러 쌉니다.</p>
 
 <div class="bd-example">
 <blockquote class="blockquote">
