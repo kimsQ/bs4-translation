@@ -591,8 +591,8 @@
 <li class="toc-entry toc-h2"><a href="#버튼-태그">버튼 태그</a></li>
 <li class="toc-entry toc-h2"><a href="#아웃라인-버튼">아웃라인 버튼</a></li>
 <li class="toc-entry toc-h2"><a href="#사이즈">사이즈</a></li>
-<li class="toc-entry toc-h2"><a href="#활성-상태-active-state">활성 상태 (Active state)</a></li>
-<li class="toc-entry toc-h2"><a href="#비활성-상태-disabled-state">비활성 상태 (Disabled state)</a>
+<li class="toc-entry toc-h2"><a href="#활성-상태-active">활성 상태 (Active)</a></li>
+<li class="toc-entry toc-h2"><a href="#비활성-상태-disabled">비활성 상태 (Disabled)</a>
 <ul>
 <li class="toc-entry toc-h4"><a href="#link-functionality-caveat">Link functionality caveat</a></li>
 </ul>
@@ -615,7 +615,7 @@
 
           <h2 id="예제">예제</h2>
 
-<p>Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control.부트스트랩에는 몇가지 미리 정의 된 버튼 스타일이 포함되어 있으며 각 스타일은 자체 의미론적 목적을 제공하며 더 많은 제어를 위해 몇가지 추가 기능이 포함되어 있습니다.</p>
+<p>부트스트랩에는 몇가지 미리 정의 된 버튼 스타일이 포함되어 있으며 각 스타일은 자체 의미론적 목적을 제공하며 더 많은 제어를 위해 몇가지 추가 기능이 포함되어 있습니다.</p>
 
 <div class="bd-example">
 <button type="button" class="btn btn-primary">Primary</button>
@@ -648,9 +648,11 @@
 
 <h2 id="버튼-태그">버튼 태그</h2>
 
-<p>The <code class="highlighter-rouge">.btn</code> classes are designed to be used with the <code class="highlighter-rouge">&lt;button&gt;</code> element. However, you can also use these classes on <code class="highlighter-rouge">&lt;a&gt;</code> or <code class="highlighter-rouge">&lt;input&gt;</code> elements (though some browsers may apply a slightly different rendering).</p>
+<p><code class="highlighter-rouge">.btn</code> 클래스는 <code class="highlighter-rouge">&lt;button&gt;</code> 요소와 함께 사용하도록 설계 되었습니다. 그러나 이 클래스는 <code class="highlighter-rouge">&lt;a&gt;</code> 또는 <code class="highlighter-rouge">&lt;input&gt;</code> 요소에서 사용할 수도 있습니다 (일부 브라우저는 약간 다른 렌더링을 적용 할수 있음).</p>
 
 <p>When using button classes on <code class="highlighter-rouge">&lt;a&gt;</code> elements that are used to trigger in-page functionality (like collapsing content), rather than linking to new pages or sections within the current page, these links should be given a <code class="highlighter-rouge">role="button"</code> to appropriately convey their purpose to assistive technologies such as screen readers.</p>
+
+<p><code class="highlighter-rouge">&lt;a&gt;</code>요소에 <code class="highlighter-rouge">.btn</code> 클래스를 사용하여 페이지 내에서 기능 (예 : 컨텐츠 컬랩스)을 트리거하는 경우, 현재 페이지의 새 페이지 또는 섹션에 링크하는 대신 이러한 링크에 적절하게 <code class="highlighter-rouge">role="button"</code> 을 지정해야 합니다 목적을 스크린리더와 같은 보조 기술로 전달합니다.</p>
 
 <div class="bd-example">
 <a class="btn btn-primary" href="#" role="button">Link</a>
@@ -667,7 +669,7 @@
 
 <h2 id="아웃라인-버튼">아웃라인 버튼</h2>
 
-<p>In need of a button, but not the hefty background colors they bring? Replace the default modifier classes with the <code class="highlighter-rouge">.btn-outline-*</code> ones to remove all background images and colors on any button.</p>
+<p>무거운 배경색이 아닌 버튼이 필요 합니까? 기본 클래스를 <code class="highlighter-rouge">.btn-outline-*</code> 로 바꾸면 모든 버튼의 모든 배경 이미지와 색상이 제거 됩니다.</p>
 
 <div class="bd-example">
 <button type="button" class="btn btn-outline-primary">Primary</button>
@@ -690,34 +692,35 @@
 
 <h2 id="사이즈">사이즈</h2>
 
-<p>Fancy larger or smaller buttons? Add <code class="highlighter-rouge">.btn-lg</code> or <code class="highlighter-rouge">.btn-sm</code> for additional sizes.</p>
+<p>더 크거나 작은 버튼이 있을까요?  <code class="highlighter-rouge">.btn-lg</code> 또는 <code class="highlighter-rouge">.btn-sm</code> 을 추가 하십시오.</p>
 
 <div class="bd-example">
-<button type="button" class="btn btn-primary btn-lg">Large button</button>
-<button type="button" class="btn btn-secondary btn-lg">Large button</button>
+<button type="button" class="btn btn-primary btn-lg">큰 버튼</button>
+<button type="button" class="btn btn-secondary btn-lg">큰 버튼</button>
 </div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-lg"</span><span class="nt">&gt;</span>Large button<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary btn-lg"</span><span class="nt">&gt;</span>Large button<span class="nt">&lt;/button&gt;</span></code></pre></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-lg"</span><span class="nt">&gt;</span>큰 버튼<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary btn-lg"</span><span class="nt">&gt;</span>큰 버튼<span class="nt">&lt;/button&gt;</span></code></pre></div>
 
 <div class="bd-example">
-<button type="button" class="btn btn-primary btn-sm">Small button</button>
-<button type="button" class="btn btn-secondary btn-sm">Small button</button>
+<button type="button" class="btn btn-primary btn-sm">작은 버튼</button>
+<button type="button" class="btn btn-secondary btn-sm">작은 버튼</button>
 </div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-sm"</span><span class="nt">&gt;</span>Small button<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary btn-sm"</span><span class="nt">&gt;</span>Small button<span class="nt">&lt;/button&gt;</span></code></pre></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-sm"</span><span class="nt">&gt;</span>작은 버튼<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary btn-sm"</span><span class="nt">&gt;</span>작은 버튼<span class="nt">&lt;/button&gt;</span></code></pre></div>
 
-<p>Create block level buttons—those that span the full width of a parent—by adding <code class="highlighter-rouge">.btn-block</code>.</p>
+<p><code class="highlighter-rouge">.btn-block</code>을 추가하여 부모의 전체 너비에 걸쳐있는 블록 레벨 버튼을 만듭니다.</p>
 
 <div class="bd-example">
-<button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-<button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
+<button type="button" class="btn btn-primary btn-lg btn-block">블록 레벨 버튼</button>
+<button type="button" class="btn btn-secondary btn-lg btn-block">블록 레벨 버튼</button>
 </div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-lg btn-block"</span><span class="nt">&gt;</span>Block level button<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary btn-lg btn-block"</span><span class="nt">&gt;</span>Block level button<span class="nt">&lt;/button&gt;</span></code></pre></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-lg btn-block"</span><span class="nt">&gt;</span>블록 레벨 버튼<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary btn-lg btn-block"</span><span class="nt">&gt;</span>블록 레벨 버튼<span class="nt">&lt;/button&gt;</span></code></pre></div>
 
-<h2 id="활성-상태-active-state">활성 상태 (Active state)</h2>
+<h2 id="활성-상태-active">활성 상태 (Active)</h2>
 
-<p>Buttons will appear pressed (with a darker background, darker border, and inset shadow) when active. <strong>There’s no need to add a class to <code class="highlighter-rouge">&lt;button&gt;</code>s as they use a pseudo-class</strong>. However, you can still force the same active appearance with <code class="highlighter-rouge">.active</code> (and include the <code>aria-pressed="true"</code> attribute) should you need to replicate the state programmatically.</p>
+<p>활성(active) 상태가 되면 버튼이 눌려져 보입니다 (더 어두운 배경과 테두리 그리고 내부 그림자 적용). <strong>가상 클래스를 사용하기 때문에 <code class="highlighter-rouge">&lt;button&gt;</code>에 클래스를 추가 할 필요가 없습니다.</strong>
+하지만 상태를 프로그래밍 방식으로 재현해야 하는 경우에는 <code class="highlighter-rouge">.active</code> (aria-pressed=”true”속성 포함)를 추가하여 동일한 활성(active) 상태를 임의 적용할 수 있습니다.</p>
 
 <div class="bd-example">
 <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
@@ -726,9 +729,9 @@
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-lg active"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">aria-pressed=</span><span class="s">"true"</span><span class="nt">&gt;</span>Primary link<span class="nt">&lt;/a&gt;</span>
 <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-secondary btn-lg active"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">aria-pressed=</span><span class="s">"true"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span></code></pre></div>
 
-<h2 id="비활성-상태-disabled-state">비활성 상태 (Disabled state)</h2>
+<h2 id="비활성-상태-disabled">비활성 상태 (Disabled)</h2>
 
-<p>Make buttons look inactive by adding the <code class="highlighter-rouge">disabled</code> boolean attribute to any <code class="highlighter-rouge">&lt;button&gt;</code> element.</p>
+<p><code class="highlighter-rouge">disabled</code> 속성을 <code class="highlighter-rouge">&lt;button&gt;</code> 요소에 추가하여 버튼을 비활성 상태로 만듭니다.</p>
 
 <div class="bd-example">
 <button type="button" class="btn btn-lg btn-primary" disabled="">Primary button</button>
@@ -737,12 +740,13 @@
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-lg btn-primary"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Primary button<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary btn-lg"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span></code></pre></div>
 
-<p>Disabled buttons using the <code class="highlighter-rouge">&lt;a&gt;</code> element behave a bit different:</p>
+<p><code class="highlighter-rouge">&lt;a&gt;</code> 요소를 사용하는 비활성 버튼은 조금 다르게 동작합니다.</p>
 
 <ul>
-  <li><code class="highlighter-rouge">&lt;a&gt;</code>s don’t support the <code class="highlighter-rouge">disabled</code> attribute, so you must add the <code class="highlighter-rouge">.disabled</code> class to make it visually appear disabled.</li>
-  <li>Some future-friendly styles are included to disable all <code class="highlighter-rouge">pointer-events</code> on anchor buttons. In browsers which support that property, you won’t see the disabled cursor at all.</li>
+  <li><code class="highlighter-rouge">&lt;a&gt;</code>는 <code class="highlighter-rouge">disabled</code> 속성을 지원하지 않으므로 비활성화 된 것으로 보이게 하려면 <code class="highlighter-rouge">.disabled</code> 클래스를 추가 해야합니다.</li>
+  <li>미래지향 스타일이 포함되어 anchor 버튼의 모든 <code class="highlighter-rouge">pointer-events</code>를 비활성화 합니다. 해당 속성을 지원하는 브라우저에서는 비활성화 된 커서가 전혀 표시되지 않습니다.</li>
   <li>Disabled buttons should include the <code class="highlighter-rouge">aria-disabled="true"</code> attribute to indicate the state of the element to assistive technologies.</li>
+  <li>비활성화 된 버튼에는 보조 기술에게 요소의 상태를 표시하기 위해 <code class="highlighter-rouge">aria-disabled="true"</code> 속성이 포함 되어야 합니다.</li>
 </ul>
 
 <div class="bd-example">
@@ -760,11 +764,12 @@
 
 <h2 id="버튼-플러그인">버튼 플러그인</h2>
 
-<p>Do more with buttons. Control button states or create groups of buttons for more components like toolbars.</p>
+<p>Do more with buttons. Control button states or create groups of buttons for more components like toolbars.
+버튼으로 더 많은 작업을 수행하십시오. 컨트롤 버튼은 툴바와 같은 더 많은 구성 요소에 대한 버튼 그룹을 작성하거나 만듭니다.</p>
 
 <h3 id="토글-상태">토글 상태</h3>
 
-<p>Add <code class="highlighter-rouge">data-toggle="button"</code> to toggle a button’s <code class="highlighter-rouge">active</code> state. If you’re pre-toggling a button, you must manually add the <code class="highlighter-rouge">.active</code> class <strong>and</strong> <code class="highlighter-rouge">aria-pressed="true"</code> to the <code class="highlighter-rouge">&lt;button&gt;</code>.</p>
+<p><code class="highlighter-rouge">data-toggle="button"</code> 을 추가하여 버튼 <code class="highlighter-rouge">active</code> 상태를 토글 합니다. 버튼을 미리 토글할 경우에는 <code class="highlighter-rouge">.active</code> 클래스 <strong>와</strong> <code class="highlighter-rouge">aria-pressed="true"</code> 를 수동으로 <code class="highlighter-rouge">&lt;button&gt;</code>에 추가 해야 합니다.</p>
 
 <div class="bd-example">
 <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
@@ -779,57 +784,61 @@
 
 <p>Bootstrap’s <code class="highlighter-rouge">.button</code> styles can be applied to other elements, such as <code class="highlighter-rouge">&lt;label&gt;</code>s, to provide checkbox or radio style button toggling. Add <code class="highlighter-rouge">data-toggle="buttons"</code> to a <code class="highlighter-rouge">.btn-group</code> containing those modified buttons to enable toggling in their respective styles.</p>
 
+<p>부트스트랩의 <code class="highlighter-rouge">.button</code> 스타일은 <code class="highlighter-rouge">&lt;label&gt;</code>과 같은 요소에 적용되어 checkbox나 radio에 버튼 토글할 수 있습니다. 각각의 스타일에서 토글링할 수 있도록 변경된 버튼이 포함 된 <code class="highlighter-rouge">.btn-group</code>에 <code class="highlighter-rouge">data-toggle="buttons"</code> 을 추가합니다.</p>
+
 <p>The checked state for these buttons is <strong>only updated via <code class="highlighter-rouge">click</code> event</strong> on the button. If you use another method to update the input—e.g., with <code class="highlighter-rouge">&lt;input type="reset"&gt;</code> or by manually applying the input’s <code class="highlighter-rouge">checked</code> property—you’ll need to toggle <code class="highlighter-rouge">.active</code> on the <code class="highlighter-rouge">&lt;label&gt;</code> manually.</p>
 
-<p>Note that pre-checked buttons require you to manually add the <code class="highlighter-rouge">.active</code> class to the input’s <code class="highlighter-rouge">&lt;label&gt;</code>.</p>
+<p>이 버튼들의 체크된 상태는 버튼의 <strong>클릭 이벤트를 통해서만</strong> 업데이트 됩니다. 다른 방법을 사용하여 <code class="highlighter-rouge">&lt;input type="reset"&gt;</code> 또는 input의 <code class="highlighter-rouge">checked</code> 속성을 수동 적용하여 입력을 업데이트하는 경우 <code class="highlighter-rouge">&lt;label&gt;</code>을 수동으로 토글 해야합니다.</p>
+
+<p>기본 선택된 버튼은 적용하려면 <code class="highlighter-rouge">.active</code> 클래스를 input의 <code class="highlighter-rouge">&lt;label&gt;</code>에 수동으로 추가 해야합니다.</p>
 
 <div class="bd-example">
 <div class="btn-group" data-toggle="buttons">
   <label class="btn btn-secondary active">
-    <input type="checkbox" checked="" autocomplete="off" /> Checkbox 1 (pre-checked)
+    <input type="checkbox" checked="" autocomplete="off" /> 체크박스 1 (기본선택)
   </label>
   <label class="btn btn-secondary">
-    <input type="checkbox" autocomplete="off" /> Checkbox 2
+    <input type="checkbox" autocomplete="off" /> 체크박스 2
   </label>
   <label class="btn btn-secondary">
-    <input type="checkbox" autocomplete="off" /> Checkbox 3
+    <input type="checkbox" autocomplete="off" /> 체크박스 3
   </label>
 </div>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span> <span class="na">data-toggle=</span><span class="s">"buttons"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"btn btn-secondary active"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">checked</span> <span class="na">autocomplete=</span><span class="s">"off"</span><span class="nt">&gt;</span> Checkbox 1 (pre-checked)
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">checked</span> <span class="na">autocomplete=</span><span class="s">"off"</span><span class="nt">&gt;</span> 체크박스 1 (기본선택)
   <span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">autocomplete=</span><span class="s">"off"</span><span class="nt">&gt;</span> Checkbox 2
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">autocomplete=</span><span class="s">"off"</span><span class="nt">&gt;</span> 체크박스 2
   <span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">autocomplete=</span><span class="s">"off"</span><span class="nt">&gt;</span> Checkbox 3
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">autocomplete=</span><span class="s">"off"</span><span class="nt">&gt;</span> 체크박스 3
   <span class="nt">&lt;/label&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
 
 <div class="bd-example">
 <div class="btn-group" data-toggle="buttons">
   <label class="btn btn-secondary active">
-    <input type="radio" name="options" id="option1" autocomplete="off" checked="" /> Radio 1 (preselected)
+    <input type="radio" name="options" id="option1" autocomplete="off" checked="" /> 라디오 1 (기본선택)
   </label>
   <label class="btn btn-secondary">
-    <input type="radio" name="options" id="option2" autocomplete="off" /> Radio 2
+    <input type="radio" name="options" id="option2" autocomplete="off" /> 라디오 2
   </label>
   <label class="btn btn-secondary">
-    <input type="radio" name="options" id="option3" autocomplete="off" /> Radio 3
+    <input type="radio" name="options" id="option3" autocomplete="off" /> 라디오 3
   </label>
 </div>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span> <span class="na">data-toggle=</span><span class="s">"buttons"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"btn btn-secondary active"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"options"</span> <span class="na">id=</span><span class="s">"option1"</span> <span class="na">autocomplete=</span><span class="s">"off"</span> <span class="na">checked</span><span class="nt">&gt;</span> Radio 1 (preselected)
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"options"</span> <span class="na">id=</span><span class="s">"option1"</span> <span class="na">autocomplete=</span><span class="s">"off"</span> <span class="na">checked</span><span class="nt">&gt;</span> 라디오 1 (기본선택)
   <span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"options"</span> <span class="na">id=</span><span class="s">"option2"</span> <span class="na">autocomplete=</span><span class="s">"off"</span><span class="nt">&gt;</span> Radio 2
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"options"</span> <span class="na">id=</span><span class="s">"option2"</span> <span class="na">autocomplete=</span><span class="s">"off"</span><span class="nt">&gt;</span> 라디오 2
   <span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"options"</span> <span class="na">id=</span><span class="s">"option3"</span> <span class="na">autocomplete=</span><span class="s">"off"</span><span class="nt">&gt;</span> Radio 3
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"options"</span> <span class="na">id=</span><span class="s">"option3"</span> <span class="na">autocomplete=</span><span class="s">"off"</span><span class="nt">&gt;</span> 라디오 3
   <span class="nt">&lt;/label&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
 
@@ -838,14 +847,14 @@
 <table>
   <thead>
     <tr>
-      <th>Method</th>
-      <th>Description</th>
+      <th>메소드</th>
+      <th>설명</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td><code class="highlighter-rouge">$().button('toggle')</code></td>
-      <td>Toggles push state. Gives the button the appearance that it has been activated.</td>
+      <td>푸시 상태를 토글합니다. 버튼에 활성화된 상태를 지정합니다.</td>
     </tr>
   </tbody>
 </table>
