@@ -12,7 +12,7 @@ toc: true
 
 
 {% example html %}
-<div class="btn-group" role="group" aria-label="Basic example">
+<div class="btn-group" role="group" aria-label="기본 예제">
   <button type="button" class="btn btn-secondary">좌측</button>
   <button type="button" class="btn btn-secondary">가운데</button>
   <button type="button" class="btn btn-secondary">우측</button>
@@ -29,32 +29,33 @@ In addition, groups and toolbars should be given an explicit label, as most assi
 
 ## 버튼 툴바
 
-Combine sets of button groups into button toolbars for more complex components. Use utility classes as needed to space out groups, buttons, and more.
+toolbar 안에 버튼그룹 셋을 결합하여 보다 복잡한 구성요소를 만듭니다. 필요에 따라 유틸리티 클래스를 사용하여 그룹, 버튼 등을 배치 하십시오.
+
 
 {% example html %}
-<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-  <div class="btn-group mr-2" role="group" aria-label="First group">
+<div class="btn-toolbar" role="toolbar" aria-label="버튼 그룹이 있는 툴바">
+  <div class="btn-group mr-2" role="group" aria-label="첫번째 그룹">
     <button type="button" class="btn btn-secondary">1</button>
     <button type="button" class="btn btn-secondary">2</button>
     <button type="button" class="btn btn-secondary">3</button>
     <button type="button" class="btn btn-secondary">4</button>
   </div>
-  <div class="btn-group mr-2" role="group" aria-label="Second group">
+  <div class="btn-group mr-2" role="group" aria-label="두번째 그룹">
     <button type="button" class="btn btn-secondary">5</button>
     <button type="button" class="btn btn-secondary">6</button>
     <button type="button" class="btn btn-secondary">7</button>
   </div>
-  <div class="btn-group" role="group" aria-label="Third group">
+  <div class="btn-group" role="group" aria-label="세번째 그룹">
     <button type="button" class="btn btn-secondary">8</button>
   </div>
 </div>
 {% endexample %}
 
-Feel free to mix input groups with button groups in your toolbars. Similar to the example above, you'll likely need some utilities though to space things properly.
+toolbar 안에서 입력 그룹을 버튼 그룹과 자유롭게 조합하십시오. 위의 예와 비슷하게, 적절히 배치하기 위해서는 유틸리티가 필요할 것입니다.
 
 {% example html %}
 <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
-  <div class="btn-group mr-2" role="group" aria-label="First group">
+  <div class="btn-group mr-2" role="group" aria-label="첫번째 그룹">
     <button type="button" class="btn btn-secondary">1</button>
     <button type="button" class="btn btn-secondary">2</button>
     <button type="button" class="btn btn-secondary">3</button>
@@ -62,12 +63,12 @@ Feel free to mix input groups with button groups in your toolbars. Similar to th
   </div>
   <div class="input-group">
     <span class="input-group-addon" id="btnGroupAddon">@</span>
-    <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon">
+    <input type="text" class="form-control" placeholder="입력그룹 예제" aria-label="입력그룹 예제" aria-describedby="btnGroupAddon">
   </div>
 </div>
 
-<div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
-  <div class="btn-group" role="group" aria-label="First group">
+<div class="btn-toolbar justify-content-between" role="toolbar" aria-label="버튼 그룹이 있는 툴바">
+  <div class="btn-group" role="group" aria-label="첫번째 그룹">
     <button type="button" class="btn btn-secondary">1</button>
     <button type="button" class="btn btn-secondary">2</button>
     <button type="button" class="btn btn-secondary">3</button>
@@ -75,32 +76,32 @@ Feel free to mix input groups with button groups in your toolbars. Similar to th
   </div>
   <div class="input-group">
     <span class="input-group-addon" id="btnGroupAddon2">@</span>
-    <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon2">
+    <input type="text" class="form-control" placeholder="입력그룹 예제" aria-label="입력그룹 예제" aria-describedby="btnGroupAddon2">
   </div>
 </div>
 {% endexample %}
 
 ## 크기 조정
 
-Instead of applying button sizing classes to every button in a group, just add `.btn-group-*` to each `.btn-group`, including each one when nesting multiple groups.
+그룹의 모든 버튼에 크기 조정 클래스를 적용하는 대신, 단지 각각의 `.btn-group`에 `.btn-group-*` 을 추가하면 됩니다.
 
 <div class="bd-example">
-  <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
-    <button type="button" class="btn btn-secondary">Left</button>
-    <button type="button" class="btn btn-secondary">Middle</button>
-    <button type="button" class="btn btn-secondary">Right</button>
+  <div class="btn-group btn-group-lg" role="group" aria-label="큰 버튼그룹">
+    <button type="button" class="btn btn-secondary">왼쪽</button>
+    <button type="button" class="btn btn-secondary">중간</button>
+    <button type="button" class="btn btn-secondary">오른쪽</button>
   </div>
   <br>
-  <div class="btn-group" role="group" aria-label="Default button group">
-    <button type="button" class="btn btn-secondary">Left</button>
-    <button type="button" class="btn btn-secondary">Middle</button>
-    <button type="button" class="btn btn-secondary">Right</button>
+  <div class="btn-group" role="group" aria-label="기본 버튼그룹">
+    <button type="button" class="btn btn-secondary">왼쪽</button>
+    <button type="button" class="btn btn-secondary">중간</button>
+    <button type="button" class="btn btn-secondary">오른쪽</button>
   </div>
   <br>
-  <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
-    <button type="button" class="btn btn-secondary">Left</button>
-    <button type="button" class="btn btn-secondary">Middle</button>
-    <button type="button" class="btn btn-secondary">Right</button>
+  <div class="btn-group btn-group-sm" role="group" aria-label="작은 버튼그룹">
+    <button type="button" class="btn btn-secondary">왼쪽</button>
+    <button type="button" class="btn btn-secondary">중간</button>
+    <button type="button" class="btn btn-secondary">오른쪽</button>
   </div>
 </div>
 
@@ -114,6 +115,8 @@ Instead of applying button sizing classes to every button in a group, just add `
 
 Place a `.btn-group` within another `.btn-group` when you want dropdown menus mixed with a series of buttons.
 
+드롭다운 메뉴를 일련의 버튼들과 함께 사용하려면 `.btn-group` 안에 `.btn-group`을 배치 하십시오.
+
 {% example html %}
 <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
   <button type="button" class="btn btn-secondary">1</button>
@@ -121,72 +124,72 @@ Place a `.btn-group` within another `.btn-group` when you want dropdown menus mi
 
   <div class="btn-group" role="group">
     <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Dropdown
+      드롭다운
     </button>
     <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-      <a class="dropdown-item" href="#">Dropdown link</a>
-      <a class="dropdown-item" href="#">Dropdown link</a>
+      <a class="dropdown-item" href="#">다롭다운 링크</a>
+      <a class="dropdown-item" href="#">다롭다운 링크</a>
     </div>
   </div>
 </div>
 {% endexample %}
 
-## Vertical variation
+## 수직 변형
 
-Make a set of buttons appear vertically stacked rather than horizontally. **Split button dropdowns are not supported here.**
+한 세트의 버튼을 수평이 아닌 수직으로 수직으로 표시합니다.  **분할 버튼 드롭 다운은 여기에서 지원되지 않습니다.**
 
 <div class="bd-example">
-  <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-    <button type="button" class="btn btn-secondary">Button</button>
-    <button type="button" class="btn btn-secondary">Button</button>
-    <button type="button" class="btn btn-secondary">Button</button>
-    <button type="button" class="btn btn-secondary">Button</button>
-    <button type="button" class="btn btn-secondary">Button</button>
-    <button type="button" class="btn btn-secondary">Button</button>
+  <div class="btn-group-vertical" role="group" aria-label="세로형 버튼그룹">
+    <button type="button" class="btn btn-secondary">버튼</button>
+    <button type="button" class="btn btn-secondary">버튼</button>
+    <button type="button" class="btn btn-secondary">버튼</button>
+    <button type="button" class="btn btn-secondary">버튼</button>
+    <button type="button" class="btn btn-secondary">버튼</button>
+    <button type="button" class="btn btn-secondary">버튼</button>
   </div>
 </div>
 
 
 <div class="bd-example">
-  <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-    <button type="button" class="btn btn-secondary">Button</button>
-    <button type="button" class="btn btn-secondary">Button</button>
+  <div class="btn-group-vertical" role="group" aria-label="세로형 버튼그룹">
+    <button type="button" class="btn btn-secondary">버튼</button>
+    <button type="button" class="btn btn-secondary">버튼</button>
     <div class="btn-group" role="group">
       <button id="btnGroupVerticalDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Dropdown
+        다롭다운
       </button>
       <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop1">
-        <a class="dropdown-item" href="#">Dropdown link</a>
-        <a class="dropdown-item" href="#">Dropdown link</a>
+        <a class="dropdown-item" href="#">드롭다운 링크</a>
+        <a class="dropdown-item" href="#">드롭다운 링크</a>
       </div>
     </div>
-    <button type="button" class="btn btn-secondary">Button</button>
-    <button type="button" class="btn btn-secondary">Button</button>
+    <button type="button" class="btn btn-secondary">버튼</button>
+    <button type="button" class="btn btn-secondary">버튼</button>
     <div class="btn-group" role="group">
       <button id="btnGroupVerticalDrop2" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Dropdown
+        드롭다운
       </button>
       <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop2">
-        <a class="dropdown-item" href="#">Dropdown link</a>
-        <a class="dropdown-item" href="#">Dropdown link</a>
+        <a class="dropdown-item" href="#">드롭다운 링크</a>
+        <a class="dropdown-item" href="#"드롭다운 링크</a>
       </div>
     </div>
     <div class="btn-group" role="group">
       <button id="btnGroupVerticalDrop3" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Dropdown
+        드롭다운
       </button>
       <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop3">
-        <a class="dropdown-item" href="#">Dropdown link</a>
-        <a class="dropdown-item" href="#">Dropdown link</a>
+        <a class="dropdown-item" href="#">드롭다운 링크</a>
+        <a class="dropdown-item" href="#">드롭다운 링크</a>
       </div>
     </div>
     <div class="btn-group" role="group">
       <button id="btnGroupVerticalDrop4" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Dropdown
+        드롭다운
       </button>
       <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop4">
-        <a class="dropdown-item" href="#">Dropdown link</a>
-        <a class="dropdown-item" href="#">Dropdown link</a>
+        <a class="dropdown-item" href="#">드롭다운 링크</a>
+        <a class="dropdown-item" href="#">드롭다운 링크</a>
       </div>
     </div>
   </div>

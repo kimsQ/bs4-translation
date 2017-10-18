@@ -16,7 +16,7 @@ toc: true
 {% example html %}
 {% for color in site.data.theme-colors %}
 <div class="alert alert-{{ color.name }}" role="alert">
-  This is a {{ color.name }} alert—check it out!
+  이것은 {{ color.name }} 입니다. 확인해 보세요.!
 </div>{% endfor %}
 {% endexample %}
 
@@ -25,44 +25,44 @@ toc: true
 
 ### 링크 칼라
 
-Use the `.alert-link` utility class to quickly provide matching colored links within any alert.
+`.alert-link` 유틸리티 클래스를 사용하여 모든 경고에서 일치하는 컬러 링크를 빠르게 제공하십시오.
 
 {% example html %}
 {% for color in site.data.theme-colors %}
 <div class="alert alert-{{ color.name }}" role="alert">
-  This is a {{ color.name }} alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+  이것은 <a href="#" class="alert-link">링크</a>를 포함한 {{ color.name }} 경고 예제 입니다. 원한다면 클릭하십시오.
 </div>{% endfor %}
 {% endexample %}
 
 ### 추가 컨텐츠
 
-Alerts can also contain additional HTML elements like headings, paragraphs and dividers.
+경고에는 제목, 단락 및 구분선과 같은 추가 HTML 요소가 포함될 수도 있습니다.
 
 {% example html %}
 <div class="alert alert-success" role="alert">
-  <h4 class="alert-heading">Well done!</h4>
-  <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+  <h4 class="alert-heading">잘하셨습니다!</h4>
+  <p>네, 중요한 경고 메시지를 성공적으로 읽으셨군요. 이 예제 텍스트는 경고를 조금 더 오래 실행하여 알림 내부에서 간격이 이 종류의 콘텐츠와 어떻게 연동되는지 확인할 수 있습니다.</p>
   <hr>
-  <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+  <p class="mb-0">그럴 필요가 있을 때마다 margin 유틸리티를 사용하여 멋지고 깔끔하게 유지하십시오.</p>
 </div>
 {% endexample %}
 
 
 ### 닫기 Dismissing
 
-Using the alert JavaScript plugin, it's possible to dismiss any alert inline. Here's how:
+alert 자바스크립트 플러그인을 사용하면 모든 알림을 인라인에서 해제 할 수 있습니다. 방법은 다음과 같습니다.
 
-- Be sure you've loaded the alert plugin, or the compiled Bootstrap JavaScript.
-- If you're building our JS from source, it [requires `util.js`]({{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/javascript/#util). The compiled version includes this.
-- Add a dismiss button and the `.alert-dismissible` class, which adds extra padding to the right of the alert and positions the `.close` button.
-- On the dismiss button, add the `data-dismiss="alert"` attribute, which triggers the JavaScript functionality. Be sure to use the `<button>` element with it for proper behavior across all devices.
-- To animate alerts when dismissing them, be sure to add the `.fade` and `.show` classes.
+- alert 플러그인 이나 컴파일된 부트스트랩 JS를 로드했는지 확인하십시오.
+- 소스에서 JS를 빌드하는 경우 [`util.js`]({{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/javascript/#유틸-util)가 필요합니다. 컴파일된 버전에는 이것이 포함되어 있습니다.
+- 해제 버튼과 `.alert-dismissible` 클래스를 추가합니다. 알림의 오른쪽에 패딩을 추가하고 `.close` 버튼 위치를 지정합니다.
+- 닫기버튼에서 `data-dismiss="alert"` 속성을 추가하면 JavaScript 기능이 트리거 됩니다. 모든 디바이스에서 올바르게 동작하려면 `<button>` 요소를 사용하십시오.
+- 알림이 해제될 때 애니메이션을 적용하려면 `.fade` 와 `.show` 클래스를 추가 해야합니다.
 
-You can see this in action with a live demo:
+라이브 데모로 실제 동작해 볼 수 있습니다.
 
 {% example html %}
 <div class="alert alert-warning alert-dismissible fade show" role="alert">
-  <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+  <strong>맙소사!</strong> 아래의 몇가지 필드를 확인해야 합니다.
   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
@@ -73,13 +73,13 @@ You can see this in action with a live demo:
 
 ### 트리거 Triggers
 
-Enable dismissal of an alert via JavaScript:
+자바스크립트를 통해 알림을 해제 할 수 있습니다.
 
 {% highlight js %}
 $(".alert").alert()
 {% endhighlight %}
 
-Or with `data` attributes on a button **within the alert**, as demonstrated above:
+또는 위에서 설명한 바와 같이 **알림 내부** 버튼에 `data` 속성을 사용하여 다음을 수행할 수 있습니다.
 
 {% highlight html %}
 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -87,25 +87,26 @@ Or with `data` attributes on a button **within the alert**, as demonstrated abov
 </button>
 {% endhighlight %}
 
-Note that closing an alert will remove it from the DOM.
+알림을 닫으면 알림이 DOM에서 제거됩니다.
 
 ### 메소드 Methods
 
-| Method | Description |
+| 메소드 | 설명 |
 | --- | --- |
-| `$().alert()` | Makes an alert listen for click events on descendant elements which have the `data-dismiss="alert"` attribute. (Not necessary when using the data-api's auto-initialization.) |
-| `$().alert('close')` | Closes an alert by removing it from the DOM. If the `.fade` and `.show` classes are present on the element, the alert will fade out before it is removed. |
+| `$().alert()` | Makes an alert listen for click events on descendant elements which have the `data-dismiss="alert"` attribute. (Not necessary when using the data-api's auto-initialization.) `data-dismiss="alert"` 속성이 있는 하위 요소에 대한 클릭 이벤트를 수신합니다. (datai-api의 자동 초기화를 사용할 때는 필요 없음) |
+| `$().alert('close')` | 알림을 DOM에서 제거하여 닫습니다. 요소에 `.fade` 와 `.show` 클래스가 있으면 알림이 제거되기 전에 fade out 됩니다. |
 
 {% highlight js %}$(".alert").alert('close'){% endhighlight %}
 
 ### 이벤트 Events
 
 Bootstrap's alert plugin exposes a few events for hooking into alert functionality.
+부트스트랩 알림 플러그인은 경고 기능에 연결 하기위한 몇가지 이벤트를 노출합니다.
 
-| Event | Description |
+| 이벤트 | 설명 |
 | --- | --- |
-| `close.bs.alert` | This event fires immediately when the <code>close</code> instance method is called. |
-| `closed.bs.alert` | This event is fired when the alert has been closed (will wait for CSS transitions to complete). |
+| `close.bs.alert` |  <code>close</code> 메서드가 호출될 때 이 이벤트가 즉시 발생 합니다. |
+| `closed.bs.alert` | 이 이벤트는 알림 닫힘이 완료되면 시작됩니다 (CSS 전환이 완료 될 때까지 대기합니다).|
 
 {% highlight js %}
 $('#myAlert').on('closed.bs.alert', function () {

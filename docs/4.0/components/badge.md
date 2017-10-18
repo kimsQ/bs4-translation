@@ -40,18 +40,22 @@ toc: true
 
 Note that depending on how they are used, badges may be confusing for users of screen readers and similar assistive technologies. While the styling of badges provides a visual cue as to their purpose, these users will simply be presented with the content of the badge. Depending on the specific situation, these badges may seem like random additional words or numbers at the end of a sentence, link, or button.
 
+그것들이 사용되는 방법에 따라서, 스크린리더 사용자 및 유사한 보조 기술 사용자는 배지를 혼동 할 수 있습니다. 배지 스타일링은 목적에 따라 시각적 신호를 제공하지만 배지의 내용은 간단하게 표시됩니다. 배지들은 문장이나 링크 또는 버튼의 끝에 추가 단어나 숫자처럼 보일 수 있다
+
 Unless the context is clear (as with the "Notifications" example, where it is understood that the "4" is the number of notifications), consider including additional context with a visually hidden piece of additional text.
+
+문맥이 분명하지 않으면 (예 : "알림" 예제에서와 같이 "4"가 알림 수 임을 인식하는 경우) 시각적으로 숨겨진 추가 텍스트를 포함한 추가 컨텍스트를 포함하는 것을 고려하십시오.
 
 {% example html %}
 <button type="button" class="btn btn-primary">
   프로필 <span class="badge badge-light">9</span>
-  <span class="sr-only">unread messages</span>
+  <span class="sr-only">읽지 않은 메시지</span>
 </button>
 {% endexample %}
 
-## Contextual variations
+## 문맥의 변형 Contextual variations
 
-Add any of the below mentioned modifier classes to change the appearance of a badge.
+Add any of the below mentioned modifier classes to change the appearance of a badge. 배지의 모양을 변경하려면 아래에 언급된 클래스 중 하나를 추가하십시오.
 
 {% example html %}
 {% for color in site.data.theme-colors %}
@@ -61,9 +65,9 @@ Add any of the below mentioned modifier classes to change the appearance of a ba
 {% capture callout-include %}{% include callout-warning-color-assistive-technologies.md %}{% endcapture %}
 {{ callout-include | markdownify }}
 
-## Pill badges
+## 알약형 배지 Pill badges
 
-Use the `.badge-pill` modifier class to make badges more rounded (with a larger `border-radius` and additional horizontal `padding`). Useful if you miss the badges from v3.
+배지를 더 둥글게 만들려면 `.badge-pill` 클래스를 사용 하십시오 (보다 큰 `border-radius`와 가로 `padding` 사용). v3에서 배지를 놓친 경우 유용합니다.
 
 {% example html %}
 {% for color in site.data.theme-colors %}
@@ -72,7 +76,7 @@ Use the `.badge-pill` modifier class to make badges more rounded (with a larger 
 
 ## 링크
 
-Using the `.badge` classes with the `<a>` element quickly provide _actionable_ badges with hover and focus states.
+`<a>` 요소와 함께 `.badge` 클래스를 사용하면 hover 와 focus 상태가 있는  _실행가능한_ 배지를 신속하게 제공 할 수 있습니다.
 
 {% example html %}
 {% for color in site.data.theme-colors %}

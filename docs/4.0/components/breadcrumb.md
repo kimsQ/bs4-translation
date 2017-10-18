@@ -37,6 +37,6 @@ group: components
 
 ## 접근성
 
-Since breadcrumbs provide a navigation, it's a good idea to add a meaningful label such as `aria-label="breadcrumb"` to describe the type of navigation provided in the `<nav>` element, as well as applying an `aria-current="page"` to the last item of the set to indicate that it represents the current page.
+경로는 탐색기능을 제공하기 때문에 `<nav>`> 요소에 네비게이션 유형을 설명하기 위해 `aria-label="breadcrumb"` 와 같은 레이블을 추가하는 것이 좋습니다.  현재 페이지를 나타내기 위해 `aria-current="page"`를 마지막 항목에 적용 할 수 있습니다.
 
-For more information, see the [WAI-ARIA Authoring Practices for the breadcrumb pattern](https://www.w3.org/TR/wai-aria-practices/#breadcrumb).
+자세한 내용은 [경로 패턴에 대한 WAI-ARIA 제작방법](https://www.w3.org/TR/wai-aria-practices/#breadcrumb)을 참조하십시오.

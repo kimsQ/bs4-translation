@@ -20,61 +20,62 @@ toc: true
 
 ## 예제
 
-Carousels don't automatically normalize slide dimensions. As such, you may need to use additional utilities or custom styles to appropriately size content. While carousels support previous/next controls and indicators, they're not explicitly required. Add and customize as you see fit.
+캐러셀은 자동으로 슬라이드 크기를 표준화하지 않습니다. 따라서 콘텐츠의 크기를 적절하게 조정하려면 추가 유틸리티 또는 사용자 정의 스타일을 사용해야 할 수도 있습니다. 캐러셀은 이전/다음 컨트롤 및 인디케이터를 지원하지만 명확하게 요구되지는 않습니다. 원하는대로 추가하고 사용자 정의 하십시오.
 
-Be sure to set a unique id on the `.carousel` for optional controls, especially if you're using multiple carousels on a single page.
+선택적 컨트롤을 위해 `.carousel`에 고유ID를 설정 해야합니다. 특히 한 페이지에서 여러개의 캐러셀를 사용하는 경우 특히 그렇습니다.
 
-### Slides only
+### 슬라이드만 있는 경우
 
-Here's a carousel with slides only. Note the presence of the `.d-block` and `.img-fluid` on carousel images to prevent browser default image alignment.
+다음은 슬라이드만 있는 캐러셀 입니다. 브라우저 기본 이미지 정렬을 방지하기 위해 캐러셀 이미지에 `.d-block` 및 `.img-fluid`가 있는지 확인하십시오.
+
 
 {% example html %}
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&bg=777&fg=555&text=First slide" alt="First slide">
+      <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&bg=777&fg=555&text=첫번째 슬라이드" alt="첫번째 슬라이드">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&bg=666&fg=444&text=Second slide" alt="Second slide">
+      <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&bg=666&fg=444&text=두번째 슬라이드" alt="두번째 슬라이드">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&bg=555&fg=333&text=Third slide" alt="Third slide">
+      <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&bg=555&fg=333&text=세번째 슬라이드" alt="세번째 슬라이드">
     </div>
   </div>
 </div>
 {% endexample %}
 
-### With controls
+### 컨트롤을 사용하는 경우
 
-Adding in the previous and next controls:
+이전 및 다음 컨트롤을 추가하세요 :
 
 {% example html %}
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&bg=777&fg=555&text=First slide" alt="First slide">
+      <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&bg=777&fg=555&text=첫번째 슬라이드" alt="첫번째 슬라이드">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&bg=666&fg=444&text=Second slide" alt="Second slide">
+      <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&bg=666&fg=444&text=두번째 슬라이드" alt="두번째 슬라이드">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&bg=555&fg=333&text=Third slide" alt="Third slide">
+      <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&bg=555&fg=333&text=세번째 슬라이드" alt="세번째 슬라이드">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
+    <span class="sr-only">이전</span>
   </a>
   <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
+    <span class="sr-only">다음</span>
   </a>
 </div>
 {% endexample %}
 
-### With indicators
+### 인디케이터를 사용하는 경우
 
-You can also add the indicators to the carousel, alongside the controls, too.
+컨트롤과 함께 인디케이터를 캐러셀에 추가 할 수도 있습니다.
 
 {% example html %}
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -85,22 +86,22 @@ You can also add the indicators to the carousel, alongside the controls, too.
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&bg=777&fg=555&text=First slide" alt="First slide">
+      <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&bg=777&fg=555&text=첫번째 슬라이드" alt="첫번째 슬라이드">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&bg=666&fg=444&text=Second slide" alt="Second slide">
+      <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&bg=666&fg=444&text=두번째 슬라이드" alt="두번째 슬라이드">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&bg=555&fg=333&text=Third slide" alt="Third slide">
+      <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&bg=555&fg=333&text=세번째 슬라이드" alt="세번째 슬라이드">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
+    <span class="sr-only">이전</span>
   </a>
   <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
+    <span class="sr-only">다음</span>
   </a>
 </div>
 {% endexample %}
@@ -111,9 +112,9 @@ You can also add the indicators to the carousel, alongside the controls, too.
 The `.active` class needs to be added to one of the slides. Otherwise, the carousel will not be visible.
 {% endcallout %}
 
-### With captions
+### 캡션을 사용하는 경우
 
-Add captions to your slides easily with the `.carousel-caption` element within any `.carousel-item`. They can be easily hidden on smaller viewports, as shown below, with optional [display utilities]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/display/). We hide them initially with `.d-none` and bring them back on medium-sized devices with `.d-md-block`.
+`.carousel-item` 내에 `.carousel-caption` 요소를 사용하여 슬라이드에 캡션을 쉽게 추가 할 수 있습니다. 아래 그림과 같이 선택적으로 [디스플레이 유틸리티]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/display/)를 사용하여 작은 뷰포트에 쉽게 숨길 수 있습니다. 처음에는 `.d-none`으로 숨기고 `.d-md-block` 으로  중간 크기의 디바이스에서 다시 가져옵니다.
 
 <div class="bd-example">
   <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -124,34 +125,34 @@ Add captions to your slides easily with the `.carousel-caption` element within a
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&bg=777&fg=555&text=First slide" alt="First slide">
+        <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&bg=777&fg=555&text=첫번째 슬라이드" alt="첫번째 슬라이드">
         <div class="carousel-caption d-none d-md-block">
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>첫번째 슬라이드 라벨</h3>
+          <p>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세.</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&bg=666&fg=444&text=Second slide" alt="Second slide">
+        <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&bg=666&fg=444&text=두번째 슬라이드" alt="두번째 슬라이드">
         <div class="carousel-caption d-none d-md-block">
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>두번째 슬라이드 라벨</h3>
+          <p>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세.</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&bg=555&fg=333&text=Third slide" alt="Third slide">
+        <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&bg=555&fg=333&text=세번째 슬라이드" alt="세번째 슬라이드">
         <div class="carousel-caption d-none d-md-block">
-          <h3>Third slide label</h3>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          <h3>세번째 슬라이드 라벨</h3>
+          <p>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세.</p>
         </div>
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
+      <span class="sr-only">이전</span>
     </a>
     <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
+      <span class="sr-only">다음</span>
     </a>
   </div>
 </div>
@@ -168,15 +169,19 @@ Add captions to your slides easily with the `.carousel-caption` element within a
 
 ## 사용법
 
-### Via data attributes
+### data 속성 방식
 
 Use data attributes to easily control the position of the carousel. `data-slide` accepts the keywords `prev` or `next`, which alters the slide position relative to its current position. Alternatively, use `data-slide-to` to pass a raw slide index to the carousel `data-slide-to="2"`, which shifts the slide position to a particular index beginning with `0`.
 
+데이터 속성을 사용하여 캐러셀의 위치를 쉽게 제어 할 수 있습니다. `data-slide` 는 `prev` 또는 `next` 키워드를 사용하여 현재 위치를 기준으로 슬라이드 위치를 변경합니다. 또는 `data-slide-to`를 사용하여 슬라이드 포인터를 `0`으로 시작하는 특정 인덱스로 이동하는 슬라이드 포인터 `data-slide-to="2"` 에 원시 슬라이드 인덱스를 전달합니다.
+
 The `data-ride="carousel"` attribute is used to mark a carousel as animating starting at page load. **It cannot be used in combination with (redundant and unnecessary) explicit JavaScript initialization of the same carousel.**
 
-### Via JavaScript
+`data-ride="carousel"` 속성은 캐러셀 페이지 로드시 애니메이션으로 표시하는데 사용됩니다. 동일한 캐러셀을 JavaScript 초기화 (중복 및 불필요한)방식과 함께 사용할 수 없습니다.
 
-Call carousel manually with:
+### JavaScript 방식
+
+다음을 사용하여 수동으로 케러셀을 호출합니다.
 
 {% highlight js %}
 $('.carousel').carousel()
@@ -184,15 +189,15 @@ $('.carousel').carousel()
 
 ### 옵션
 
-Options can be passed via data attributes or JavaScript. For data attributes, append the option name to `data-`, as in `data-interval=""`.
+옵션은 data 속성 또는 JavaScript를 통해 전달 될 수 있습니다. data 속성의 경우  `data-interval=""` 처럼 `data-`에 옵션명을 추가하십시오.
 
 <table class="table table-bordered table-striped table-responsive">
   <thead>
     <tr>
-      <th style="width: 100px;">Name</th>
-      <th style="width: 50px;">Type</th>
-      <th style="width: 50px;">Default</th>
-      <th>Description</th>
+      <th style="width: 100px;">옵션명</th>
+      <th style="width: 50px;">유형</th>
+      <th style="width: 50px;">기본</th>
+      <th>설명</th>
     </tr>
   </thead>
   <tbody>
@@ -200,32 +205,33 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
       <td>interval</td>
       <td>number</td>
       <td>5000</td>
-      <td>The amount of time to delay between automatically cycling an item. If false, carousel will not automatically cycle.</td>
+      <td>아이템 자동 순환 지연시간 입니다. false 인 경우, 캐러셀은 자동으로 순환하지 않습니다.</td>
     </tr>
     <tr>
       <td>keyboard</td>
       <td>boolean</td>
       <td>true</td>
-      <td>Whether the carousel should react to keyboard events.</td>
+      <td>캐러셀이 키보드 이벤트에 반응해야 하는지 여부.</td>
     </tr>
     <tr>
       <td>pause</td>
       <td>string | boolean</td>
       <td>"hover"</td>
-      <td><p>If set to <code>"hover"</code>, pauses the cycling of the carousel on <code>mouseenter</code> and resumes the cycling of the carousel on <code>mouseleave</code>. If set to <code>false</code>, hovering over the carousel won't pause it.</p>
-      <p>On touch-enabled devices, when set to <code>"hover"</code>, cycling will pause on <code>touchend</code> (once the user finished interacting with the carousel) for two intervals, before automatically resuming. Note that this is in addition to the above mouse behavior.</p></td>
+      <td><p><code>"hover"</code>로 설정하면 <code>mouseenter</code>에서 캐러셀의 순환을 일시 중지하고 <code>mouseleave</code>에서 캐러셀을 다시 시작합니다. <code>false</code>로 설정하면 캐러셀 위에 마우스를 올리면(hover) 일시 중지되지 않습니다.</p>
+      <p>터치 지원 디바이스에서 <code>"hover"</code>로 설정하면 <code>touchend</code>(사용자가 캐러셀과 상호 작용을 완료하면)에서 두번의 인터벌 동안 순환이 일시 중지됩니다. 이것은 위의 마우스 동작에 추가 된 것입니다.</p>
+      </td>
     </tr>
     <tr>
       <td>ride</td>
       <td>string</td>
       <td>false</td>
-      <td>Autoplays the carousel after the user manually cycles the first item. If "carousel", autoplays the carousel on load.</td>
+      <td>사용자가 첫번째 아이템을 수동으로 순환시킨 후 캐러셀을 자동 재생합니다. "carousel" 인 경우 로드시 캐러셀을 자동 재생 합니다.</td>
     </tr>
     <tr>
       <td>wrap</td>
       <td>boolean</td>
       <td>true</td>
-      <td>Whether the carousel should cycle continuously or have hard stops.</td>
+      <td>캐러셀이 지속적으로 순환 해야하는지 아니면 단단하게 정지를 해야하는지.</td>
     </tr>
   </tbody>
 </table>
@@ -237,7 +243,7 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
 
 #### `.carousel(options)`
 
-Initializes the carousel with an optional options `object` and starts cycling through items.
+선택적 옵션 `object`를 사용하여 캐러셀을 초기화하고 아이템을 순환 시킵니다.
 
 {% highlight js %}
 $('.carousel').carousel({
@@ -247,50 +253,50 @@ $('.carousel').carousel({
 
 #### `.carousel('cycle')`
 
-Cycles through the carousel items from left to right.
+왼쪽에서 오른쪽으로 캐러셀 아이템을 순환 시킵니다.
 
 #### `.carousel('pause')`
 
-Stops the carousel from cycling through items.
+아이템이 순환하는 것을 중지합니다.
 
 #### `.carousel(number)`
 
-Cycles the carousel to a particular frame (0 based, similar to an array). **Returns to the caller before the target item has been shown** (i.e. before the `slid.bs.carousel` event occurs).
+캐러셀을 특정 프레임 (배열과 비슷한 0 기반)으로 이동 시킵니다. 대상 아이템이 표시되기 전에 (즉, `slid.bs.carousel` 이벤트가 발생하기 전에) 호출자에게 반환됩니다.
 
 #### `.carousel('prev')`
 
-Cycles to the previous item. **Returns to the caller before the previous item has been shown** (i.e. before the `slid.bs.carousel` event occurs).
+이전 항목으로 이동합니다. 이전 항목이 표시되기 전에 (즉, `slid.bs.carousel` 이벤트가 발생하기 전에) 호출자에게 반환됩니다.
 
 #### `.carousel('next')`
 
-Cycles to the next item. **Returns to the caller before the next item has been shown** (i.e. before the `slid.bs.carousel` event occurs).
+다음 항목으로 이동합니다. 다음 항목이 표시되기 전에 (즉, `slid.bs.carousel` 이벤트가 발생하기 전에) 호출자에게 반환됩니다.
 
-### 이벤트 Events
+### 이벤트
 
-Bootstrap's carousel class exposes two events for hooking into carousel functionality. Both events have the following additional properties:
+부트스트랩의 캐러셀 클래스는 캐러셀 기능에 연결하기 위한 두가지 이벤트를 노출합니다. 두 이벤트 모두 다음과 같은 추가 속성을 가집니다.
 
-- `direction`: The direction in which the carousel is sliding (either `"left"` or `"right"`).
-- `relatedTarget`: The DOM element that is being slid into place as the active item.
-- `from`: The index of the current item
-- `to`: The index of the next item
+- `direction`: 캐러셀이 슬라이드 되는 방향 ( `"left"` 또는 `"right"`).
+- `relatedTarget`: 활성화된(active) 아이템으로 제자리에 들어간 DOM 요소입니다. The DOM element that is being slid into place as the active item.
+- `from`: 현재 아이템의 색인(index)
+- `to`: 다음 아이템의 색인(index)
 
-All carousel events are fired at the carousel itself (i.e. at the `<div class="carousel">`).
+모든 이벤트는 캐러셀 자체에서 발생(fired) 됩니다. (즉, `<div class="carousel">` 에서)
 
 <table class="table table-bordered table-striped table-responsive">
   <thead>
     <tr>
-      <th style="width: 150px;">Event Type</th>
-      <th>Description</th>
+      <th style="width: 150px;">이벤트</th>
+      <th>설명</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>slide.bs.carousel</td>
-      <td>This event fires immediately when the <code>slide</code> instance method is invoked.</td>
+      <td>이 이벤트는 슬라이드 인스턴스 메서드가 호출 될 때 즉시 발생합니다.</td>
     </tr>
     <tr>
       <td>slid.bs.carousel</td>
-      <td>This event is fired when the carousel has completed its slide transition.</td>
+      <td>이 이벤트는 회전식 슬라이드 전환(transition)이 완료되면 시작됩니다.</td>
     </tr>
   </tbody>
 </table>
