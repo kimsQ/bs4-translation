@@ -19,14 +19,14 @@ redirect_from: "/examples/"
       <img class="img-thumbnail" src="{{ site.baseurl }}/docs/{{ site.docs_version }}/examples/screenshots/starter-template.jpg" alt="" width="800" height="600">
       <h4>초보자 템플릿</h4>
     </a>
-    <p>기본적인 것 외에는 아무것도 없습니다.: 컴파일된 CSS 와 JavaScript.</p>
+    <p>컴파일된 CSS 와 JavaScript 외에는 아무것도 없습니다.</p>
   </div>
   <div class="col-6 col-md-4">
     <a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/examples/grid/">
       <img class="img-thumbnail" src="{{ site.baseurl }}/docs/{{ site.docs_version }}/examples/screenshots/grid.jpg" alt="" width="800" height="600">
       <h4>그리드</h4>
     </a>
-    <p>Multiple examples of grid layouts with all four tiers, nesting, and more.</p>
+    <p>네가지 반응형 계층, 중첩 등을 포함한 그리드 레이아웃의 몇가지 예제.</p>
   </div>
   <div class="clearfix hidden-md-up"></div>
 
@@ -35,14 +35,14 @@ redirect_from: "/examples/"
       <img class="img-thumbnail" src="{{ site.baseurl }}/docs/{{ site.docs_version }}/examples/screenshots/jumbotron.jpg" alt="" width="800" height="600">
       <h4>점보트론</h4>
     </a>
-    <p>Build around the jumbotron with a navbar and some basic grid columns.</p>
+    <p>navbar와 기본 그리드 컬럼으로 점보트론 주변을 구성해보세요.</p>
   </div>
   <div class="col-6 col-md-4">
     <a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/examples/narrow-jumbotron/">
       <img class="img-thumbnail" src="{{ site.baseurl }}/docs/{{ site.docs_version }}/examples/screenshots/jumbotron-narrow.jpg" alt="" width="800" height="600">
       <h4>좁은 점보트론</h4>
     </a>
-    <p>Build a more custom page by narrowing the default container and jumbotron.</p>
+    <p>기본 컨테이너와 점보트론을 좁혀 맞춤 페이지를 제작할 수 있습니다.</p>
   </div>
 </div>
 
@@ -56,14 +56,14 @@ redirect_from: "/examples/"
       <img class="img-thumbnail" src="{{ site.baseurl }}/docs/{{ site.docs_version }}/examples/screenshots/navbar.jpg" alt="" width="800" height="600">
       <h4>네비게이션 바</h4>
     </a>
-    <p>Super basic template that includes the navbar along with some additional content.</p>
+    <p>약간의 추가 콘텐츠와 함께 Navbar를 포함하는 기본 템플릿.</p>
   </div>
   <div class="col-6 col-md-4">
     <a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/examples/navbar-top/">
       <img class="img-thumbnail" src="{{ site.baseurl }}/docs/{{ site.docs_version }}/examples/screenshots/navbar-static.jpg" alt="" width="800" height="600">
       <h4>일반형 네비게이션 바</h4>
     </a>
-    <p>Super basic template with a static top navbar along with some additional content.</p>
+    <p>약간의 추가 콘텐츠와 함께 정적 Navbar를 포함하는 기본 템플릿.</p>
   </div>
   <div class="clearfix hidden-md-up"></div>
 
@@ -72,22 +72,20 @@ redirect_from: "/examples/"
       <img class="img-thumbnail" src="{{ site.baseurl }}/docs/{{ site.docs_version }}/examples/screenshots/navbar-fixed.jpg" alt="" width="800" height="600">
       <h4>고정형 네비게이션 바</h4>
     </a>
-    <p>Super basic template with a fixed top navbar along with some additional content.</p>
+    <p>약간의 추가 콘텐츠와 함께 고정형 Navbar를 포함하는 기본 템플릿.</p>
   </div>
   <div class="col-6 col-md-4">
     <a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/examples/navbar-bottom/">
       <img class="img-thumbnail" src="{{ site.baseurl }}/docs/{{ site.docs_version }}/examples/screenshots/navbar-bottom.jpg" alt="">
       <h4>하단 네비게이션 바</h4>
     </a>
-    <p>Super basic template with a bottom navbar along with some additional content.</p>
+    <p>약간의 추가 콘텐츠와 함께 하단 Navbar를 포함하는 기본 템플릿.</p>
   </div>
 </div>
 
-## 사용자정의 컴포넌트
+## 맞춤 컴포넌트
 
-Brand new components and templates to help folks quickly get started with Bootstrap and demonstrate best practices for adding onto the framework.
-
-새로운 컴포넌트 및 템플릿을 사용하여 사람들이 부트스트랩을 신속하게 시작하고 프레임워크에 추가하기 위한 모범사례를 보여줍니다.
+새 컴포넌트와 템플릿을 사용하여 부트스트랩을 빠르게 시작하고 프레임워크를 추가하는 최상의 방법을 보여줍니다.
 
 <div class="row bd-examples">
   <div class="col-6 col-md-4">
@@ -95,14 +93,14 @@ Brand new components and templates to help folks quickly get started with Bootst
       <img class="img-thumbnail" src="{{ site.baseurl }}/docs/{{ site.docs_version }}/examples/screenshots/album.jpg" alt="" width="800" height="600">
       <h4>앨범</h4>
     </a>
-    <p>Simple one-page template for photo galleries, portfolios, and more.</p>
+    <p>포토갤러리, 포트폴리오 등을 위한 심플한 원페이지 템플릿</p>
   </div>
   <div class="col-6 col-md-4">
     <a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/examples/cover/">
       <img class="img-thumbnail" src="{{ site.baseurl }}/docs/{{ site.docs_version }}/examples/screenshots/cover.jpg" alt="" width="800" height="600">
       <h4>커버</h4>
     </a>
-    <p>A one-page template for building simple and beautiful home pages.</p>
+    <p>간단하고 아름다운 홈페이지 구축하기 위한 원 페이지 템플릿.</p>
   </div>
   <div class="clearfix hidden-md-up"></div>
 
@@ -111,14 +109,14 @@ Brand new components and templates to help folks quickly get started with Bootst
       <img class="img-thumbnail" src="{{ site.baseurl }}/docs/{{ site.docs_version }}/examples/screenshots/carousel.jpg" alt="" width="800" height="600">
       <h4>캐러셀</h4>
     </a>
-    <p>Customize the navbar and carousel, then add some new components.</p>
+    <p>네비게이션 바와 캐러셀을 맞춤 설정 한 다음, 새로운 컴포넌트를 추가하십시오.</p>
   </div>
   <div class="col-6 col-md-4">
     <a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/examples/blog/">
       <img class="img-thumbnail" src="{{ site.baseurl }}/docs/{{ site.docs_version }}/examples/screenshots/blog.jpg" alt="" width="800" height="600">
       <h4>블로그</h4>
     </a>
-    <p>Simple two-column blog layout with custom navigation, header, and type.</p>
+    <p>맞춤 네비게이션, 헤더 및 폰트지정을 포함한 심플한 2칼럼 블로그 레이아웃.</p>
   </div>
   <div class="clearfix hidden-md-up"></div>
 
@@ -127,14 +125,14 @@ Brand new components and templates to help folks quickly get started with Bootst
       <img class="img-thumbnail" src="{{ site.baseurl }}/docs/{{ site.docs_version }}/examples/screenshots/dashboard.jpg" alt="" width="800" height="600">
       <h4>대시보드</h4>
     </a>
-    <p>Basic admin dashboard shell with fixed sidebar and navbar.</p>
+    <p>고정된 sidebar와 navbar를 포함한 기본 관리자 대시보드.</p>
   </div>
   <div class="col-6 col-md-4">
     <a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/examples/signin/">
       <img class="img-thumbnail" src="{{ site.baseurl }}/docs/{{ site.docs_version }}/examples/screenshots/sign-in.jpg" alt="" width="800" height="600">
-      <h4>Sign-in page</h4>
+      <h4>로그인 페이지</h4>
     </a>
-    <p>Custom form layout and design for a simple sign in form.</p>
+    <p>간단한 로그인 폼을 위한 맞춤 폼 레이아웃과 디자인</p>
   </div>
   <div class="clearfix hidden-md-up"></div>
 
@@ -143,14 +141,14 @@ Brand new components and templates to help folks quickly get started with Bootst
       <img class="img-thumbnail" src="{{ site.baseurl }}/docs/{{ site.docs_version }}/examples/screenshots/justified-nav.jpg" alt="" width="800" height="600">
       <h4>양쪽정렬된 네비게이션</h4>
     </a>
-    <p>Create a custom navbar with justified links. Heads up! Not too Safari friendly.</p>
+    <p>정렬된 링크가 있는 맞춤 navbar를 만듭니다. 조심! 사파리 친화적이지 않습니다.</p>
   </div>
   <div class="col-6 col-md-4">
     <a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/examples/sticky-footer/">
       <img class="img-thumbnail" src="{{ site.baseurl }}/docs/{{ site.docs_version }}/examples/screenshots/sticky-footer.jpg" alt="" width="800" height="600">
       <h4>스티키 풋터</h4>
     </a>
-    <p>Attach a footer to the bottom of the viewport when the content is shorter than it.</p>
+    <p>콘텐츠가 짧을 경우 뷰포트의 바닥에 풋터를 부착합니다.</p>
   </div>
   <div class="clearfix hidden-md-up"></div>
 
@@ -159,7 +157,7 @@ Brand new components and templates to help folks quickly get started with Bootst
       <img class="img-thumbnail" src="{{ site.baseurl }}/docs/{{ site.docs_version }}/examples/screenshots/sticky-footer-navbar.jpg" alt="" width="800" height="600">
       <h4>고정형 네비바&스티키 풋터</h4>
     </a>
-    <p>Attach a footer to the bottom of the viewport with a fixed top navbar.</p>
+    <p>고정형 상단 navbar를 포함하여 뷰포트의 바닥에 풋터를 부착하십시오.</p>
   </div>
 </div>
 
@@ -173,6 +171,6 @@ Brand new components and templates to help folks quickly get started with Bootst
       <img class="img-thumbnail" src="{{ site.baseurl }}/docs/{{ site.docs_version }}/examples/screenshots/offcanvas.jpg" alt="" width="800" height="600">
       <h4>오프 캔버스</h4>
     </a>
-    <p>Build a toggleable off-canvas navigation menu for use with Bootstrap.</p>
+    <p>부트스트랩과 함께 사용할 토글형 off-canvas 네비게이션 메뉴를 만듭니다.</p>
   </div>
 </div>

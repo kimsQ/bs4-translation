@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: 리부트 Reboot
-description: Reboot, a collection of element-specific CSS changes in a single file, kickstart Bootstrap to provide an elegant, consistent, and simple baseline to build upon. 요소별 CSS 변경사항 모음인 리부트는 구축 할때 우아하고 일관되며 심플한 기준치를 제공합니다.
+description: 요소별 CSS 변경사항 모음인 리부트는 구축 할때 우아하고 일관되며 심플한 기준치를 제공합니다.
 group: content
 redirect_from: "/docs/4.0/content/"
 toc: true
@@ -14,8 +14,7 @@ toc: true
 
 리부트는 Normalize를 사용하여 빌드되며, 요소 선택자만을 사용하여 독창적인 스타일의 많은 HTML 요소를 제공합니다. 추가적인 스타일은 클래스 만으로 수행됩니다. 예를 들어 보다 단순한 기준치를 위해 `<table>` 스타일을 리부트한 다음 후에 `.table`, `.table-bordered`, 등을 제공합니다.
 
-Here are our guidelines and reasons for choosing what to override in Reboot:
-리부트 시에 덮어쓸 대상을 선택하기 위한 가이드라인과 이유는 다음과 같습니다.
+리부트에서 재정의할 대상을 선택하기 위한 가이드라인과 이유는 다음과 같습니다.
 
 - 확장 가능한 구성 요소의 간격에 대해 `em` 대신 `rem`을 사용하도록 일부 브라우저 기본 값을 업데이트합니다.
 - Avoid `margin-top`. Vertical margins can collapse, yielding unexpected results. More importantly though, a single direction of `margin` is a simpler mental model.

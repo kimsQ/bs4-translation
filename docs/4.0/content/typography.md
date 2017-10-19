@@ -158,7 +158,7 @@ toc: true
 <p><del>삭제된 텍스트로 간주됩니다.</del></p>
 <p><s>더 이상 정확하지 않은 것으로 간주됩니다.</s></p>
 <p><ins>문서에 추가되는 것으로 간주됩니다.</ins></p>
-<p><u>언더라인 형태로 렌더링 됩니다.</u></p>
+<p><u>밑줄이 그어질것입니다</u></p>
 <p><small>작은 글자로 취급 됩니다.</small></p>
 <p><strong>굵게 표시 됩니다.</strong></p>
 <p><em>기울임 텍스트로 표시 됩니다.</em></p>
@@ -172,13 +172,13 @@ toc: true
 
 텍스트 정렬, 변환, 스타일, 굵기 및 색상을 [텍스트 유틸리티]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/text/#text-alignment)로 변경하십시오.
 
-## 약어 Abbreviations
+## 약어
 
 Stylized implementation of HTML's `<abbr>` element for abbreviations and acronyms to show the expanded version on hover. Abbreviations have a default underline and gain a help cursor to provide additional context on hover and to users of assistive technologies.
 
-Add `.initialism` to an abbreviation for a slightly smaller font-size.
+hover에 확장 된 버전을 표시하기위한 약어 및 머리 글자에 대한 HTML의 `<abbr>` 요소의 양식화 된 구현입니다. 약어에는 기본 밑줄이 있으며 hover와 보조 기술 사용자에 대한 추가 컨텍스트를 제공하는 도움말 커서가 있습니다.
 
-호버에 확장 된 버전을 표시하기위한 약어 및 머리 글자에 대한 HTML의 `<abbr>` 요소의 양식화 된 구현입니다. 약어에는 기본 밑줄이 있으며 hover와 보조 기술 사용자에 대한 추가 컨텍스트를 제공하는 도움말 커서가 있습니다.
+`<abbr>` 는 약어에 마우스를 올렸을 때 원래 텍스트를 보여주기 위한 요소입니다. title 속성이 있는 약어는 점으로된 밑줄을 가지고 있고 마우스를 올렸을때 물음표 커서가 보여지며, 원래 텍스트를 보여줍니다.
 
 조금 더 작은 글꼴 크기의 약어에 `.initialism`을 추가하십시오.
 
@@ -187,121 +187,119 @@ Add `.initialism` to an abbreviation for a slightly smaller font-size.
 <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p>
 {% endexample %}
 
-## 인용구 Blockquotes
+## 인용구
 
-For quoting blocks of content from another source within your document. Wrap `<blockquote class="blockquote">` around any <abbr title="HyperText Markup Language">HTML</abbr> as the quote.
-
-문서 내의 다른 소스에서 내용 인용하기. 인용 부호로 <abbr title="HyperText Markup Language">HTML</abbr> 주위에 `<blockquote class="blockquote">`를 둘러 쌉니다.
+문서 내의 다른 출처에서 내용 인용하기. 인용 부호로 <abbr title="HyperText Markup Language">HTML</abbr> 주위에 `<blockquote class="blockquote">`를 둘러 쌉니다.
 
 {% example html %}
 <blockquote class="blockquote">
-  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+  <p class="mb-0">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.</p>
 </blockquote>
 {% endexample %}
 
-### Naming a source
+### 출처 표기
 
-Add a `<footer class="blockquote-footer">` for identifying the source. Wrap the name of the source work in `<cite>`.
+출처 임을 식별하기 위해 `<footer class="blockquote-footer">` 를 추가하십시오. `<cite>` 에 출처(참조) 타이틀을 입력하세요.
 
 {% example html %}
 <blockquote class="blockquote">
-  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-  <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+  <p class="mb-0">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.</p>
+  <footer class="blockquote-footer">안익태 작곡 <cite title="애국가">애국가</cite></footer>
 </blockquote>
 {% endexample %}
 
-### Alignment
+### 정렬
 
-Use text utilities as needed to change the alignment of your blockquote.
+필요에 따라 텍스트 유틸리티를 사용하여 인용구 정렬을 변경하십시오.
 
 {% example html %}
 <blockquote class="blockquote text-center">
-  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-  <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+  <p class="mb-0">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.</p>
+  <footer class="blockquote-footer">안익태 작곡 <cite title="Source Title">애국가</cite></footer>
 </blockquote>
 {% endexample %}
 
 {% example html %}
 <blockquote class="blockquote text-right">
-  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-  <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+  <p class="mb-0">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.</p>
+  <footer class="blockquote-footer">안익태 작곡 <cite title="Source Title">애국가</cite></footer>
 </blockquote>
 {% endexample %}
 
-## Lists
+## 목록
 
-### Unstyled
+### 스타일 없는 목록 Unstyled
 
-Remove the default `list-style` and left margin on list items (immediate children only). **This only applies to immediate children list items**, meaning you will need to add the class for any nested lists as well.
+목록 항목의 기본 `list-style` 과 왼쪽 margin을 제거합니다. **직계 자식 목록 항목에만 적용됩니다.**  즉, 중첩 목록에도 클래스를 추가 해야합니다.
 
 {% example html %}
 <ul class="list-unstyled">
-  <li>Lorem ipsum dolor sit amet</li>
-  <li>Consectetur adipiscing elit</li>
-  <li>Integer molestie lorem at massa</li>
-  <li>Facilisis in pretium nisl aliquet</li>
-  <li>Nulla volutpat aliquam velit
+  <li>동해물과 백두산이</li>
+  <li>마르고 닳도록 하느님이</li>
+  <li>보우하사 우리 나라만세</li>
+  <li>무궁화 삼천리 화려 강산</li>
+  <li>대한사람 대한으로 길이 보전하세
     <ul>
-      <li>Phasellus iaculis neque</li>
-      <li>Purus sodales ultricies</li>
-      <li>Vestibulum laoreet porttitor sem</li>
-      <li>Ac tristique libero volutpat at</li>
+      <li>동해물과 백두산이</li>
+      <li>마르고 닳도록 하느님이</li>
+      <li>보우하사 우리 나라만세</li>
+      <li>무궁화 삼천리 화려 강산</li>
     </ul>
   </li>
-  <li>Faucibus porta lacus fringilla vel</li>
-  <li>Aenean sit amet erat nunc</li>
-  <li>Eget porttitor lorem</li>
+  <li>남산 위에 저 소나무 철갑을 두른듯</li>
+  <li>바람서리 불변함은 우리 기상일세</li>
+  <li>무궁화 삼천리 화려 강산 대한사람</li>
 </ul>
 {% endexample %}
 
-### Inline
+### 인라인
 
-Remove a list's bullets and apply some light `margin` with a combination of two classes, `.list-inline` and `.list-inline-item`.
+목록의 글머리 기호를 제거하고 `.list-inline` 및 `.list-inline-item` 클래스의 조합으로 약간의 `margin` 을 적용합니다.
 
 {% example html %}
 <ul class="list-inline">
-  <li class="list-inline-item">Lorem ipsum</li>
-  <li class="list-inline-item">Phasellus iaculis</li>
-  <li class="list-inline-item">Nulla volutpat</li>
+  <li class="list-inline-item">동해물과 백두산이</li>
+  <li class="list-inline-item">마르고 닳도록 하느님이</li>
+  <li class="list-inline-item">보우하사 우리 나라만세</li>
 </ul>
 {% endexample %}
 
-### Description list alignment
+### 정의형 목록 정렬
 
-Align terms and descriptions horizontally by using our grid system's predefined classes (or semantic mixins). For longer terms, you can optionally add a `.text-truncate` class to truncate the text with an ellipsis.
+사전 정의된 그리드 시스템의 클래스를 사용하여 용어와 설명을 수평정렬 하세요. 긴 용어의 경우 선택적으로 `.text-truncate` 클래스를 추가하여 말줄임표(...)를 적용 할수 있습니다.
 
 {% example html %}
 <dl class="row">
-  <dt class="col-sm-3">Description lists</dt>
-  <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+  <dt class="col-sm-3">정의형 목록</dt>
+  <dd class="col-sm-9">정의형 목록은 용어 정의에 적합합니다.</dd>
 
-  <dt class="col-sm-3">Euismod</dt>
+  <dt class="col-sm-3">애국가</dt>
   <dd class="col-sm-9">
-    <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>
-    <p>Donec id elit non mi porta gravida at eget metus.</p>
+    <p>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산.</p>
+    <p>대한사람 대한으로 길이 보전하세 남산 위에 저 소나무 철갑을 두른듯.</p>
   </dd>
 
-  <dt class="col-sm-3">Malesuada porta</dt>
-  <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+  <dt class="col-sm-3">동해물과 백두산이 마르고 닳도록</dt>
+  <dd class="col-sm-9">동해물과 백두산이 마르고 닳도록 동해물과 백두산이 마르고 닳도록.</dd>
 
-  <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
-  <dd class="col-sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+  <dt class="col-sm-3 text-truncate">동해물과 백두산이 마르고 닳도록 동해물과 백두산이 마르고 닳도록</dt>
+  <dd class="col-sm-9">동해물과 백두산이 마르고 닳도록 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세.</dd>
 
-  <dt class="col-sm-3">Nesting</dt>
+  <dt class="col-sm-3">중첩</dt>
   <dd class="col-sm-9">
     <dl class="row">
-      <dt class="col-sm-4">Nested definition list</dt>
-      <dd class="col-sm-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
+      <dt class="col-sm-4">중첩된 정의형 목록</dt>
+      <dd class="col-sm-8">동해물과 백두산이 마르고 닳도록 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세</dd>
     </dl>
   </dd>
 </dl>
 {% endexample %}
 
-## Responsive typography
+## 반응형 타이포그래피
 
-*Responsive typography* refers to scaling text and components by simply adjusting the root element's `font-size` within a series of media queries. Bootstrap doesn't do this for you, but it's fairly easy to add if you need it.
+*반응형 타이포그래피* 는 일련의 미디어 쿼리 내에서 루트 요소의 `font-size`를 조정하기만 하여 텍스트 및 컴포넌트의 크기를 조정하는 것을 의미합니다. 부트스트랩은이 작업을 수행하지 않지만 필요할 경우 추가하기가 쉽습니다.
 
-Here's an example of it in practice. Choose whatever `font-size`s and media queries you wish.
+이것이 실제 사례 입니다. 원하는 `font-size`와 미디어 쿼리를 선택하십시오.
 
 {% highlight scss %}
 html {

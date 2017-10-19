@@ -10,20 +10,23 @@ toc: true
 
 
 
-## Changing `display`
+## `display` 변경
 
-Use our `display` utilities for responsively toggling common values of the `display` property. Mix it with our grid system, content, or components to show or hide them across specific viewports.
+`display` 유틸리티의 일반값을 적절하게 변경하려면 `display` 유틸리티를 사용하십시오. 그리드 시스템, 컨텐츠 또는 컴포넌트와 혼합하여 특정 뷰포트에 표시하거나 숨깁니다.
 
-## Flexbox options
 
-Bootstrap 4 is built with flexbox, but not every element's `display` has been changed to `display: flex` as this would add many unnecessary overrides and unexpectedly change key browser behaviors. Most of [our components]({{ site.baseurl }}/docs/{{ site.docs_version }}/components/alerts/) are built with flexbox enabled.
+## Flexbox 옵션
 
-Should you need to add `display: flex` to an element, do so with `.d-flex` or one of the responsive variants (e.g., `.d-sm-flex`). You'll need this class or `display` value to allow the use of our extra [flexbox utilities]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/flex/) for sizing, alignment, spacing, and more.
+부트스트랩 4는 flexbox로 만들어졌지만, 불필요한 재정의 코드가 필요하고 예기치 않게 변경되는 주요 브라우저 때문에 모든 요소의 `display`가 `display: flex`로 변경되지는 않았습니다. 대부분의 구성 요소는 flexbox 적용이 가능하도록 구현되었습니다.
 
-## Margin and padding
+`display: flex` 를 요소에 추가 해야하는 경우, `.d-flex` 또는 관련 반응형 처리 클래스 (예 : `.d-sm-flex`)를 사용하십시오.
+크기조정, 정렬, 간격조정 등을 위해 [flexbox 유틀리티]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/flex/)를 사용하려면 이 클래스 또는 `display` 값의 변경이 필요합니다.
 
-Use the `margin` and `padding` [spacing utilities]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/spacing/) to control how elements and components are spaced and sized. Bootstrap 4 includes a five-level scale for spacing utilities, based on a `1rem` value default `$spacer` variable. Choose values for all viewports (e.g., `.mr-3` for `margin-right: 1rem`), or pick responsive variants to target specific viewports (e.g., `.mr-md-3` for `margin-right: 1rem` starting at the `md` breakpoint).
+## Margin 과 padding
 
-## Toggle `visibility`
+[spacing 유틸리티]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/spacing/)를 사용하여 요소 및 컴포넌트의 간격 및 크기 조정을 제어 하십시오. 부트스트랩 4에는 `1rem` 값인 `$spacer` 변수를 기반으로 하는 5단계의 spacing 유틸리티가 포함 되어있습니다. 모든 뷰포트에 대응하거나(예 : `margin-right: 1rem` 의 경우 `.mr-3`) 특정 뷰포트를 지정하려면 (예 : `md` breakpoint에서 시작되는 `margin-right: 1rem`의 경우 `.mr-md-3`) 반응형 응용방법을 참조 하십시오.
 
-When toggling `display` isn't needed, you can toggle the `visibility` of an element with our [visibility utilities]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/visibility/). Invisible elements will still affect the layout of the page, but are visually hidden from visitors.
+
+## `visibility` 전환
+
+`display`를 전환할 필요가 없는 경우, [visibility 유틸리티]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/visibility/)를 사용하여 요소의 `visibility`을 전환 할 수 있습니다. 보이지 않는 요소는 여전히 페이지의 레이아웃에 영향을 미치지만 방문자에게 시각적으로 숨길 수 있습니다.

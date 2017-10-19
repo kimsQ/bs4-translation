@@ -8,45 +8,45 @@ toc: true
 
 
 
-## Inline code
+## 인라인 코드
 
-Wrap inline snippets of code with `<code>`. Be sure to escape HTML angle brackets.
+`<code>`를 사용하여 인라인 코드 스니핏을 감사세요. HTML 꺾쇠 괄호를 이스케이프 해야합니다.
 
 {% example html %}
-For example, <code>&lt;section&gt;</code> should be wrapped as inline.
+예를 들어, <code>&lt;section&gt;</code> 은 인라인으로 감싸져야 합니다..
 {% endexample %}
 
-## Code blocks
+## 코드 블럭
 
-Use `<pre>`s for multiple lines of code. Once again, be sure to escape any angle brackets in the code for proper rendering. You may optionally add the `.pre-scrollable` class, which will set a max-height of 350px and provide a y-axis scrollbar.
+여러 줄의 코드에는 `<pre>`를 사용하십시오. 다시 한번, 올바른 렌더링을 위해 코드에서 꺾쇠 괄호를 이스케이프 해야합니다. 350px의 최대 높이를 설정하고 세로 스크롤 막대를 제공하는 `.pre-scrollable` 클래스를 선택적으로 추가 할 수 있습니다.
 
 {% example html %}
-<pre><code>&lt;p&gt;Sample text here...&lt;/p&gt;
-&lt;p&gt;And another line of sample text here...&lt;/p&gt;
+<pre><code>&lt;p&gt;샘플 텍스트는 여기에 ...&lt;/p&gt;
+&lt;p&gt;그리고 또 다른 샘플 텍스트는 여기에 ....&lt;/p&gt;
 </code></pre>
 {% endexample %}
 
-## Variables
+## 변수
 
-For indicating variables use the `<var>` tag.
+지시 변수(indicating variables)의 경우 `<var>` 태그를 사용하십시오.
 
 {% example html %}
 <var>y</var> = <var>m</var><var>x</var> + <var>b</var>
 {% endexample %}
 
-## User input
+## 사용자 입력
 
-Use the `<kbd>` to indicate input that is typically entered via keyboard.
+키보드를 통해 일반적으로 입력되는 사항을 나타내려면 <`<kbd>`를 사용하십시오.
 
 {% example html %}
-To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
-To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
+디렉토리를 전환하려면 <kbd>cd</kbd> 다음에 디렉토리 이름을 입력하십시오.<br>
+설정을 편집하려면 <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd> 를 누르세요.
 {% endexample %}
 
-## Sample output
+## 샘플 출력
 
-For indicating sample output from a program use the `<samp>` tag.
+프로그램의 샘플 출력을 표시하려면 `<samp>` 태그를 사용하십시오.
 
 {% example html %}
-<samp>This text is meant to be treated as sample output from a computer program.</samp>
+<samp>이 텍스트는 컴퓨터 프로그램의 샘플 출력으로 처리됩니다.</samp>
 {% endexample %}
