@@ -40,7 +40,7 @@
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="이미지">
-  <meta name="twitter:description" content="Documentation and examples for opting images into responsive behavior (so they never become larger than their parent elements) and add lightweight styles to them—all via classes.">
+  <meta name="twitter:description" content="이미지에 반응형 동작(부모 요소보다 커지지 않도록)을 적용하고 클래스로 경량화된 스타일을 추가하는데 필요한 문서 및 예제.">
   <meta name="twitter:image" content="http://bootstrap4.kr/assets/brand/bootstrap-social-logo.png">
 
 
@@ -48,7 +48,7 @@
 
   <meta property="og:url" content="http://bootstrap4.kr/docs/4.0/content/images/">
   <meta property="og:title" content="이미지">
-  <meta property="og:description" content="Documentation and examples for opting images into responsive behavior (so they never become larger than their parent elements) and add lightweight styles to them—all via classes.">
+  <meta property="og:description" content="이미지에 반응형 동작(부모 요소보다 커지지 않도록)을 적용하고 클래스로 경량화된 스타일을 추가하는데 필요한 문서 및 예제.">
   <meta property="og:type" content="website">
 
 <meta property="og:image" content="http://bootstrap4.kr/assets/brand/bootstrap-social.png">
@@ -583,42 +583,43 @@
         
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#responsive-images">Responsive images</a>
+<li class="toc-entry toc-h2"><a href="#반응형-이미지">반응형 이미지</a>
 <ul>
-<li class="toc-entry toc-h4"><a href="#svg-images-and-ie-10">SVG images and IE 10</a></li>
+<li class="toc-entry toc-h4"><a href="#svg-이미지와-ie-10">SVG 이미지와 IE 10</a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h2"><a href="#image-thumbnails">Image thumbnails</a></li>
-<li class="toc-entry toc-h2"><a href="#aligning-images">Aligning images</a></li>
-<li class="toc-entry toc-h2"><a href="#picture">Picture</a></li>
+<li class="toc-entry toc-h2"><a href="#섬네일-이미지">섬네일 이미지</a></li>
+<li class="toc-entry toc-h2"><a href="#이미지-정렬하기">이미지 정렬하기</a></li>
+<li class="toc-entry toc-h2"><a href="#picture-요소">Picture 요소</a></li>
 </ul>
           </div>
         
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
           <h1 class="bd-title" id="content">이미지</h1>
-          <p class="bd-lead">Documentation and examples for opting images into responsive behavior (so they never become larger than their parent elements) and add lightweight styles to them—all via classes.</p>
+          <p class="bd-lead">이미지에 반응형 동작(부모 요소보다 커지지 않도록)을 적용하고 클래스로 경량화된 스타일을 추가하는데 필요한 문서 및 예제.</p>
           
 
-          <h2 id="responsive-images">Responsive images</h2>
+          <h2 id="반응형-이미지">반응형 이미지</h2>
 
-<p>Images in Bootstrap are made responsive with <code class="highlighter-rouge">.img-fluid</code>. <code class="highlighter-rouge">max-width: 100%;</code> and <code class="highlighter-rouge">height: auto;</code> are applied to the image so that it scales with the parent element.</p>
+<p><code class="highlighter-rouge">.img-fluid</code>로 반응형 이미지가 됩니다. <code class="highlighter-rouge">max-width: 100%;</code> 과  <code class="highlighter-rouge">height: auto;</code> 가 부모 요소와 크기가 같도록 이미지에 적용됩니다.</p>
 
 <div class="bd-example">
   <img data-src="holder.js/100px250" class="img-fluid" alt="Generic responsive image" />
 </div>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">class=</span><span class="s">"img-fluid"</span> <span class="na">alt=</span><span class="s">"Responsive image"</span><span class="nt">&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">class=</span><span class="s">"img-fluid"</span> <span class="na">alt=</span><span class="s">"반응형 이미지"</span><span class="nt">&gt;</span></code></pre></figure>
 
 <div class="bd-callout bd-callout-warning">
-<h4 id="svg-images-and-ie-10">SVG images and IE 10</h4>
+<h4 id="svg-이미지와-ie-10">SVG 이미지와 IE 10</h4>
 
-<p>In Internet Explorer 10, SVG images with <code class="highlighter-rouge">.img-fluid</code> are disproportionately sized. To fix this, add <code class="highlighter-rouge">width: 100% \9;</code> where necessary. This fix improperly sizes other image formats, so Bootstrap doesn’t apply it automatically.</p>
+<p>Internet Explorer 10에서 <code class="highlighter-rouge">.img-fluid</code>를 사용하는 SVG 이미지는 불균형하게 크기가 지정됩니다. 이 문제를 해결하려면 필요한 경우 <code class="highlighter-rouge">width: 100% \9;</code> 를 추가하십시오. 이 픽스는 다른 이미지 의 크기를 잘못 지정하므로 부트스트랩이 자동으로 적용하지 않습니다.</p>
+
 </div>
 
-<h2 id="image-thumbnails">Image thumbnails</h2>
+<h2 id="섬네일-이미지">섬네일 이미지</h2>
 
-<p>In addition to our <a href="/docs/4.0/utilities/borders/">border-radius utilities</a>, you can use <code class="highlighter-rouge">.img-thumbnail</code> to give an image a rounded 1px border appearance.</p>
+<p><a href="/docs/4.0/utilities/borders/">border-radius 유틸리티</a> 외에도 <code class="highlighter-rouge">.img-thumbnail</code> 을 사용하여 이미지에 둥근 1px 테두리 모양을 부여 할 수 있습니다.</p>
 
 <div class="bd-example bd-example-images">
   <img data-src="holder.js/200x200" class="img-thumbnail" alt="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera" />
@@ -626,9 +627,9 @@
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"..."</span> <span class="na">class=</span><span class="s">"img-thumbnail"</span><span class="nt">&gt;</span></code></pre></figure>
 
-<h2 id="aligning-images">Aligning images</h2>
+<h2 id="이미지-정렬하기">이미지 정렬하기</h2>
 
-<p>Align images with the <a href="/docs/4.0/utilities/float">helper float classes</a> or <a href="/docs/4.0/utilities/text/#text-alignment">text alignment classes</a>. <code class="highlighter-rouge">block</code>-level images can be centered using <a href="/docs/4.0/utilities/spacing/#horizontal-centering">the <code class="highlighter-rouge">.mx-auto</code> margin utility class</a>.</p>
+<p>이미지를 <a href="/docs/4.0/utilities/float">float 클래스</a>  또는 <a href="/docs/4.0/utilities/text/#text-alignment">텍스트 정렬 클래스</a>로 정렬합니다. <code class="highlighter-rouge">block</code> 레벨 이미지는 <a href="/docs/4.0/utilities/spacing/#horizontal-centering"><code class="highlighter-rouge">.mx-auto</code> margin 유틸리티 클래스</a>를 사용하여 중앙에 배치 할 수 있습니다.</p>
 
 <div class="bd-example bd-example-images">
   <img data-src="holder.js/200x200" class="rounded float-left" alt="A generic square placeholder image with rounded corners" />
@@ -654,9 +655,9 @@
   <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">class=</span><span class="s">"rounded"</span> <span class="na">alt=</span><span class="s">"..."</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<h2 id="picture">Picture</h2>
+<h2 id="picture-요소">Picture 요소</h2>
 
-<p>If you are using the <code class="highlighter-rouge">&lt;picture&gt;</code> element to specify multiple <code class="highlighter-rouge">&lt;source&gt;</code> elements for a specific <code class="highlighter-rouge">&lt;img&gt;</code>, make sure to add the <code class="highlighter-rouge">.img-*</code> classes to the <code class="highlighter-rouge">&lt;img&gt;</code> and not to the <code class="highlighter-rouge">&lt;picture&gt;</code> tag.</p>
+<p><code class="highlighter-rouge">&lt;picture&gt;</code> 요소를 사용하여 특정 <code class="highlighter-rouge">&lt;img&gt;</code> 요소에 대해 여러 <code class="highlighter-rouge">&lt;source&gt;</code> 요소를 지정하는 경우, <code class="highlighter-rouge">&lt;picture&gt;</code> 태그가 아닌 <code class="highlighter-rouge">&lt;img&gt;</code>에 <code class="highlighter-rouge">.img-*</code> 클래스를 추가해야 합니다.</p>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html">​<span class="nt">&lt;picture&gt;</span>
   <span class="nt">&lt;source</span> <span class="na">srcset=</span><span class="s">"..."</span> <span class="na">type=</span><span class="s">"image/svg+xml"</span><span class="nt">&gt;</span>

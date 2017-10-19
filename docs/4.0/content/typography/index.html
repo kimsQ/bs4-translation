@@ -593,21 +593,21 @@
 <li class="toc-entry toc-h2"><a href="#리드">리드</a></li>
 <li class="toc-entry toc-h2"><a href="#인라인-텍스트-요소">인라인 텍스트 요소</a></li>
 <li class="toc-entry toc-h2"><a href="#텍스트-유틸리티">텍스트 유틸리티</a></li>
-<li class="toc-entry toc-h2"><a href="#약어-abbreviations">약어 Abbreviations</a></li>
-<li class="toc-entry toc-h2"><a href="#인용구-blockquotes">인용구 Blockquotes</a>
+<li class="toc-entry toc-h2"><a href="#약어">약어</a></li>
+<li class="toc-entry toc-h2"><a href="#인용구">인용구</a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#naming-a-source">Naming a source</a></li>
-<li class="toc-entry toc-h3"><a href="#alignment">Alignment</a></li>
+<li class="toc-entry toc-h3"><a href="#출처-표기">출처 표기</a></li>
+<li class="toc-entry toc-h3"><a href="#정렬">정렬</a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h2"><a href="#lists">Lists</a>
+<li class="toc-entry toc-h2"><a href="#목록">목록</a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#unstyled">Unstyled</a></li>
-<li class="toc-entry toc-h3"><a href="#inline">Inline</a></li>
-<li class="toc-entry toc-h3"><a href="#description-list-alignment">Description list alignment</a></li>
+<li class="toc-entry toc-h3"><a href="#스타일-없는-목록-unstyled">스타일 없는 목록 Unstyled</a></li>
+<li class="toc-entry toc-h3"><a href="#인라인">인라인</a></li>
+<li class="toc-entry toc-h3"><a href="#정의형-목록-정렬">정의형 목록 정렬</a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h2"><a href="#responsive-typography">Responsive typography</a></li>
+<li class="toc-entry toc-h2"><a href="#반응형-타이포그래피">반응형 타이포그래피</a></li>
 </ul>
           </div>
         
@@ -778,7 +778,7 @@
 <p><del>삭제된 텍스트로 간주됩니다.</del></p>
 <p><s>더 이상 정확하지 않은 것으로 간주됩니다.</s></p>
 <p><ins>문서에 추가되는 것으로 간주됩니다.</ins></p>
-<p><u>언더라인 형태로 렌더링 됩니다.</u></p>
+<p><u>밑줄이 그어질것입니다</u></p>
 <p><small>작은 글자로 취급 됩니다.</small></p>
 <p><strong>굵게 표시 됩니다.</strong></p>
 <p><em>기울임 텍스트로 표시 됩니다.</em></p>
@@ -787,7 +787,7 @@
 <span class="nt">&lt;p&gt;&lt;del&gt;</span>삭제된 텍스트로 간주됩니다.<span class="nt">&lt;/del&gt;&lt;/p&gt;</span>
 <span class="nt">&lt;p&gt;&lt;s&gt;</span>더 이상 정확하지 않은 것으로 간주됩니다.<span class="nt">&lt;/s&gt;&lt;/p&gt;</span>
 <span class="nt">&lt;p&gt;&lt;ins&gt;</span>문서에 추가되는 것으로 간주됩니다.<span class="nt">&lt;/ins&gt;&lt;/p&gt;</span>
-<span class="nt">&lt;p&gt;&lt;u&gt;</span>언더라인 형태로 렌더링 됩니다.<span class="nt">&lt;/u&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;&lt;u&gt;</span>밑줄이 그어질것입니다<span class="nt">&lt;/u&gt;&lt;/p&gt;</span>
 <span class="nt">&lt;p&gt;&lt;small&gt;</span>작은 글자로 취급 됩니다.<span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
 <span class="nt">&lt;p&gt;&lt;strong&gt;</span>굵게 표시 됩니다.<span class="nt">&lt;/strong&gt;&lt;/p&gt;</span>
 <span class="nt">&lt;p&gt;&lt;em&gt;</span>기울임 텍스트로 표시 됩니다.<span class="nt">&lt;/em&gt;&lt;/p&gt;</span></code></pre></div>
@@ -800,13 +800,13 @@
 
 <p>텍스트 정렬, 변환, 스타일, 굵기 및 색상을 <a href="/docs/4.0/utilities/text/#text-alignment">텍스트 유틸리티</a>로 변경하십시오.</p>
 
-<h2 id="약어-abbreviations">약어 Abbreviations</h2>
+<h2 id="약어">약어</h2>
 
 <p>Stylized implementation of HTML’s <code class="highlighter-rouge">&lt;abbr&gt;</code> element for abbreviations and acronyms to show the expanded version on hover. Abbreviations have a default underline and gain a help cursor to provide additional context on hover and to users of assistive technologies.</p>
 
-<p>Add <code class="highlighter-rouge">.initialism</code> to an abbreviation for a slightly smaller font-size.</p>
+<p>hover에 확장 된 버전을 표시하기위한 약어 및 머리 글자에 대한 HTML의 <code class="highlighter-rouge">&lt;abbr&gt;</code> 요소의 양식화 된 구현입니다. 약어에는 기본 밑줄이 있으며 hover와 보조 기술 사용자에 대한 추가 컨텍스트를 제공하는 도움말 커서가 있습니다.</p>
 
-<p>호버에 확장 된 버전을 표시하기위한 약어 및 머리 글자에 대한 HTML의 <code class="highlighter-rouge">&lt;abbr&gt;</code> 요소의 양식화 된 구현입니다. 약어에는 기본 밑줄이 있으며 hover와 보조 기술 사용자에 대한 추가 컨텍스트를 제공하는 도움말 커서가 있습니다.</p>
+<p><code class="highlighter-rouge">&lt;abbr&gt;</code> 는 약어에 마우스를 올렸을 때 원래 텍스트를 보여주기 위한 요소입니다. title 속성이 있는 약어는 점으로된 밑줄을 가지고 있고 마우스를 올렸을때 물음표 커서가 보여지며, 원래 텍스트를 보여줍니다.</p>
 
 <p>조금 더 작은 글꼴 크기의 약어에 <code class="highlighter-rouge">.initialism</code>을 추가하십시오.</p>
 
@@ -817,182 +817,180 @@
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p&gt;&lt;abbr</span> <span class="na">title=</span><span class="s">"attribute"</span><span class="nt">&gt;</span>attr<span class="nt">&lt;/abbr&gt;&lt;/p&gt;</span>
 <span class="nt">&lt;p&gt;&lt;abbr</span> <span class="na">title=</span><span class="s">"HyperText Markup Language"</span> <span class="na">class=</span><span class="s">"initialism"</span><span class="nt">&gt;</span>HTML<span class="nt">&lt;/abbr&gt;&lt;/p&gt;</span></code></pre></div>
 
-<h2 id="인용구-blockquotes">인용구 Blockquotes</h2>
+<h2 id="인용구">인용구</h2>
 
-<p>For quoting blocks of content from another source within your document. Wrap <code class="highlighter-rouge">&lt;blockquote class="blockquote"&gt;</code> around any <abbr title="HyperText Markup Language">HTML</abbr> as the quote.</p>
-
-<p>문서 내의 다른 소스에서 내용 인용하기. 인용 부호로 <abbr title="HyperText Markup Language">HTML</abbr> 주위에 <code class="highlighter-rouge">&lt;blockquote class="blockquote"&gt;</code>를 둘러 쌉니다.</p>
+<p>문서 내의 다른 출처에서 내용 인용하기. 인용 부호로 <abbr title="HyperText Markup Language">HTML</abbr> 주위에 <code class="highlighter-rouge">&lt;blockquote class="blockquote"&gt;</code>를 둘러 쌉니다.</p>
 
 <div class="bd-example">
 <blockquote class="blockquote">
-  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+  <p class="mb-0">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.</p>
 </blockquote>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;blockquote</span> <span class="na">class=</span><span class="s">"blockquote"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mb-0"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mb-0"</span><span class="nt">&gt;</span>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/blockquote&gt;</span></code></pre></div>
 
-<h3 id="naming-a-source">Naming a source</h3>
+<h3 id="출처-표기">출처 표기</h3>
 
-<p>Add a <code class="highlighter-rouge">&lt;footer class="blockquote-footer"&gt;</code> for identifying the source. Wrap the name of the source work in <code class="highlighter-rouge">&lt;cite&gt;</code>.</p>
+<p>출처 임을 식별하기 위해 <code class="highlighter-rouge">&lt;footer class="blockquote-footer"&gt;</code> 를 추가하십시오. <code class="highlighter-rouge">&lt;cite&gt;</code> 에 출처(참조) 타이틀을 입력하세요.</p>
 
 <div class="bd-example">
 <blockquote class="blockquote">
-  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-  <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+  <p class="mb-0">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.</p>
+  <footer class="blockquote-footer">안익태 작곡 <cite title="애국가">애국가</cite></footer>
 </blockquote>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;blockquote</span> <span class="na">class=</span><span class="s">"blockquote"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mb-0"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"blockquote-footer"</span><span class="nt">&gt;</span>Someone famous in <span class="nt">&lt;cite</span> <span class="na">title=</span><span class="s">"Source Title"</span><span class="nt">&gt;</span>Source Title<span class="nt">&lt;/cite&gt;&lt;/footer&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mb-0"</span><span class="nt">&gt;</span>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"blockquote-footer"</span><span class="nt">&gt;</span>안익태 작곡 <span class="nt">&lt;cite</span> <span class="na">title=</span><span class="s">"애국가"</span><span class="nt">&gt;</span>애국가<span class="nt">&lt;/cite&gt;&lt;/footer&gt;</span>
 <span class="nt">&lt;/blockquote&gt;</span></code></pre></div>
 
-<h3 id="alignment">Alignment</h3>
+<h3 id="정렬">정렬</h3>
 
-<p>Use text utilities as needed to change the alignment of your blockquote.</p>
+<p>필요에 따라 텍스트 유틸리티를 사용하여 인용구 정렬을 변경하십시오.</p>
 
 <div class="bd-example">
 <blockquote class="blockquote text-center">
-  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-  <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+  <p class="mb-0">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.</p>
+  <footer class="blockquote-footer">안익태 작곡 <cite title="Source Title">애국가</cite></footer>
 </blockquote>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;blockquote</span> <span class="na">class=</span><span class="s">"blockquote text-center"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mb-0"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"blockquote-footer"</span><span class="nt">&gt;</span>Someone famous in <span class="nt">&lt;cite</span> <span class="na">title=</span><span class="s">"Source Title"</span><span class="nt">&gt;</span>Source Title<span class="nt">&lt;/cite&gt;&lt;/footer&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mb-0"</span><span class="nt">&gt;</span>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"blockquote-footer"</span><span class="nt">&gt;</span>안익태 작곡 <span class="nt">&lt;cite</span> <span class="na">title=</span><span class="s">"Source Title"</span><span class="nt">&gt;</span>애국가<span class="nt">&lt;/cite&gt;&lt;/footer&gt;</span>
 <span class="nt">&lt;/blockquote&gt;</span></code></pre></div>
 
 <div class="bd-example">
 <blockquote class="blockquote text-right">
-  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-  <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+  <p class="mb-0">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.</p>
+  <footer class="blockquote-footer">안익태 작곡 <cite title="Source Title">애국가</cite></footer>
 </blockquote>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;blockquote</span> <span class="na">class=</span><span class="s">"blockquote text-right"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mb-0"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"blockquote-footer"</span><span class="nt">&gt;</span>Someone famous in <span class="nt">&lt;cite</span> <span class="na">title=</span><span class="s">"Source Title"</span><span class="nt">&gt;</span>Source Title<span class="nt">&lt;/cite&gt;&lt;/footer&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mb-0"</span><span class="nt">&gt;</span>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"blockquote-footer"</span><span class="nt">&gt;</span>안익태 작곡 <span class="nt">&lt;cite</span> <span class="na">title=</span><span class="s">"Source Title"</span><span class="nt">&gt;</span>애국가<span class="nt">&lt;/cite&gt;&lt;/footer&gt;</span>
 <span class="nt">&lt;/blockquote&gt;</span></code></pre></div>
 
-<h2 id="lists">Lists</h2>
+<h2 id="목록">목록</h2>
 
-<h3 id="unstyled">Unstyled</h3>
+<h3 id="스타일-없는-목록-unstyled">스타일 없는 목록 Unstyled</h3>
 
-<p>Remove the default <code class="highlighter-rouge">list-style</code> and left margin on list items (immediate children only). <strong>This only applies to immediate children list items</strong>, meaning you will need to add the class for any nested lists as well.</p>
+<p>목록 항목의 기본 <code class="highlighter-rouge">list-style</code> 과 왼쪽 margin을 제거합니다. <strong>직계 자식 목록 항목에만 적용됩니다.</strong>  즉, 중첩 목록에도 클래스를 추가 해야합니다.</p>
 
 <div class="bd-example">
 <ul class="list-unstyled">
-  <li>Lorem ipsum dolor sit amet</li>
-  <li>Consectetur adipiscing elit</li>
-  <li>Integer molestie lorem at massa</li>
-  <li>Facilisis in pretium nisl aliquet</li>
-  <li>Nulla volutpat aliquam velit
+  <li>동해물과 백두산이</li>
+  <li>마르고 닳도록 하느님이</li>
+  <li>보우하사 우리 나라만세</li>
+  <li>무궁화 삼천리 화려 강산</li>
+  <li>대한사람 대한으로 길이 보전하세
     <ul>
-      <li>Phasellus iaculis neque</li>
-      <li>Purus sodales ultricies</li>
-      <li>Vestibulum laoreet porttitor sem</li>
-      <li>Ac tristique libero volutpat at</li>
+      <li>동해물과 백두산이</li>
+      <li>마르고 닳도록 하느님이</li>
+      <li>보우하사 우리 나라만세</li>
+      <li>무궁화 삼천리 화려 강산</li>
     </ul>
   </li>
-  <li>Faucibus porta lacus fringilla vel</li>
-  <li>Aenean sit amet erat nunc</li>
-  <li>Eget porttitor lorem</li>
+  <li>남산 위에 저 소나무 철갑을 두른듯</li>
+  <li>바람서리 불변함은 우리 기상일세</li>
+  <li>무궁화 삼천리 화려 강산 대한사람</li>
 </ul>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-unstyled"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;li&gt;</span>Lorem ipsum dolor sit amet<span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li&gt;</span>Consectetur adipiscing elit<span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li&gt;</span>Integer molestie lorem at massa<span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li&gt;</span>Facilisis in pretium nisl aliquet<span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li&gt;</span>Nulla volutpat aliquam velit
+  <span class="nt">&lt;li&gt;</span>동해물과 백두산이<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>마르고 닳도록 하느님이<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>보우하사 우리 나라만세<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>무궁화 삼천리 화려 강산<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>대한사람 대한으로 길이 보전하세
     <span class="nt">&lt;ul&gt;</span>
-      <span class="nt">&lt;li&gt;</span>Phasellus iaculis neque<span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li&gt;</span>Purus sodales ultricies<span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li&gt;</span>Vestibulum laoreet porttitor sem<span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li&gt;</span>Ac tristique libero volutpat at<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>동해물과 백두산이<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>마르고 닳도록 하느님이<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>보우하사 우리 나라만세<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>무궁화 삼천리 화려 강산<span class="nt">&lt;/li&gt;</span>
     <span class="nt">&lt;/ul&gt;</span>
   <span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li&gt;</span>Faucibus porta lacus fringilla vel<span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li&gt;</span>Aenean sit amet erat nunc<span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li&gt;</span>Eget porttitor lorem<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>남산 위에 저 소나무 철갑을 두른듯<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>바람서리 불변함은 우리 기상일세<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>무궁화 삼천리 화려 강산 대한사람<span class="nt">&lt;/li&gt;</span>
 <span class="nt">&lt;/ul&gt;</span></code></pre></div>
 
-<h3 id="inline">Inline</h3>
+<h3 id="인라인">인라인</h3>
 
-<p>Remove a list’s bullets and apply some light <code class="highlighter-rouge">margin</code> with a combination of two classes, <code class="highlighter-rouge">.list-inline</code> and <code class="highlighter-rouge">.list-inline-item</code>.</p>
+<p>목록의 글머리 기호를 제거하고 <code class="highlighter-rouge">.list-inline</code> 및 <code class="highlighter-rouge">.list-inline-item</code> 클래스의 조합으로 약간의 <code class="highlighter-rouge">margin</code> 을 적용합니다.</p>
 
 <div class="bd-example">
 <ul class="list-inline">
-  <li class="list-inline-item">Lorem ipsum</li>
-  <li class="list-inline-item">Phasellus iaculis</li>
-  <li class="list-inline-item">Nulla volutpat</li>
+  <li class="list-inline-item">동해물과 백두산이</li>
+  <li class="list-inline-item">마르고 닳도록 하느님이</li>
+  <li class="list-inline-item">보우하사 우리 나라만세</li>
 </ul>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-inline"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-inline-item"</span><span class="nt">&gt;</span>Lorem ipsum<span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-inline-item"</span><span class="nt">&gt;</span>Phasellus iaculis<span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-inline-item"</span><span class="nt">&gt;</span>Nulla volutpat<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-inline-item"</span><span class="nt">&gt;</span>동해물과 백두산이<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-inline-item"</span><span class="nt">&gt;</span>마르고 닳도록 하느님이<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-inline-item"</span><span class="nt">&gt;</span>보우하사 우리 나라만세<span class="nt">&lt;/li&gt;</span>
 <span class="nt">&lt;/ul&gt;</span></code></pre></div>
 
-<h3 id="description-list-alignment">Description list alignment</h3>
+<h3 id="정의형-목록-정렬">정의형 목록 정렬</h3>
 
-<p>Align terms and descriptions horizontally by using our grid system’s predefined classes (or semantic mixins). For longer terms, you can optionally add a <code class="highlighter-rouge">.text-truncate</code> class to truncate the text with an ellipsis.</p>
+<p>사전 정의된 그리드 시스템의 클래스를 사용하여 용어와 설명을 수평정렬 하세요. 긴 용어의 경우 선택적으로 <code class="highlighter-rouge">.text-truncate</code> 클래스를 추가하여 말줄임표(…)를 적용 할수 있습니다.</p>
 
 <div class="bd-example">
 <dl class="row">
-  <dt class="col-sm-3">Description lists</dt>
-  <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+  <dt class="col-sm-3">정의형 목록</dt>
+  <dd class="col-sm-9">정의형 목록은 용어 정의에 적합합니다.</dd>
 
-  <dt class="col-sm-3">Euismod</dt>
+  <dt class="col-sm-3">애국가</dt>
   <dd class="col-sm-9">
-    <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>
-    <p>Donec id elit non mi porta gravida at eget metus.</p>
+    <p>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산.</p>
+    <p>대한사람 대한으로 길이 보전하세 남산 위에 저 소나무 철갑을 두른듯.</p>
   </dd>
 
-  <dt class="col-sm-3">Malesuada porta</dt>
-  <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+  <dt class="col-sm-3">동해물과 백두산이 마르고 닳도록</dt>
+  <dd class="col-sm-9">동해물과 백두산이 마르고 닳도록 동해물과 백두산이 마르고 닳도록.</dd>
 
-  <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
-  <dd class="col-sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+  <dt class="col-sm-3 text-truncate">동해물과 백두산이 마르고 닳도록 동해물과 백두산이 마르고 닳도록</dt>
+  <dd class="col-sm-9">동해물과 백두산이 마르고 닳도록 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세.</dd>
 
-  <dt class="col-sm-3">Nesting</dt>
+  <dt class="col-sm-3">중첩</dt>
   <dd class="col-sm-9">
     <dl class="row">
-      <dt class="col-sm-4">Nested definition list</dt>
-      <dd class="col-sm-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
+      <dt class="col-sm-4">중첩된 정의형 목록</dt>
+      <dd class="col-sm-8">동해물과 백두산이 마르고 닳도록 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세</dd>
     </dl>
   </dd>
 </dl>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;dl</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;dt</span> <span class="na">class=</span><span class="s">"col-sm-3"</span><span class="nt">&gt;</span>Description lists<span class="nt">&lt;/dt&gt;</span>
-  <span class="nt">&lt;dd</span> <span class="na">class=</span><span class="s">"col-sm-9"</span><span class="nt">&gt;</span>A description list is perfect for defining terms.<span class="nt">&lt;/dd&gt;</span>
+  <span class="nt">&lt;dt</span> <span class="na">class=</span><span class="s">"col-sm-3"</span><span class="nt">&gt;</span>정의형 목록<span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dd</span> <span class="na">class=</span><span class="s">"col-sm-9"</span><span class="nt">&gt;</span>정의형 목록은 용어 정의에 적합합니다.<span class="nt">&lt;/dd&gt;</span>
 
-  <span class="nt">&lt;dt</span> <span class="na">class=</span><span class="s">"col-sm-3"</span><span class="nt">&gt;</span>Euismod<span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dt</span> <span class="na">class=</span><span class="s">"col-sm-3"</span><span class="nt">&gt;</span>애국가<span class="nt">&lt;/dt&gt;</span>
   <span class="nt">&lt;dd</span> <span class="na">class=</span><span class="s">"col-sm-9"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;p&gt;</span>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;p&gt;</span>Donec id elit non mi porta gravida at eget metus.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p&gt;</span>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p&gt;</span>대한사람 대한으로 길이 보전하세 남산 위에 저 소나무 철갑을 두른듯.<span class="nt">&lt;/p&gt;</span>
   <span class="nt">&lt;/dd&gt;</span>
 
-  <span class="nt">&lt;dt</span> <span class="na">class=</span><span class="s">"col-sm-3"</span><span class="nt">&gt;</span>Malesuada porta<span class="nt">&lt;/dt&gt;</span>
-  <span class="nt">&lt;dd</span> <span class="na">class=</span><span class="s">"col-sm-9"</span><span class="nt">&gt;</span>Etiam porta sem malesuada magna mollis euismod.<span class="nt">&lt;/dd&gt;</span>
+  <span class="nt">&lt;dt</span> <span class="na">class=</span><span class="s">"col-sm-3"</span><span class="nt">&gt;</span>동해물과 백두산이 마르고 닳도록<span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dd</span> <span class="na">class=</span><span class="s">"col-sm-9"</span><span class="nt">&gt;</span>동해물과 백두산이 마르고 닳도록 동해물과 백두산이 마르고 닳도록.<span class="nt">&lt;/dd&gt;</span>
 
-  <span class="nt">&lt;dt</span> <span class="na">class=</span><span class="s">"col-sm-3 text-truncate"</span><span class="nt">&gt;</span>Truncated term is truncated<span class="nt">&lt;/dt&gt;</span>
-  <span class="nt">&lt;dd</span> <span class="na">class=</span><span class="s">"col-sm-9"</span><span class="nt">&gt;</span>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.<span class="nt">&lt;/dd&gt;</span>
+  <span class="nt">&lt;dt</span> <span class="na">class=</span><span class="s">"col-sm-3 text-truncate"</span><span class="nt">&gt;</span>동해물과 백두산이 마르고 닳도록 동해물과 백두산이 마르고 닳도록<span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dd</span> <span class="na">class=</span><span class="s">"col-sm-9"</span><span class="nt">&gt;</span>동해물과 백두산이 마르고 닳도록 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세.<span class="nt">&lt;/dd&gt;</span>
 
-  <span class="nt">&lt;dt</span> <span class="na">class=</span><span class="s">"col-sm-3"</span><span class="nt">&gt;</span>Nesting<span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dt</span> <span class="na">class=</span><span class="s">"col-sm-3"</span><span class="nt">&gt;</span>중첩<span class="nt">&lt;/dt&gt;</span>
   <span class="nt">&lt;dd</span> <span class="na">class=</span><span class="s">"col-sm-9"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;dl</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;dt</span> <span class="na">class=</span><span class="s">"col-sm-4"</span><span class="nt">&gt;</span>Nested definition list<span class="nt">&lt;/dt&gt;</span>
-      <span class="nt">&lt;dd</span> <span class="na">class=</span><span class="s">"col-sm-8"</span><span class="nt">&gt;</span>Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.<span class="nt">&lt;/dd&gt;</span>
+      <span class="nt">&lt;dt</span> <span class="na">class=</span><span class="s">"col-sm-4"</span><span class="nt">&gt;</span>중첩된 정의형 목록<span class="nt">&lt;/dt&gt;</span>
+      <span class="nt">&lt;dd</span> <span class="na">class=</span><span class="s">"col-sm-8"</span><span class="nt">&gt;</span>동해물과 백두산이 마르고 닳도록 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세<span class="nt">&lt;/dd&gt;</span>
     <span class="nt">&lt;/dl&gt;</span>
   <span class="nt">&lt;/dd&gt;</span>
 <span class="nt">&lt;/dl&gt;</span></code></pre></div>
 
-<h2 id="responsive-typography">Responsive typography</h2>
+<h2 id="반응형-타이포그래피">반응형 타이포그래피</h2>
 
-<p><em>Responsive typography</em> refers to scaling text and components by simply adjusting the root element’s <code class="highlighter-rouge">font-size</code> within a series of media queries. Bootstrap doesn’t do this for you, but it’s fairly easy to add if you need it.</p>
+<p><em>반응형 타이포그래피</em> 는 일련의 미디어 쿼리 내에서 루트 요소의 <code class="highlighter-rouge">font-size</code>를 조정하기만 하여 텍스트 및 컴포넌트의 크기를 조정하는 것을 의미합니다. 부트스트랩은이 작업을 수행하지 않지만 필요할 경우 추가하기가 쉽습니다.</p>
 
-<p>Here’s an example of it in practice. Choose whatever <code class="highlighter-rouge">font-size</code>s and media queries you wish.</p>
+<p>이것이 실제 사례 입니다. 원하는 <code class="highlighter-rouge">font-size</code>와 미디어 쿼리를 선택하십시오.</p>
 
 <figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nt">html</span> <span class="p">{</span>
   <span class="nl">font-size</span><span class="p">:</span> <span class="m">1rem</span><span class="p">;</span>

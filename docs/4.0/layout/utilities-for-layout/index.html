@@ -583,10 +583,10 @@
         
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#changing-display">Changing display</a></li>
-<li class="toc-entry toc-h2"><a href="#flexbox-options">Flexbox options</a></li>
-<li class="toc-entry toc-h2"><a href="#margin-and-padding">Margin and padding</a></li>
-<li class="toc-entry toc-h2"><a href="#toggle-visibility">Toggle visibility</a></li>
+<li class="toc-entry toc-h2"><a href="#display-변경">display 변경</a></li>
+<li class="toc-entry toc-h2"><a href="#flexbox-옵션">Flexbox 옵션</a></li>
+<li class="toc-entry toc-h2"><a href="#margin-과-padding">Margin 과 padding</a></li>
+<li class="toc-entry toc-h2"><a href="#visibility-전환">visibility 전환</a></li>
 </ul>
           </div>
         
@@ -596,23 +596,24 @@
           <p class="bd-lead">모바일 친화적이고 반응형웹 개발을 좀더 빠르게 하기위해 부트스트랩에는 콘텐츠를 표시, 숨기기, 정렬 및 간격을 조정하기 위한 수십가지 유틸리티 클래스가 포함되어 있습니다.</p>
           
 
-          <h2 id="changing-display">Changing <code class="highlighter-rouge">display</code></h2>
+          <h2 id="display-변경"><code class="highlighter-rouge">display</code> 변경</h2>
 
-<p>Use our <code class="highlighter-rouge">display</code> utilities for responsively toggling common values of the <code class="highlighter-rouge">display</code> property. Mix it with our grid system, content, or components to show or hide them across specific viewports.</p>
+<p><code class="highlighter-rouge">display</code> 유틸리티의 일반값을 적절하게 변경하려면 <code class="highlighter-rouge">display</code> 유틸리티를 사용하십시오. 그리드 시스템, 컨텐츠 또는 컴포넌트와 혼합하여 특정 뷰포트에 표시하거나 숨깁니다.</p>
 
-<h2 id="flexbox-options">Flexbox options</h2>
+<h2 id="flexbox-옵션">Flexbox 옵션</h2>
 
-<p>Bootstrap 4 is built with flexbox, but not every element’s <code class="highlighter-rouge">display</code> has been changed to <code class="highlighter-rouge">display: flex</code> as this would add many unnecessary overrides and unexpectedly change key browser behaviors. Most of <a href="/docs/4.0/components/alerts/">our components</a> are built with flexbox enabled.</p>
+<p>부트스트랩 4는 flexbox로 만들어졌지만, 불필요한 재정의 코드가 필요하고 예기치 않게 변경되는 주요 브라우저 때문에 모든 요소의 <code class="highlighter-rouge">display</code>가 <code class="highlighter-rouge">display: flex</code>로 변경되지는 않았습니다. 대부분의 구성 요소는 flexbox 적용이 가능하도록 구현되었습니다.</p>
 
-<p>Should you need to add <code class="highlighter-rouge">display: flex</code> to an element, do so with <code class="highlighter-rouge">.d-flex</code> or one of the responsive variants (e.g., <code class="highlighter-rouge">.d-sm-flex</code>). You’ll need this class or <code class="highlighter-rouge">display</code> value to allow the use of our extra <a href="/docs/4.0/utilities/flex/">flexbox utilities</a> for sizing, alignment, spacing, and more.</p>
+<p><code class="highlighter-rouge">display: flex</code> 를 요소에 추가 해야하는 경우, <code class="highlighter-rouge">.d-flex</code> 또는 관련 반응형 처리 클래스 (예 : <code class="highlighter-rouge">.d-sm-flex</code>)를 사용하십시오.
+크기조정, 정렬, 간격조정 등을 위해 <a href="/docs/4.0/utilities/flex/">flexbox 유틀리티</a>를 사용하려면 이 클래스 또는 <code class="highlighter-rouge">display</code> 값의 변경이 필요합니다.</p>
 
-<h2 id="margin-and-padding">Margin and padding</h2>
+<h2 id="margin-과-padding">Margin 과 padding</h2>
 
-<p>Use the <code class="highlighter-rouge">margin</code> and <code class="highlighter-rouge">padding</code> <a href="/docs/4.0/utilities/spacing/">spacing utilities</a> to control how elements and components are spaced and sized. Bootstrap 4 includes a five-level scale for spacing utilities, based on a <code class="highlighter-rouge">1rem</code> value default <code class="highlighter-rouge">$spacer</code> variable. Choose values for all viewports (e.g., <code class="highlighter-rouge">.mr-3</code> for <code class="highlighter-rouge">margin-right: 1rem</code>), or pick responsive variants to target specific viewports (e.g., <code class="highlighter-rouge">.mr-md-3</code> for <code class="highlighter-rouge">margin-right: 1rem</code> starting at the <code class="highlighter-rouge">md</code> breakpoint).</p>
+<p><a href="/docs/4.0/utilities/spacing/">spacing 유틸리티</a>를 사용하여 요소 및 컴포넌트의 간격 및 크기 조정을 제어 하십시오. 부트스트랩 4에는 <code class="highlighter-rouge">1rem</code> 값인 <code class="highlighter-rouge">$spacer</code> 변수를 기반으로 하는 5단계의 spacing 유틸리티가 포함 되어있습니다. 모든 뷰포트에 대응하거나(예 : <code class="highlighter-rouge">margin-right: 1rem</code> 의 경우 <code class="highlighter-rouge">.mr-3</code>) 특정 뷰포트를 지정하려면 (예 : <code class="highlighter-rouge">md</code> breakpoint에서 시작되는 <code class="highlighter-rouge">margin-right: 1rem</code>의 경우 <code class="highlighter-rouge">.mr-md-3</code>) 반응형 응용방법을 참조 하십시오.</p>
 
-<h2 id="toggle-visibility">Toggle <code class="highlighter-rouge">visibility</code></h2>
+<h2 id="visibility-전환"><code class="highlighter-rouge">visibility</code> 전환</h2>
 
-<p>When toggling <code class="highlighter-rouge">display</code> isn’t needed, you can toggle the <code class="highlighter-rouge">visibility</code> of an element with our <a href="/docs/4.0/utilities/visibility/">visibility utilities</a>. Invisible elements will still affect the layout of the page, but are visually hidden from visitors.</p>
+<p><code class="highlighter-rouge">display</code>를 전환할 필요가 없는 경우, <a href="/docs/4.0/utilities/visibility/">visibility 유틸리티</a>를 사용하여 요소의 <code class="highlighter-rouge">visibility</code>을 전환 할 수 있습니다. 보이지 않는 요소는 여전히 페이지의 레이아웃에 영향을 미치지만 방문자에게 시각적으로 숨길 수 있습니다.</p>
 
         </main>
       </div>

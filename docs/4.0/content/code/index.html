@@ -583,11 +583,11 @@
         
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#inline-code">Inline code</a></li>
-<li class="toc-entry toc-h2"><a href="#code-blocks">Code blocks</a></li>
-<li class="toc-entry toc-h2"><a href="#variables">Variables</a></li>
-<li class="toc-entry toc-h2"><a href="#user-input">User input</a></li>
-<li class="toc-entry toc-h2"><a href="#sample-output">Sample output</a></li>
+<li class="toc-entry toc-h2"><a href="#인라인-코드">인라인 코드</a></li>
+<li class="toc-entry toc-h2"><a href="#코드-블럭">코드 블럭</a></li>
+<li class="toc-entry toc-h2"><a href="#변수">변수</a></li>
+<li class="toc-entry toc-h2"><a href="#사용자-입력">사용자 입력</a></li>
+<li class="toc-entry toc-h2"><a href="#샘플-출력">샘플 출력</a></li>
 </ul>
           </div>
         
@@ -597,56 +597,56 @@
           <p class="bd-lead">인라인 및 멀티라인 코드블록을 표시 하기위한 문서 및 예제.</p>
           
 
-          <h2 id="inline-code">Inline code</h2>
+          <h2 id="인라인-코드">인라인 코드</h2>
 
-<p>Wrap inline snippets of code with <code class="highlighter-rouge">&lt;code&gt;</code>. Be sure to escape HTML angle brackets.</p>
+<p><code class="highlighter-rouge">&lt;code&gt;</code>를 사용하여 인라인 코드 스니핏을 감사세요. HTML 꺾쇠 괄호를 이스케이프 해야합니다.</p>
 
 <div class="bd-example">
-For example, <code>&lt;section&gt;</code> should be wrapped as inline.
+예를 들어, <code>&lt;section&gt;</code> 은 인라인으로 감싸져야 합니다..
 </div>
-<div class="highlight"><pre><code class="language-html" data-lang="html">For example, <span class="nt">&lt;code&gt;</span><span class="ni">&amp;lt;</span>section<span class="ni">&amp;gt;</span><span class="nt">&lt;/code&gt;</span> should be wrapped as inline.</code></pre></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html">예를 들어, <span class="nt">&lt;code&gt;</span><span class="ni">&amp;lt;</span>section<span class="ni">&amp;gt;</span><span class="nt">&lt;/code&gt;</span> 은 인라인으로 감싸져야 합니다..</code></pre></div>
 
-<h2 id="code-blocks">Code blocks</h2>
+<h2 id="코드-블럭">코드 블럭</h2>
 
-<p>Use <code class="highlighter-rouge">&lt;pre&gt;</code>s for multiple lines of code. Once again, be sure to escape any angle brackets in the code for proper rendering. You may optionally add the <code class="highlighter-rouge">.pre-scrollable</code> class, which will set a max-height of 350px and provide a y-axis scrollbar.</p>
+<p>여러 줄의 코드에는 <code class="highlighter-rouge">&lt;pre&gt;</code>를 사용하십시오. 다시 한번, 올바른 렌더링을 위해 코드에서 꺾쇠 괄호를 이스케이프 해야합니다. 350px의 최대 높이를 설정하고 세로 스크롤 막대를 제공하는 <code class="highlighter-rouge">.pre-scrollable</code> 클래스를 선택적으로 추가 할 수 있습니다.</p>
 
 <div class="bd-example">
-<pre><code>&lt;p&gt;Sample text here...&lt;/p&gt;
-&lt;p&gt;And another line of sample text here...&lt;/p&gt;
+<pre><code>&lt;p&gt;샘플 텍스트는 여기에 ...&lt;/p&gt;
+&lt;p&gt;그리고 또 다른 샘플 텍스트는 여기에 ....&lt;/p&gt;
 </code></pre>
 </div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;pre&gt;&lt;code&gt;</span><span class="ni">&amp;lt;</span>p<span class="ni">&amp;gt;</span>Sample text here...<span class="ni">&amp;lt;</span>/p<span class="ni">&amp;gt;</span>
-<span class="ni">&amp;lt;</span>p<span class="ni">&amp;gt;</span>And another line of sample text here...<span class="ni">&amp;lt;</span>/p<span class="ni">&amp;gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;pre&gt;&lt;code&gt;</span><span class="ni">&amp;lt;</span>p<span class="ni">&amp;gt;</span>샘플 텍스트는 여기에 ...<span class="ni">&amp;lt;</span>/p<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>p<span class="ni">&amp;gt;</span>그리고 또 다른 샘플 텍스트는 여기에 ....<span class="ni">&amp;lt;</span>/p<span class="ni">&amp;gt;</span>
 <span class="nt">&lt;/code&gt;&lt;/pre&gt;</span></code></pre></div>
 
-<h2 id="variables">Variables</h2>
+<h2 id="변수">변수</h2>
 
-<p>For indicating variables use the <code class="highlighter-rouge">&lt;var&gt;</code> tag.</p>
+<p>지시 변수(indicating variables)의 경우 <code class="highlighter-rouge">&lt;var&gt;</code> 태그를 사용하십시오.</p>
 
 <div class="bd-example">
 <var>y</var> = <var>m</var><var>x</var> + <var>b</var>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;var&gt;</span>y<span class="nt">&lt;/var&gt;</span> = <span class="nt">&lt;var&gt;</span>m<span class="nt">&lt;/var&gt;&lt;var&gt;</span>x<span class="nt">&lt;/var&gt;</span> + <span class="nt">&lt;var&gt;</span>b<span class="nt">&lt;/var&gt;</span></code></pre></div>
 
-<h2 id="user-input">User input</h2>
+<h2 id="사용자-입력">사용자 입력</h2>
 
-<p>Use the <code class="highlighter-rouge">&lt;kbd&gt;</code> to indicate input that is typically entered via keyboard.</p>
-
-<div class="bd-example">
-To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br />
-To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
-</div>
-<div class="highlight"><pre><code class="language-html" data-lang="html">To switch directories, type <span class="nt">&lt;kbd&gt;</span>cd<span class="nt">&lt;/kbd&gt;</span> followed by the name of the directory.<span class="nt">&lt;br&gt;</span>
-To edit settings, press <span class="nt">&lt;kbd&gt;&lt;kbd&gt;</span>ctrl<span class="nt">&lt;/kbd&gt;</span> + <span class="nt">&lt;kbd&gt;</span>,<span class="nt">&lt;/kbd&gt;&lt;/kbd&gt;</span></code></pre></div>
-
-<h2 id="sample-output">Sample output</h2>
-
-<p>For indicating sample output from a program use the <code class="highlighter-rouge">&lt;samp&gt;</code> tag.</p>
+<p>키보드를 통해 일반적으로 입력되는 사항을 나타내려면 &lt;<code class="highlighter-rouge">&lt;kbd&gt;</code>를 사용하십시오.</p>
 
 <div class="bd-example">
-<samp>This text is meant to be treated as sample output from a computer program.</samp>
+디렉토리를 전환하려면 <kbd>cd</kbd> 다음에 디렉토리 이름을 입력하십시오.<br />
+설정을 편집하려면 <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd> 를 누르세요.
 </div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;samp&gt;</span>This text is meant to be treated as sample output from a computer program.<span class="nt">&lt;/samp&gt;</span></code></pre></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html">디렉토리를 전환하려면 <span class="nt">&lt;kbd&gt;</span>cd<span class="nt">&lt;/kbd&gt;</span> 다음에 디렉토리 이름을 입력하십시오.<span class="nt">&lt;br&gt;</span>
+설정을 편집하려면 <span class="nt">&lt;kbd&gt;&lt;kbd&gt;</span>ctrl<span class="nt">&lt;/kbd&gt;</span> + <span class="nt">&lt;kbd&gt;</span>,<span class="nt">&lt;/kbd&gt;&lt;/kbd&gt;</span> 를 누르세요.</code></pre></div>
+
+<h2 id="샘플-출력">샘플 출력</h2>
+
+<p>프로그램의 샘플 출력을 표시하려면 <code class="highlighter-rouge">&lt;samp&gt;</code> 태그를 사용하십시오.</p>
+
+<div class="bd-example">
+<samp>이 텍스트는 컴퓨터 프로그램의 샘플 출력으로 처리됩니다.</samp>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;samp&gt;</span>이 텍스트는 컴퓨터 프로그램의 샘플 출력으로 처리됩니다.<span class="nt">&lt;/samp&gt;</span></code></pre></div>
 
 
         </main>
