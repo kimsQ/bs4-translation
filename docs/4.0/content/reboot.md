@@ -301,7 +301,7 @@ $font-family-sans-serif:
 
  `<address>`s are for presenting contact information for the nearest ancestor (or an entire body of work). Preserve formatting by ending lines with `<br>`.
 
-`<address>` 요소는 브라우저 기본 `font-style`인 `italic`에서 `normal`로 재설정 하도록 업데이트 되었습니다. `line-height` 도 상속되며 `margin-bottom: 1rem`이 추가 되었습니다. `<address>`는 가장 가까운 조상 (또는 전체 작업 본문)에 대한 연락처 정보를 제공하기 위한 것입니다. `<br>`로 끝나는 문자를 서식으로 유지하십시오.
+`<address>` 요소는 브라우저 기본 `font-style`인 `italic`에서 `normal`로 재설정 하도록 업데이트 되었습니다. `line-height` 도 상속되며 `margin-bottom: 1rem`이 추가 되었습니다. `<address>`는 상위로 인접하는 내용(또는 전체 본문)에 대한 연락처 정보를 제공하기 위한 것입니다. `<br>`로 개행합니다.
 
 <div class="bd-example">
   <address>
