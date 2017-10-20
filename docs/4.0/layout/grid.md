@@ -686,14 +686,14 @@ $container-max-widths: (
 믹스인(Mixin)은 그리드 변수와 함께 사용되어 개별 그리드 칼럼에 대한 시멘틱 CSS를 생성합니다.
 
 {% highlight scss %}
-// Creates a wrapper for a series of columns
+// 일련의 칼럼들을 감싸기 위한 wrapper 생성
 @include make-row();
 
-// Make the element grid-ready (applying everything but the width)
+// grid-ready 요소를 만듭니다.(width 제외)  
 @include make-col-ready();
 @include make-col($size, $columns: $grid-columns);
 
-// Get fancy by offsetting, or changing the sort order
+// 오프셋을 사용하거나 정렬 순서를 변경하여 멋지게 표현하세요.
 @include make-col-offset($size, $columns: $grid-columns);
 {% endhighlight %}
 
