@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: 그리드 시스템
-description: 12개의 컬럼 시스템, 5개의 기본 반응형 계층, Sass 변수 및 믹스인 및 수십 개의 미리 정의 된 클래스를 사용하여 강력한 mobile-first 플렉스박스 그리드로 모든 형태의 레이아웃을 만듭니다.
+description: 12개의 컬럼 시스템, 5개의 반응형 계층, Sass 변수 및 믹스인 및 수십 개의 미리 정의 된 클래스를 사용하여 강력한 mobile-first 플렉스박스 그리드로 모든 형태의 레이아웃을 만듭니다.
 group: layout
 toc: true
 ---
@@ -18,13 +18,13 @@ toc: true
 <div class="container">
   <div class="row">
     <div class="col-sm">
-      세개 칼럼 중 하나
+      세 칼럼 중 하나
     </div>
     <div class="col-sm">
-      세개 칼럼 중 하나
+      세 칼럼 중 하나
     </div>
     <div class="col-sm">
-      세개 칼럼 중 하나
+      세 칼럼 중 하나
     </div>
   </div>
 </div>
@@ -35,22 +35,23 @@ toc: true
 
 이것을 변경하는 방법은 다음과 같습니다.
 
-- Containers provide a means to center and horizontally pad your site's contents. Use `.container` for a responsive pixel width or `.container-fluid` for `width: 100%` across all viewport and device sizes.
-- Rows are wrappers for columns. Each column has horizontal `padding` (called a gutter) for controlling the space between them. This `padding` is then counteracted on the rows with negative margins. This way, all the content in your columns is visually aligned down the left side.
-- In a grid layout, content must be placed within columns and only columns may be immediate children of rows.
-- Thanks to flexbox, grid columns without a specified `width` will automatically layout as equal width columns. For example, four instances of `.col-sm` will each automatically be 25% wide from the small breakpoint and up. See the [auto-layout columns](#auto-layout-columns) section for more examples.
-- Column classes indicate the number of columns you'd like to use out of the possible 12 per row. So, if you want three equal-width columns across, you can use `.col-4`.
-- Column `width`s are set in percentages, so they're always fluid and sized relative to their parent element.
-- Columns have horizontal `padding` to create the gutters between individual columns, however, you can remove the `margin` from rows and `padding` from columns with `.no-gutters` on the `.row`.
-- To make the grid responsive, there are five grid breakpoints, one for each [responsive breakpoint]({{ site.baseurl }}/docs/{{ site.docs_version }}/layout/overview/#responsive-breakpoints): all breakpoints (extra small), small, medium, large, and extra large.
-- Grid breakpoints are based on minimum width media queries, meaning **they apply to that one breakpoint and all those above it** (e.g., `.col-sm-4` applies to small, medium, large, and extra large devices, but not the first `xs` breakpoint).
-- You can use predefined grid classes (like `.col-4`) or [Sass mixins](#sass-mixins) for more semantic markup.
+- 컨테이너는 사이트 콘텐츠를 중앙에 배치하게 합니다. 반응형 픽셀 너비를 위해서는 `.container`를,  모든 뷰포트 와 디바이스 크기에 꽉차는 `width: 100%` 너비를 위해서는  `.container-fluid` 를 사용하세요.
+- 행(row)은 칼럼(column)을 감싸고 있습니다. 각 칼럼은 그들 사이의 공간을 제어하기 위해 수평 `padding` (gutter라고 부름)을 가지고 있습니다. 이 `padding`은 마이너스 마진이 적용된  행(row)의 양쪽 끝에서는 상쇄 됩니다. 이렇게 하면 칼럼에 있는 모든 콘텐츠가 왼쪽에서 수평방향으로 정렬됩니다.
+- 그리드 레이아웃에서 컨텐츠는 칼럼 안에 배치되어야 하며 칼럼은 행(row)의 직계 자손이어야 합니다.
+- flexbox 덕분에 지정된 `width`가 없는 그리드 칼럼은 자동으로 동일한 폭의 칼럼으로 배치됩니다. 예를 들어, `.col-sm`이 적용된 네개의 칼럼은 자동으로 small breakpoint에서 25% 폭이 됩니다. 자세한 예는 [auto-layout 칼럼](#auto-layout-columns) 섹션을 참조하십시오.
+- 칼럼 클래스는 행(row)당 12개의 가능한 칼럼 중에서 사용하려는 칼럼의 수(number)를 나타냅니다. 따라서 동일한 폭의 3개의 칼럼이 필요하다면 `.col-4`를 사용할 수 있습니다.
+- 칼럼의 `width`는 퍼센트(%)로 설정되므로 항상 부모요소를 기준으로 유동적으로 크기가 조정됩니다.
+- 칼럼 사이에 여백(gutter)를 만들기 위해 가로 `padding`이 적용되어 있지만, `.row`에 `.no-gutters`를 적용하여 행(row)에서 `margin` 과 칼럼에서 `padding` 을 제거할 수 있습니다.
+- 반응형 그리드를 만들기 위해 5개의 중단점(breakpoint)이 있습니다. 각각의 [반응형 중단점]({{ site.baseurl }}/docs/{{ site.docs_version }}/layout/overview/#responsive-breakpoints)에는 all breakpoints (extra small), small, medium, large, 그리고 extra large 가 있습니다.
+- 그리드 중단점(breakpoint)은 최소 폭(minimum width)의 미디어 쿼리를 기반으로 합니다. 즉, **하나의 중단점은 상위에 있는 모든 항목에 적용됩니다** (예 : `.col-sm-4`는 small, medium, large, 그리고 extra large 디바이스에 적용되지만 첫번째 `xs` 중단점에는 적용되지 않음).
+- 보다 의미있는(semantic) 마크업을 위해 사전 정의된 그리드 클래스 (`.col-4`와 같은) 또는 [Sass 믹스인](#sass-mixins)을 사용할 수 있습니다.
 
-Be aware of the limitations and [bugs around flexbox](https://github.com/philipwalton/flexbugs), like the [inability to use some HTML elements as flex containers](https://github.com/philipwalton/flexbugs#9-some-html-elements-cant-be-flex-containers).
+[Flex 컨테이너로 일부 HTML 요소를 사용할 수 없는 것](https://github.com/philipwalton/flexbugs#9-some-html-elements-cant-be-flex-containers)과 같은 flexbox 관련 제한 사항 과 [버그](https://github.com/philipwalton/flexbugs)를 알고 있어야 합니다.
+
 
 ## 그리드 옵션
 
-부트스트랩은 대부분 크기를 정의 할 때 `em` 이나 `rem`을 사용하지만, `px`은 그리드 브레이크 포인트와 컨테이너의 폭에 사용됩니다. 이유는 뷰포트 너비가 픽셀 단위이며 [폰트 사이즈](https://drafts.csswg.org/mediaqueries-3/#units)에 따라 변하지 않기 때문입니다.
+부트스트랩은 대부분 크기를 정의 할 때 `em` 이나 `rem`을 사용하지만, `px`은 그리드 중단점(breakpoint)과 컨테이너의 폭(width)에 사용됩니다. 이유는 뷰포트 너비가 픽셀 단위이며 [폰트 사이즈](https://drafts.csswg.org/mediaqueries-3/#units)에 따라 변하지 않기 때문입니다.
 
 부트스트랩 그리드 시스템이 여러 디바이스에서 어떻게 작동하는지 표에서 확인해 보세요.
 
@@ -116,13 +117,13 @@ Be aware of the limitations and [bugs around flexbox](https://github.com/philipw
   </tbody>
 </table>
 
-## Auto-layout columns 칼럼 자동 배치
+## Auto-layout 칼럼
 
 `.col-sm-6` 과 같이 명시적으로 번호가 매겨진 클래스가 없으면  쉽게 칼럼폭 크기조절을 위해 브레이크 포인트 관련 칼럼 클래스를 활용하십시오.
 
-### Equal-width 동일폭
+### 동일 폭
 
-For example, here are two grid layouts that apply to every device and viewport, from `xs` to `xl`. Add any number of unit-less classes for each breakpoint you need and every column will be the same width.
+예를 들어 `xs`에서`xl`까지 모든 디바이스와 뷰포트에 적용되는 두개의 그리드 레이아웃이 있습니다. 필요한 각 중단점에 대해 단위숫자 없이 클래스를 추가하면 모든 칼럼은 동일한 폭이 됩니다.
 
 <div class="bd-example-row">
 {% example html %}
@@ -150,9 +151,9 @@ For example, here are two grid layouts that apply to every device and viewport, 
 {% endexample %}
 </div>
 
-Equal-width columns can be broken into multiple lines, but there is a [Safari flexbox bug](https://github.com/philipwalton/flexbugs#11-min-and-max-size-declarations-are-ignored-when-wrapping-flex-items) that prevents this from working without an explicit `flex-basis` or `border`. Our example works thanks to the `border` being set; you can do the same with `.col { border: 1px solid transparent; }`. Alternatively, you can set the flex-basis to the width of the column (e.g., `.col { flex: 1 0 50%; }`).
+동일폭 칼럼은 여러 라인으로 나뉠 수 있지만, Safari 에서 `flex-basis` 또는 `border` 없이는 작동하지 않는 [Safari flexbox bug](https://github.com/philipwalton/flexbugs#11-min-and-max-size-declarations-are-ignored-when-wrapping-flex-items)가 있습니다. 예제는 `border`가 설정 되어있어 작동합니다. 당신도 `.col { border: 1px solid transparent; }` 또는 flex-basis을 칼럼 너비로 설정할 수 있습니다. (예 : `.col { flex: 1 0 50%; }`)
 
-Both these fixes have been documented in a [reduced test case outside Bootstrap](https://output.jsbin.com/micohor).
+이 두가지 수정 사항은 [reduced test case outside Bootstrap](https://output.jsbin.com/micohor)에 문서화 되었습니다.
 
 <div class="bd-example-row">
 {% example html %}
@@ -168,9 +169,10 @@ Both these fixes have been documented in a [reduced test case outside Bootstrap]
 {% endexample %}
 </div>
 
-### Setting one column width
+### 특정 칼럼 너비 셋팅
 
-Auto-layout for flexbox grid columns also means you can set the width of one column and have the sibling columns automatically resize around it. You may use predefined grid classes (as shown below), grid mixins, or inline widths. Note that the other columns will resize no matter the width of the center column.
+Auto-layout은 한 칼럼의 폭을 지정하면 다른 형제 칼럼의 폭은 자동으로 다시 조정 된다는 뜻입니다.
+그리드 클래스, 믹스인(mixin) 또는 인라인으로 너비(width)를 지정할 수 있으며, 폭이 지정된 중앙 칼럼의 너비에 따라 다른 칼럼은 크기가 조정됩니다.(아래 그림 참조)
 
 <div class="bd-example-row">
 {% example html %}
@@ -180,7 +182,7 @@ Auto-layout for flexbox grid columns also means you can set the width of one col
       1 of 3
     </div>
     <div class="col-6">
-      2 of 3 (wider)
+      2 of 3 (넓음)
     </div>
     <div class="col">
       3 of 3
@@ -191,7 +193,7 @@ Auto-layout for flexbox grid columns also means you can set the width of one col
       1 of 3
     </div>
     <div class="col-5">
-      2 of 3 (wider)
+      2 of 3 (넓음)
     </div>
     <div class="col">
       3 of 3
@@ -201,9 +203,9 @@ Auto-layout for flexbox grid columns also means you can set the width of one col
 {% endexample %}
 </div>
 
-### Variable width content
+### 가변 폭 콘텐츠
 
-Use `col-{breakpoint}-auto` classes to size columns based on the natural width of their content.
+`col-{breakpoint}-auto` 클래스를 사용하여 컨텐츠의 너비에 따라 칼럼 폭이 가변적으로 변경될 수 있도록 하세요.
 
 <div class="bd-example-row">
 {% example html %}
@@ -213,7 +215,7 @@ Use `col-{breakpoint}-auto` classes to size columns based on the natural width o
       1 of 3
     </div>
     <div class="col-md-auto">
-      Variable width content
+      가변 폭 콘텐츠
     </div>
     <div class="col col-lg-2">
       3 of 3
@@ -224,7 +226,7 @@ Use `col-{breakpoint}-auto` classes to size columns based on the natural width o
       1 of 3
     </div>
     <div class="col-md-auto">
-      Variable width content
+      가변 폭 콘텐츠
     </div>
     <div class="col col-lg-2">
       3 of 3
@@ -234,9 +236,9 @@ Use `col-{breakpoint}-auto` classes to size columns based on the natural width o
 {% endexample %}
 </div>
 
-### Equal-width multi-row
+### 동일 폭-멀티 라인
 
-Create equal-width columns that span multiple rows by inserting a `.w-100` where you want the columns to break to a new line. Make the breaks responsive by mixing the `.w-100` with some [responsive display utilities]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/display/).
+칼럼을 줄바꿈할 위치에 `.w-100`을 삽입하여 멀티 라인 동일폭 칼럼을 작성합니다. `.w-100`을 [반응형 디스플레이 유틸리티]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/display/)와 혼합하여 행을 구분하세요.
 
 <div class="bd-example-row">
 {% example html %}
@@ -250,13 +252,13 @@ Create equal-width columns that span multiple rows by inserting a `.w-100` where
 {% endexample %}
 </div>
 
-## Responsive classes
+## 반응형 클래스
 
-Bootstrap's grid includes five tiers of predefined classes for building complex responsive layouts. Customize the size of your columns on extra small, small, medium, large, or extra large devices however you see fit.
+부트스트랩의 그리드에는 복잡한 반응형 레이아웃을 작성하기 위한 5개 계층의 클래스가 있습니다. extra small, small, medium, large 또는 extra large 디바이스에서 칼럼의 크기를 맞춤 설정할 수 있습니다.
 
-### All breakpoints
+### 전체 디바이스 포괄
 
-For grids that are the same from the smallest of devices to the largest, use the `.col` and `.col-*` classes. Specify a numbered class when you need a particularly sized column; otherwise, feel free to stick to `.col`.
+가장 작은 디바이스 부터 가장 큰 디바이스 까지 동일한 그리드를 사용할 경우 `.col` 및 `.col-*` 클래스를 사용 하십시오. 특히 크기가 지정된 칼럼이 필요할 때는 번호가 매겨진 클래스를 지정 하십시오. 그렇지 않으면 주저하지 말고 `.col`을 사용 하십시오.
 
 <div class="bd-example-row">
 {% example html %}
@@ -273,9 +275,9 @@ For grids that are the same from the smallest of devices to the largest, use the
 {% endexample %}
 </div>
 
-### Stacked to horizontal
+### 수평으로 쌓기
 
-Using a single set of `.col-sm-*` classes, you can create a basic grid system that starts out stacked on extra small devices before becoming horizontal on desktop (medium) devices.
+단일 계층의 `.col-sm-*` 클래스 세트를 사용하여 스마트폰(extra small)에서는 수직으로 쌓이게 하고, 데스크탑(medium)에서는 수평으로 쌓이는 기본 그리드 시스템을 만들 수 있습니다.
 
 <div class="bd-example-row">
 {% example html %}
@@ -291,26 +293,26 @@ Using a single set of `.col-sm-*` classes, you can create a basic grid system th
 {% endexample %}
 </div>
 
-### Mix and match
+### 클래스의 조합
 
-Don't want your columns to simply stack in some grid tiers? Use a combination of different classes for each tier as needed. See the example below for a better idea of how it all works.
+반응형 그리드 계층별로 다르게 칼럼을 배치하기를 원한다면, 각 계층마다 다른 클래스의 조합을 사용하십시오. 아래의 예를 참조하면 모든것이 어떻게 작동하는지 더 잘 알 수 있습니다.
 
 <div class="bd-example-row">
 {% example html %}
-<!-- Stack the columns on mobile by making one full-width and the other half-width -->
+<!-- 모바일에서는 전체너비와 절반너비의 칼럼으로 수직 배치합니다. -->
 <div class="row">
   <div class="col-12 col-md-8">.col-12 .col-md-8</div>
   <div class="col-6 col-md-4">.col-6 .col-md-4</div>
 </div>
 
-<!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+<!-- 모바일에서는 50%, 데스크탑에서는 33.3% 로 칼럼 폭이 변경됩니다. -->
 <div class="row">
   <div class="col-6 col-md-4">.col-6 .col-md-4</div>
   <div class="col-6 col-md-4">.col-6 .col-md-4</div>
   <div class="col-6 col-md-4">.col-6 .col-md-4</div>
 </div>
 
-<!-- Columns are always 50% wide, on mobile and desktop -->
+<!-- 모바일 및 데스크톱에서 항상 칼럼폭이 50% 입니다. -->
 <div class="row">
   <div class="col-6">.col-6</div>
   <div class="col-6">.col-6</div>
@@ -318,46 +320,46 @@ Don't want your columns to simply stack in some grid tiers? Use a combination of
 {% endexample %}
 </div>
 
-## Alignment
+## 정렬
 
-Use flexbox alignment utilities to vertically and horizontally align columns.
+Flexbox 정렬 유틸리티를 사용하여 수직 및 수평으로 칼럼을 정렬 하십시오.
 
-### Vertical alignment
+### 수직 정렬
 
 <div class="bd-example-row bd-example-row-flex-cols">
 {% example html %}
 <div class="container">
   <div class="row align-items-start">
     <div class="col">
-      One of three columns
+      세 칼럼 중 하나
     </div>
     <div class="col">
-      One of three columns
+      세 칼럼 중 하나
     </div>
     <div class="col">
-      One of three columns
+      세 칼럼 중 하나
     </div>
   </div>
   <div class="row align-items-center">
     <div class="col">
-      One of three columns
+      세개의 칼럼 중 하나
     </div>
     <div class="col">
-      One of three columns
+      세 칼럼 중 하나
     </div>
     <div class="col">
-      One of three columns
+      세 칼럼 중 하나
     </div>
   </div>
   <div class="row align-items-end">
     <div class="col">
-      One of three columns
+      세 칼럼 중 하나
     </div>
     <div class="col">
-      One of three columns
+      세 칼럼 중 하나
     </div>
     <div class="col">
-      One of three columns
+      세 칼럼 중 하나
     </div>
   </div>
 </div>
@@ -369,75 +371,78 @@ Use flexbox alignment utilities to vertically and horizontally align columns.
 <div class="container">
   <div class="row">
     <div class="col align-self-start">
-      One of three columns
+      세 칼럼 중 하나
     </div>
     <div class="col align-self-center">
-      One of three columns
+      세 칼럼 중 하나
     </div>
     <div class="col align-self-end">
-      One of three columns
+      세 칼럼 중 하나
     </div>
   </div>
 </div>
 {% endexample %}
 </div>
 
-### Horizontal alignment
+### 수평 정렬
 
 <div class="bd-example-row">
 {% example html %}
 <div class="container">
   <div class="row justify-content-start">
     <div class="col-4">
-      One of two columns
+      두개의 칼럼중 하나
     </div>
     <div class="col-4">
-      One of two columns
+      두개의 칼럼중 하나
     </div>
   </div>
   <div class="row justify-content-center">
     <div class="col-4">
-      One of two columns
+      두개의 칼럼중 하나
     </div>
     <div class="col-4">
-      One of two columns
+      두개의 칼럼중 하나
     </div>
   </div>
   <div class="row justify-content-end">
     <div class="col-4">
-      One of two columns
+      두개의 칼럼중 하나
     </div>
     <div class="col-4">
-      One of two columns
+      두개의 칼럼중 하나
     </div>
   </div>
   <div class="row justify-content-around">
     <div class="col-4">
-      One of two columns
+      두개의 칼럼중 하나
     </div>
     <div class="col-4">
-      One of two columns
+      두개의 칼럼중 하나
     </div>
   </div>
   <div class="row justify-content-between">
     <div class="col-4">
-      One of two columns
+      두개의 칼럼중 하나
     </div>
     <div class="col-4">
-      One of two columns
+      두개의 칼럼중 하나
     </div>
   </div>
 </div>
 {% endexample %}
 </div>
 
-### No gutters
+### 여백 없애기
 
-The gutters between columns in our predefined grid classes can be removed with `.no-gutters`. This removes the negative `margin`s from `.row` and the horizontal `padding` from all immediate children columns.
+칼럼 사이에 있는 여백(gutter)은 `.no-gutters`로 제거 할 수 있습니다. 이렇게하면 `.row` 에 적용된 마이너스 `margin`과 직계 하위 칼럼의 가로 `padding`이 제거됩니다.
 
 Here's the source code for creating these styles. Note that column overrides are scoped to only the first children columns and are targeted via [attribute selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors). While this generates a more specific selector, column padding can still be further customized with [spacing utilities]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/spacing/).
 
-**Need an edge-to-edge design?** Drop the parent `.container` or `.container-fluid`.
+다음은 이러한 스타일을 만드는데 필요한 소스코드 입니다. 칼럼의 재정의(override)는 첫번째 하위 칼럼에만 적용되고 [속성 선택자](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors)를 통해 대상으로 지정됩니다. 이 과정에서 더 구체적인 선택자가 적용되지만, 칼럼의 padding은 여전히 [spacing 유틸리티]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/spacing/)를 사용하여 사용자 지정 할 수 있습니다.
+
+
+**edge-to-edge 디자인이 필요하십니까?** 부모요소의 `.container` 또는 `.container-fluid` 를 삭제하십시오.
 
 {% highlight sass %}
 .no-gutters {
@@ -452,7 +457,7 @@ Here's the source code for creating these styles. Note that column overrides are
 }
 {% endhighlight %}
 
-In practice, here's how it looks. Note you can continue to use this with all other predefined grid classes (including column widths, responsive tiers, reorders, and more).
+실제로 이렇게 보입니다. 다른 모든 그리드 클래스 (칼럼 너비, 반응형 계층, 재정렬 등)는 계속 사용할 수 있습니다.
 
 <div class="bd-example-row">
 {% example html %}
@@ -463,23 +468,25 @@ In practice, here's how it looks. Note you can continue to use this with all oth
 {% endexample %}
 </div>
 
-### Column wrapping
+### 칼럼 묶기
 
-If more than 12 columns are placed within a single row, each group of extra columns will, as one unit, wrap onto a new line.
+하나의 행(row)에 12개 이상의 칼럼 유닛이 있으면, 초과된 유닛이 포함된 칼럼은 새 행(row)으로 묶입니다.
 
 <div class="bd-example-row">
 {% example html %}
 <div class="row">
   <div class="col-9">.col-9</div>
-  <div class="col-4">.col-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</div>
-  <div class="col-6">.col-6<br>Subsequent columns continue along the new line.</div>
+  <div class="col-4">.col-4<br>9 + 4 = 13 &gt; 12 이므로, 이 div는 하나의 연속된 유닛으로서 새로운 라인에 래핑 됩니다.</div>
+  <div class="col-6">.col-6<br>후속 칼럼은 계속해서 새 라인을 따라 이어집니다.</div>
 </div>
 {% endexample %}
 </div>
 
-### Column breaks
+### 칼럼 줄바꿈
 
 Breaking columns to a new line in flexbox requires a small hack: add an element with `width: 100%` wherever you want to wrap your columns to a new line. Normally this is accomplished with multiple `.row`s, but not ever implementation method can account for this.
+
+flexbox에서 새로운 라인으로 컬럼을 줄바꿈하는 것은 약간의 해킹이 필요합니다 : 컬럼을 새로운 라인에 래핑하고자 할 때마다 `width: 100%` 요소를 추가하십시오. 일반적으로 이것은 여러개의 `.row`가 수반 되지만, 이행 방법은 절대 이것을 설명할 수 없다
 
 <div class="bd-example-row">
 {% example html %}
@@ -487,7 +494,7 @@ Breaking columns to a new line in flexbox requires a small hack: add an element 
   <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
   <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
 
-  <!-- Force next columns to break to new line -->
+  <!-- 다음 칼럼을 강제로 새 라인으로 나눕니다. -->
   <div class="w-100"></div>
 
   <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
@@ -496,7 +503,7 @@ Breaking columns to a new line in flexbox requires a small hack: add an element 
 {% endexample %}
 </div>
 
-You may also apply this break at specific breakpoints with our [responsive display utilities]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/display/).
+[반응형 디스플레이 유틸리티]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/display/)를 사용하여 특정 중단점에서 이러한 줄바꿈을 적용 할 수도 있습니다.
 
 <div class="bd-example-row">
 {% example html %}
@@ -504,7 +511,7 @@ You may also apply this break at specific breakpoints with our [responsive displ
   <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
   <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
 
-  <!-- Force next columns to break to new line at md breakpoint and up -->
+  <!-- 다음 컬럼을 강제로 md 중단점에서 새로운 라인으로 나눕니다. -->
   <div class="w-100 d-none d-md-block"></div>
 
   <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
@@ -513,57 +520,57 @@ You may also apply this break at specific breakpoints with our [responsive displ
 {% endexample %}
 </div>
 
-## Reordering
+## 컬럼 순서지정
 
-### Order classes
+### 순서지정 클래스
 
-Use `.order-` classes for controlling the **visual order** of your content. These classes are responsive, so you can set the `order` by breakpoint (e.g., `.order-1.order-md-2`). Includes support for `1` through `12` across all five grid tiers.
+`.order-` 클래스를 사용하여 콘텐츠의 **시각적 순서** 를 제어하십시오. 이 클래스는 반응형이어서, 중단점(예 : `.order-1.order-md-2`)별로 `order`를 설정할 수 있습니다. 5단계 그리드 계층에서 대해 `1` 에서 `12` 까지의 순서지정을 지원합니다.
 
 <div class="bd-example-row">
 {% example html %}
 <div class="container">
   <div class="row">
     <div class="col">
-      First, but unordered
+      첫번재, 순서 미지정됨
     </div>
     <div class="col order-12">
-      Second, but last
+      두번째, 하지만 마지막
     </div>
     <div class="col order-1">
-      Third, but first
+      세번째, 하지만 첫번째
     </div>
   </div>
 </div>
 {% endexample %}
 </div>
 
-There's also a responsive `.order-first` class that quickly changes the order of one element by applying `order: -1`. This class can also be intermixed with the numbered `.order-*` classes as needed.
+`order: -1`를 적용하여 요소의 순서를 빠르게 변경하는 `.order-first` 라는 반응형 클래스가 있습니다.  이 클래스는 필요에 따라 번호가 매겨진 `.order-*` 클래스와 섞일 수도 있습니다.
 
 <div class="bd-example-row">
 {% example html %}
 <div class="container">
   <div class="row">
     <div class="col">
-      First, but unordered
+      첫번째, 순서 미지정
     </div>
     <div class="col">
-      Second, but unordered
+      두번째, 순서 미지정
     </div>
     <div class="col order-first">
-      Third, but first
+      세번째, 그러나 첫번째
     </div>
   </div>
 </div>
 {% endexample %}
 </div>
 
-### Offsetting columns
+### 컬럼 간격 띄우기
 
-You can offset grid columns in two ways: our responsive `.offset-` grid classes and our [margin utilities]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/spacing/). Grid classes are sized to match columns while margins are more useful for quick layouts where the width of the offset is variable.
+그리드 칼럼의 간격을 띄우는 방법에는 두가지가 있습니다: `.offset-` 그리드 클래스 와  [margin 유틸리티]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/spacing/) 를 사용하는 것 입니다. 그리드 클래스는 칼럼과 일치하도록 크기가 조정되는 반면, margin을 적용하는 방법은 오프셋의 폭이 가변적인 레이아웃에 더 유용합니다.
 
-#### Offset classes
+#### 오프셋 클래스
 
-Move columns to the right using `.offset-md-*` classes. These classes increase the left margin of a column by `*` columns. For example, `.offset-md-4` moves `.col-md-4` over four columns.
+`.offset-md-*` 클래스를 사용하여 칼럼을 오른쪽으로 이동 하세요. 이러한 클래스는 칼럼의 왼쪽 여백을 `*` 만큼 늘립니다. 예를 들어, `.offset-md-4`는 4개 칼럼 유닛 만큼 `.col-md-4`를 이동 시킵니다..
 
 <div class="bd-example-row">
 {% example html %}
@@ -581,7 +588,7 @@ Move columns to the right using `.offset-md-*` classes. These classes increase t
 {% endexample %}
 </div>
 
-In addition to column clearing at responsive breakpoints, you may need to reset offsets. See this in action in [the grid example]({{ site.baseurl }}/docs/{{ site.docs_version }}/examples/grid/).
+게다가 반응형 중단점에서 칼럼을 초기화 하기 위해 오프셋을 재설정해야 할 수도 있습니다. [그리드 예제]({{ site.baseurl }}/docs/{{ site.docs_version }}/examples/grid/)에서 실제로 확인해 보세요.
 
 <div class="bd-example-row">
 {% example html %}
@@ -597,9 +604,9 @@ In addition to column clearing at responsive breakpoints, you may need to reset 
 {% endexample %}
 </div>
 
-#### Margin utilities
+#### Margin 유틸리티
 
-With the move to flexbox in v4, you can use margin utilities like `.mr-auto` to force sibling columns away from one another.
+부트스트랩 v4의 flexbox를 사용하면서 `.mr-auto` 같은 margin 유틸리티를 사용하여 형제 칼럼을 서로 멀리 떨어 뜨릴 수 있습니다.
 
 <div class="bd-example-row">
 {% example html %}
@@ -618,21 +625,21 @@ With the move to flexbox in v4, you can use margin utilities like `.mr-auto` to 
 {% endexample %}
 </div>
 
-## Nesting
+## 컬럼 중첩
 
-To nest your content with the default grid, add a new `.row` and set of `.col-sm-*` columns within an existing `.col-sm-*` column. Nested rows should include a set of columns that add up to 12 or fewer (it is not required that you use all 12 available columns).
+콘텐츠를 기본 그리드로 중첩(nest) 시키려면, 기존 `.col-sm-*` 칼럼 안에 새로운 .`.row` 및 `.col-sm-*` 칼럼 셋을 추가하세요. 중첩된 행(row)에는 최대 12개 이하의 칼럼이 포함 되어야 합니다 (12개 칼럼을 모두 사용할 필요는 없음).
 
 <div class="bd-example-row">
 {% example html %}
 <div class="row">
   <div class="col-sm-9">
-    Level 1: .col-sm-9
+    레벨 1: .col-sm-9
     <div class="row">
       <div class="col-8 col-sm-6">
-        Level 2: .col-8 .col-sm-6
+        레벨 2: .col-8 .col-sm-6
       </div>
       <div class="col-4 col-sm-6">
-        Level 2: .col-4 .col-sm-6
+        레벨 2: .col-4 .col-sm-6
       </div>
     </div>
   </div>
@@ -640,13 +647,16 @@ To nest your content with the default grid, add a new `.row` and set of `.col-sm
 {% endexample %}
 </div>
 
-## Sass mixins
+## Sass 믹스인
 
-When using Bootstrap's source Sass files, you have the option of using Sass variables and mixins to create custom, semantic, and responsive page layouts. Our predefined grid classes use these same variables and mixins to provide a whole suite of ready-to-use classes for fast responsive layouts.
+부트스트랩의 Sass 소스파일을 사용할 때, Sass 변수와 믹스인을 사용하여 사용자 맞춤, 시멘틱 그리고 반응형 페이지 레이아웃을 생성 할 수 있습니다. 미리 정의된 그리드 클래스는 빠르게 반응형 레이아웃 제작을 위한 바로 사용할 수 있는 클래스 모음을 제공하기 위해 이러한 동일한 변수와 믹스 인을 사용합니다.
 
-### Variables
+
+### 변수
 
 Variables and maps determine the number of columns, the gutter width, and the media query point at which to begin floating columns. We use these to generate the predefined grid classes documented above, as well as for the custom mixins listed below.
+
+변수 및 맵은 부동 열을 시작할 열의 수, 거터 폭 및 미디어 쿼리 포인트를 결정합니다. 우리는 위에 나열된 미리 정의 된 그리드 클래스를 생성하고 아래에 나열된 사용자 정의 믹스킨을 생성합니다.
 
 {% highlight scss %}
 $grid-columns:      12;
@@ -673,9 +683,9 @@ $container-max-widths: (
 );
 {% endhighlight %}
 
-### Mixins
+### 믹스인
 
-Mixins are used in conjunction with the grid variables to generate semantic CSS for individual grid columns.
+믹스인(Mixin)은 그리드 변수와 함께 사용되어 개별 그리드 칼럼에 대한 시멘틱 CSS를 생성합니다.
 
 {% highlight scss %}
 // Creates a wrapper for a series of columns
@@ -689,9 +699,9 @@ Mixins are used in conjunction with the grid variables to generate semantic CSS 
 @include make-col-offset($size, $columns: $grid-columns);
 {% endhighlight %}
 
-### Example usage
+### 사용 예
 
-You can modify the variables to your own custom values, or just use the mixins with their default values. Here's an example of using the default settings to create a two-column layout with a gap between.
+변수를 사용자 맞춤 값으로 수정하거나 기본값을 사용하여 mixins를 사용할 수 있습니다. 다음은 기본 설정을 사용하여 간격이 있는 두개의 칼럼을 가진 레이아웃을 만드는 예입니다.
 
 {% highlight scss %}
 .example-container {
@@ -729,28 +739,28 @@ You can modify the variables to your own custom values, or just use the mixins w
 {% example html %}
 <div class="example-container">
   <div class="example-row">
-    <div class="example-content-main">Main content</div>
-    <div class="example-content-secondary">Secondary content</div>
+    <div class="example-content-main">메인 컨텐츠</div>
+    <div class="example-content-secondary">보조 컨텐츠</div>
   </div>
 </div>
 {% endexample %}
 
-## Customizing the grid
+## 그리드 맞춤설정
 
-Using our built-in grid Sass variables and maps, it's possible to completely customize the predefined grid classes. Change the number of tiers, the media query dimensions, and the container widths—then recompile.
+내장된 그리드 Sass 변수와 맵을 사용하여 사전 정의 된 그리드 클래스를 완벽하게 사용자 맞춤(Customizing) 할 수 있습니다. 계층 수, 미디어 쿼리 치수 및 컨테이너 너비를 변경 한 다음 다시 컴파일 하십시오.
 
-### Columns and gutters
+### 칼럼과 여백
 
-The number of grid columns can be modified via Sass variables. `$grid-columns` is used to generate the widths (in percent) of each individual column while `$grid-gutter-width` allows breakpoint-specific widths that are divided evenly across `padding-left` and `padding-right` for the column gutters.
+그리드 칼럼 수는 Sass 변수를 통해 수정할 수 있습니다. `$grid-columns` 는 각 개별 칼럼의 너비(퍼센트)를 생성하는데 사용되는 반면 `$grid-gutter-width` 는  칼럼의 여백(gutter)에 대해 `padding-left`와 `padding-right`에 균등하게 나뉘어 적용되어 중단점 별 너비를 제공 합니다.
 
 {% highlight scss %}
 $grid-columns: 12 !default;
 $grid-gutter-width: 30px !default;
 {% endhighlight %}
 
-### Grid tiers
+### 그리드 계층
 
-Moving beyond the columns themselves, you may also customize the number of grid tiers. If you wanted just four grid tiers, you'd update the `$grid-breakpoints` and `$container-max-widths` to something like this:
+그리드 계층 수를 사용자 맞춤 할 수도 있습니다. 네개의 그리드 계층만 원한다면 `$grid-breakpoints` 와 `$container-max-widths`를 다음과 같이 갱신 할 것입니다 :
 
 {% highlight scss %}
 $grid-breakpoints: (
@@ -767,4 +777,4 @@ $container-max-widths: (
 );
 {% endhighlight %}
 
-When making any changes to the Sass variables or maps, you'll need to save your changes and recompile. Doing so will output a brand new set of predefined grid classes for column widths, offsets, and ordering. Responsive visibility utilities will also be updated to use the custom breakpoints. Make sure to set grid values in `px` (not `rem`, `em`, or `%`).
+Sass 변수나 맵을 변경할 때, 변경사항을 저장하고 다시 컴파일 해야합니다. 이렇게 하면 수정된 칼럼 너비, 간격 띄우기 및 정렬에 맞게 새로운 클래스 셋이 산출 됩니다. 반응형 가시성 유틸리티는 수정된 중단점을 사용하도록 업데이트 됩니다. 그리드 값을 `px` (`rem`, `em` 또는 `%` 가 아님)로 설정 해야합니다.
