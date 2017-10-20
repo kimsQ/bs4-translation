@@ -484,9 +484,7 @@ Here's the source code for creating these styles. Note that column overrides are
 
 ### 칼럼 줄바꿈
 
-Breaking columns to a new line in flexbox requires a small hack: add an element with `width: 100%` wherever you want to wrap your columns to a new line. Normally this is accomplished with multiple `.row`s, but not ever implementation method can account for this.
-
-flexbox에서 새로운 라인으로 컬럼을 줄바꿈하는 것은 약간의 해킹이 필요합니다 : 컬럼을 새로운 라인에 래핑하고자 할 때마다 `width: 100%` 요소를 추가하십시오. 일반적으로 이것은 여러개의 `.row`가 수반 되지만, 이행 방법은 절대 이것을 설명할 수 없다
+flexbox에서 새로운 라인으로 컬럼을 줄바꿈하는 것은 약간의 해킹이 필요합니다 : 컬럼을 새로운 라인에 래핑하고자 할 때마다 `width: 100%` 요소를 추가하십시오. 일반적으로 이것은 여러개의 `.row`가 수반 됩니다.
 
 <div class="bd-example-row">
 {% example html %}
@@ -699,7 +697,7 @@ $container-max-widths: (
 
 ### 사용 예
 
-변수를 사용자 맞춤 값으로 수정하거나 기본값을 사용하여 mixins를 사용할 수 있습니다. 다음은 기본 설정을 사용하여 간격이 있는 두개의 칼럼을 가진 레이아웃을 만드는 예입니다.
+변수를 사용자 맞춤 값으로 수정하거나 기본값을 사용하여 믹스인을 사용할 수 있습니다. 다음은 기본 설정을 사용하여 간격이 있는 두개의 칼럼을 가진 레이아웃을 만드는 예입니다.
 
 {% highlight scss %}
 .example-container {
