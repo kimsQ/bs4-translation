@@ -21,45 +21,46 @@ toc: true
 
 {% example html %}
 <div class="card" style="width: 20rem;">
-  <img class="card-img-top" data-src="holder.js/100px180/" alt="Card image cap">
+  <img class="card-img-top" data-src="holder.js/100px180/" alt="카드 이미지 캡션">
   <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h4 class="card-title">카드 타이틀</h4>
+    <p class="card-text">카드 제목을 작성하고 카드의 내용을 대량으로 작성할 수 있는 몇가지 빠른 예제 텍스트.</p>
+    <a href="#" class="btn btn-primary">어딘가에 가다</a>
   </div>
 </div>
 {% endexample %}
 
 ## 컨텐츠 타입
 
-Cards support a wide variety of content, including images, text, list groups, links, and more. Below are examples of what's supported.
+카드는 이미지, 텍스트, 목록 그룹, 링크 등 다양한 콘텐츠를 지원합니다. 다음은 지원되는 항목의 예입니다.
 
 ### Body
 
 The building block of a card is the `.card-body`. Use it whenever you need a padded section within a card.
+카드의 구성 블럭요소는 `.card-body` 입니다. 카드 안에 padded이 필요한 부분이 필요할 때마다 사용하십시오.
 
 {% example html %}
 <div class="card">
   <div class="card-body">
-    This is some text within a card body.
+    이것은 카드 본문 내의 일부 텍스트입니다.
   </div>
 </div>
 {% endexample %}
 
 ### 타이틀, 텍스트, 그리고 링크
 
-Card titles are used by adding `.card-title` to a `<h*>` tag. In the same way, links are added and placed next to each other by adding `.card-link` to an `<a>` tag.
+카드 타이틀은 `<h*>` 태그에 `.card-title` 을 추가하여 사용합니다. 마찬가지로, `<a>` 태그에 `.card-link`를 추가하여 링크를 추가하고 서로 옆에 배치합니다.
 
-Subtitles are used by adding a `.card-subtitle` to a `<h*>` tag. If the `.card-title` and the `.card-subtitle` items are placed in a `.card-body` item, the card title and subtitle are aligned nicely.
+서브 타이틀은 `<h*>` 태그에 `.card-subtitle`을 추가하여 사용합니다. `.card-title` 및 `.card-subtitle` 항목이 `.card-body` 항목에 배치되면 카드 타이틀과 서브 타이틀은 잘 정렬됩니다.
 
 {% example html %}
 <div class="card" style="width: 20rem;">
   <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+    <h4 class="card-title">카드 타이틀</h4>
+    <h6 class="card-subtitle mb-2 text-muted">카드 서브 타이틀</h6>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
+    <a href="#" class="card-link">카드 링크</a>
+    <a href="#" class="card-link">또 다른 링크</a>
   </div>
 </div>
 {% endexample %}
@@ -68,55 +69,57 @@ Subtitles are used by adding a `.card-subtitle` to a `<h*>` tag. If the `.card-t
 
 `.card-img-top` places an image to the top of the card. With `.card-text`, text can be added to the card. Text within `.card-text` can also be styled with the standard HTML tags.
 
+`.card-img-top`은 카드상단의 이미지에 적용합니다. `.card-text`를 사용하면 텍스트를 카드에 추가 할 수 있습니다. `.card-text` 내의 텍스트는 표준 HTML 태그로 스타일을 지정할 수도 있습니다.
+
 {% example html %}
 <div class="card" style="width: 20rem;">
-  <img class="card-img-top" data-src="holder.js/100px180/?text=Image cap" alt="Card image cap">
+  <img class="card-img-top" data-src="holder.js/100px180/?text=Image cap" alt="카드 이미지 캡션">
   <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <p class="card-text">카드 제목을 기반으로하고 카드 내용의 대부분을 구성하는 간단한 예제 텍스트.</p>
   </div>
 </div>
 {% endexample %}
 
 ### 목록 그룹
 
-Create lists of content in a card with a flush list group.
+플러시(flush) 목록 그룹으로 카드에 콘텐츠 목록을 생성합니다.
 
 {% example html %}
 <div class="card" style="width: 20rem;">
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">Cras justo odio</li>
-    <li class="list-group-item">Dapibus ac facilisis in</li>
-    <li class="list-group-item">Vestibulum at eros</li>
+    <li class="list-group-item">동해물과 백두산이</li>
+    <li class="list-group-item">마르고 닳도록 하느님이</li>
+    <li class="list-group-item">보우하사 우리 나라만세</li>
   </ul>
 </div>
 {% endexample %}
 
 ### Kitchen sink
 
-Mix and match multiple content types to create the card you need, or throw everything in there. Shown below are image styles, blocks, text styles, and a list group—all wrapped in a fixed-width card.
+여러 콘텐츠 유형을 믹스 앤 매치하여 필요한 카드를 만들거나 거기에 모든 것을 던져 넣으십시오. 아래에는 이미지 스타일, 블록, 텍스트 스타일 및 목록 그룹이 모두 고정폭 카드로 싸여 있습니다.
 
 {% example html %}
 <div class="card" style="width: 20rem;">
-  <img class="card-img-top" data-src="holder.js/100px180/?text=Image cap" alt="Card image cap">
+  <img class="card-img-top" data-src="holder.js/100px180/?text=이미지" alt="카드 이미지 캡션">
   <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h4 class="card-title">카드 타이틀</h4>
+    <p class="card-text">카드 제목을 기반으로하고 카드 내용의 대부분을 구성하는 간단한 예제 텍스트.</p>
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">Cras justo odio</li>
-    <li class="list-group-item">Dapibus ac facilisis in</li>
-    <li class="list-group-item">Vestibulum at eros</li>
+    <li class="list-group-item">동해물과 백두산이</li>
+    <li class="list-group-item">마르고 닳도록 하느님이</li>
+    <li class="list-group-item">보우하사 우리 나라만세</li>
   </ul>
   <div class="card-body">
-    <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
+    <a href="#" class="card-link">카드 링크</a>
+    <a href="#" class="card-link">또 다른 링크</a>
   </div>
 </div>
 {% endexample %}
 
 ### 헤더와 풋터
 
-Add an optional header and/or footer within a card.
+카드에 선택적으로 헤더 또는 풋터를 추가하십시오.
 
 {% example html %}
 <div class="card">
@@ -131,7 +134,7 @@ Add an optional header and/or footer within a card.
 </div>
 {% endexample %}
 
-Card headers can be styled by adding `.card-header` to `<h*>` elements.
+카드 헤더는 `<h*>` 요소에 `.card-header`를 추가하여 스타일을 지정할 수 있습니다.
 
 {% example html %}
 <div class="card">
@@ -147,12 +150,12 @@ Card headers can be styled by adding `.card-header` to `<h*>` elements.
 {% example html %}
 <div class="card">
   <div class="card-header">
-    Quote
+    인용구
   </div>
   <div class="card-body">
     <blockquote class="blockquote mb-0">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+      <p>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.</p>
+      <footer class="blockquote-footer">안익태 작곡 <cite title="Source Title">애국가</cite></footer>
     </blockquote>
   </div>
 </div>
@@ -176,11 +179,12 @@ Card headers can be styled by adding `.card-header` to `<h*>` elements.
 
 ## 크기 조정
 
-Cards assume no specific `width` to start, so they'll be 100% wide unless otherwise stated. You can change this as needed with custom CSS, grid classes, grid Sass mixins, or utilities.
+카드는 특별한 `width`가 없는 것으로 가정하므로 별도로 언급하지 않는 한 100%로 넓어집니다. 사용자 맞춤 CSS, 그리드 클래스, 그리드 Sass 믹스인 또는 유틸리티를 사용하여 필요에 따라 변경할 수 있습니다.
 
 ### 그리드 마크업 사용
 
 Using the grid, wrap cards in columns and rows as needed.
+그리드를 사용하여 필요에 따라 칼럼과 행(row)에 카드를 감사쎄요.
 
 {% example html %}
 <div class="row">
@@ -207,12 +211,12 @@ Using the grid, wrap cards in columns and rows as needed.
 
 ### 유틸리티 사용
 
-Use our handful of [available sizing utilities]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/sizing/) to quickly set a card's width.
+[사이징 유틸리티]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/sizing/)  사용하여 카드의 너비를 빠르게 설정할 수 있습니다.
 
 {% example html %}
 <div class="card w-75">
   <div class="card-body">
-    <h4 class="card-title">Card title</h4>
+    <h4 class="card-title">카드 타이틀</h4>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
     <a href="#" class="btn btn-primary">Button</a>
   </div>
@@ -220,7 +224,7 @@ Use our handful of [available sizing utilities]({{ site.baseurl }}/docs/{{ site.
 
 <div class="card w-50">
   <div class="card-body">
-    <h4 class="card-title">Card title</h4>
+    <h4 class="card-title">카드 타이틀</h4>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
     <a href="#" class="btn btn-primary">Button</a>
   </div>
@@ -229,7 +233,7 @@ Use our handful of [available sizing utilities]({{ site.baseurl }}/docs/{{ site.
 
 ### 사용자 정의 CSS
 
-Use custom CSS in your stylesheets or as inline styles to set a width.
+맞춤 CSS나 인라인 스타일로 너비를 설정하십시오.
 
 {% example html %}
 <div class="card" style="width: 20rem;">
@@ -243,7 +247,7 @@ Use custom CSS in your stylesheets or as inline styles to set a width.
 
 ## 텍스트 정렬
 
-You can quickly change the text alignment of any card—in its entirety or specific parts—with our [text align classes]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/text/#text-alignment).
+[텍스트 정렬 클래스]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/text/#text-alignment)를 사용하여 전체 또는 특정 부분에서 모든 카드의 텍스트 정렬을 신속하게 변경할 수 있습니다.
 
 {% example html %}
 <div class="card" style="width: 20rem;">
@@ -273,7 +277,7 @@ You can quickly change the text alignment of any card—in its entirety or speci
 
 ## 네비게이션
 
-Add some navigation to a card's header (or block) with Bootstrap's [nav components]({{ site.baseurl }}/docs/{{ site.docs_version }}/components/navs/).
+부트스트랩의 [네이게이션 컴포넌트]({{ site.baseurl }}/docs/{{ site.docs_version }}/components/navs/)를 사용하여 카드의 헤더 (또는 블록)에 네비게이션을 추가하십시오.
 
 {% example html %}
 <div class="card text-center">
@@ -325,58 +329,62 @@ Add some navigation to a card's header (or block) with Bootstrap's [nav componen
 
 Cards include a few options for working with images. Choose from appending "image caps" at either end of a card, overlaying images with card content, or simply embedding the image in a card.
 
-### 이미지 캡션
+카드에는 이미지 구성을 위해 몇 가지 옵션이 있습니다. 카드의 양쪽 끝에 "이미지 캡"을 추가하거나 카드 내용으로 이미지를 겹치거나 간단히 이미지를 카드에 삽입하십시오.
+
+### 이미지 캡
 
 Similar to headers and footers, cards can include top and bottom "image caps"—images at the top or bottom of a card.
+헤더와 풋터와 마찬가지로 카드에는 상단 및 하단 "image caps"이 포함될 수 있습니다. 이 이미지는 카드의 상단 또는 하단에 이미지를 나타냅니다.
 
 {% example html %}
 <div class="card mb-3">
   <img class="card-img-top" data-src="holder.js/100px180/" alt="Card image cap">
   <div class="card-body">
-    <h4 class="card-title">Card title</h4>
+    <h4 class="card-title">카드 타이틀</h4>
     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    <p class="card-text"><small class="text-muted">3분전 수정됨</small></p>
   </div>
 </div>
 <div class="card">
   <div class="card-body">
-    <h4 class="card-title">Card title</h4>
+    <h4 class="card-title">카드 타이틀</h4>
     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    <p class="card-text"><small class="text-muted">3분전 수정됨</small></p>
   </div>
-  <img class="card-img-bottom" data-src="holder.js/100px180/" alt="Card image cap">
+  <img class="card-img-bottom" data-src="holder.js/100px180/" alt="카드 이미지 캡">
 </div>
 {% endexample %}
 
 ### 이미지 오버레이 (overlays)
 
 Turn an image into a card background and overlay your card's text. Depending on the image, you may or may not need additional styles or utilities.
+이미지를 카드 배경으로 바꾸고 카드의 텍스트를 오버레이 합니다. 이미지에 따라 추가 스타일이나 유틸리티가 필요할 수도 있고 없을 수도 있습니다.
 
 {% example html %}
 <div class="card bg-dark text-white">
-  <img class="card-img" data-src="holder.js/100px270/#55595c:#373a3c/text:Card image" alt="Card image">
+  <img class="card-img" data-src="holder.js/100px270/#55595c:#373a3c/text:카드 이미지" alt="카드 이미지">
   <div class="card-img-overlay">
-    <h4 class="card-title">Card title</h4>
+    <h4 class="card-title">카드 타이틀</h4>
     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    <p class="card-text">Last updated 3 mins ago</p>
+    <p class="card-text">3분전 업데이트</p>
   </div>
 </div>
 {% endexample %}
 
 ## 카드 스타일
 
-Cards include various options for customizing their backgrounds, borders, and color.
+카드에는 백그라운드, 테두리 및 색상을 사용자 정의하는 다양한 옵션이 있습니다.
 
 ### 백그라운드와 칼라
 
-Use [text and background utilities]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/colors/) to change the appearance of a card.
+[텍스트 및 백그라운드 유틸리티]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/colors/)를 사용하여 카드 모양을 변경 하십시오.
 
 {% example html %}
 {% for color in site.data.theme-colors %}
 <div class="card{% unless color.name == "light" %} text-white{% endunless %} bg-{{ color.name }} mb-3" style="max-width: 20rem;">
-  <div class="card-header">Header</div>
+  <div class="card-header">헤더</div>
   <div class="card-body">
-    <h4 class="card-title">{{ color.name | capitalize }} card title</h4>
+    <h4 class="card-title">{{ color.name | capitalize }} 카드 타이틀</h4>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
   </div>
 </div>{% endfor %}
@@ -389,12 +397,14 @@ Use [text and background utilities]({{ site.baseurl }}/docs/{{ site.docs_version
 
 Use [border utilities]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/borders/) to change just the `border-color` of a card. Note that you can put `.text-{color}` classes on the parent `.card` or a subset of the card's contents as shown below.
 
+[border 유틸리티]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities/borders/) 를 사용하여 카드의 `border-color`만 변경 하십시오. 다음과 같이 `.text-{color}` 클래스를 부모 `.card` 또는 카드 내용의 하위에 넣을 수 있습니다.
+
 {% example html %}
 {% for color in site.data.theme-colors %}
 <div class="card border-{{ color.name }} mb-3" style="max-width: 20rem;">
-  <div class="card-header">Header</div>
+  <div class="card-header">헤더</div>
   <div class="card-body{% unless color.name == "light" %} text-{{ color.name }}{% endunless %}">
-    <h4 class="card-title">{{ color.name | capitalize }} card title</h4>
+    <h4 class="card-title">{{ color.name | capitalize }} 카드 타이틀</h4>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
   </div>
 </div>{% endfor %}
@@ -402,26 +412,27 @@ Use [border utilities]({{ site.baseurl }}/docs/{{ site.docs_version }}/utilities
 
 ### 믹스인(Mixins) 유틸리티
 
-You can also change the borders on the card header and footer as needed, and even remove their `background-color` with `.bg-transparent`.
+필요에 따라 카드 헤더와 풋터의 테두리를 변경하고 `background-color` 을 `.bg-transparent`로 제거 할 수도 있습니다.
 
 {% example html %}
 <div class="card border-success mb-3" style="max-width: 20rem;">
-  <div class="card-header bg-transparent border-success">Header</div>
+  <div class="card-header bg-transparent border-success">헤더</div>
   <div class="card-body text-success">
-    <h4 class="card-title">Success card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h4 class="card-title">Success 카드 타이틀</h4>
+    <p class="card-text">카드 제목을 기반으로하고 카드 내용의 대부분을 구성하는 간단한 예제 텍스트.</p>
   </div>
-  <div class="card-footer bg-transparent border-success">Footer</div>
+  <div class="card-footer bg-transparent border-success">풋터</div>
 </div>
 {% endexample %}
 
 ## 카드 레이아웃
 
-In addition to styling the content within cards, Bootstrap includes a few options for laying out series of cards. For the time being, **these layout options are not yet responsive**.
+부트스트랩에는 카드 내의 내용을 스타일링하는 것 외에도, 일련의 카드 레이아웃을 위한 몇가지 옵션이 있습니다. **당분간, 이러한 레이아웃 옵션은 아직 반응형이 적용되지 않았습니다**.
+
 
 ### 카드 그룹
 
-Use card groups to render cards as a single, attached element with equal width and height columns. Card groups use `display: flex;` to achieve their uniform sizing.
+카드 그룹을 사용하여 동일한 너비와 높이의 칼럼이 있는 단일 부착 요소로 카드들을 렌더링 하십시오. 카드 그룹은 균일한 크기 조정을 위해 `display: flex;`을 사용합니다.
 
 {% example html %}
 <div class="card-group">
@@ -452,7 +463,7 @@ Use card groups to render cards as a single, attached element with equal width a
 </div>
 {% endexample %}
 
-When using card groups with footers, their content will automatically line up.
+풋터가 있는 카드 그룹을 사용하면, 컨텐츠가 자동으로 정렬됩니다.
 
 {% example html %}
 <div class="card-group">
@@ -489,9 +500,10 @@ When using card groups with footers, their content will automatically line up.
 </div>
 {% endexample %}
 
-### 카드 테크 (decks)
+### 카드 덱(deck)
 
 Need a set of equal width and height cards that aren't attached to one another? Use card decks.
+서로 붙어 있지 않은 동일한 폭과 높이의 카드 세트가 필요합니까? 카드덱을 사용하십시오.
 
 {% example html %}
 <div class="card-deck">
@@ -522,7 +534,7 @@ Need a set of equal width and height cards that aren't attached to one another? 
 </div>
 {% endexample %}
 
-Just like with card groups, card footers in decks will automatically line up.
+카드 그룹과 마찬가지로 카드 덱(deck)에 있는 카드 풋터가 자동으로 정렬됩니다.
 
 {% example html %}
 <div class="card-deck">
@@ -561,9 +573,11 @@ Just like with card groups, card footers in decks will automatically line up.
 
 ### 카드 칼럼 (columns)
 
-Cards can be organized into [Masonry](https://masonry.desandro.com/)-like columns with just CSS by wrapping them in `.card-columns`. Cards are built with CSS `column` properties instead of flexbox for easier alignment. Cards are ordered from top to bottom and left to right.
+카드는 `.card-columns`로 둘러싸여 CSS 만으로 [Masonry](https://masonry.desandro.com/) 형 컬럼으로 구성될 수 있습니다. 카드들은 flexbox가 아닌  `column` CSS 속성을 사용하여 쉽게 정렬 할 수 있습니다. 카드는 위에서 아래로, 왼쪽에서 오른쪽으로 정렬됩니다.
 
 **Heads up!** Your mileage with card columns may vary. To prevent cards breaking across columns, we must set them to `display: inline-block` as `column-break-inside: avoid` isn't a bulletproof solution yet.
+
+**조심하세요!** 카드 열이 있는 마일리지는 다를 수 있습니다. 카드가 칼럼을 가로 지르지 못하게하려면 다음과 같이 표시되도록 설정해야합니다. `display: inline-block` in `column-break-inside: avoid`은 아직 완전한 솔루션이 아닙니다.
 
 {% example html %}
 <div class="card-columns">

@@ -34,38 +34,40 @@ toc: true
 </div>
 {% endexample %}
 
-## 멀티 타켓 Multiple targets
+## 멀티 타켓
 
 A `<button>` or `<a>` can show and hide multiple elements by referencing them with a JQuery selector in its `href` or `data-target` attribute.
 Multiple `<button>` or `<a>` can show and hide an element if they each reference it with their `href` or `data-target` attribute
 
+`<button>` 또는 `<a>`는 JQuery 선택자인 `href` 또는 `data-target` 속성을 사용하여 복수의 요소를 표시하거나 숨길 수 있습니다. 복수의 `<button>` 또는 `<a>`는 그들의 `href` 또는 `data-target` 속성을 사용하여 요소를 표시하거나 숨길 수 있습니다.
+
 {% example html %}
 <p>
-  <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
-  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
-  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+  <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">첫번째 요소 토글</a>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">두번째 요소 토글</button>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">양쪽 요소 토글</button>
 </p>
 <div class="row">
   <div class="col">
     <div class="collapse multi-collapse" id="multiCollapseExample1">
       <div class="card card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+        동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.
       </div>
     </div>
   </div>
   <div class="col">
     <div class="collapse multi-collapse" id="multiCollapseExample2">
       <div class="card card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+        동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.
       </div>
     </div>
   </div>
 </div>
 {% endexample %}
 
-## 아코디언 예제 Accordion example
+## 아코디언 예제
 
-Using the [card]({{ site.baseurl }}/docs/{{ site.docs_version }}/components/card/) component, you can extend the default collapse behavior to create an accordion.
+[카드]({{ site.baseurl }}/docs/{{ site.docs_version }}/components/card/) 구성 요소를 사용하여, 기본 컬랩스 동작을 확장하여 아코디언(accordion)을 만들 수 있습니다.
 
 {% example html %}
 <div id="accordion" role="tablist">
@@ -73,14 +75,14 @@ Using the [card]({{ site.baseurl }}/docs/{{ site.docs_version }}/components/card
     <div class="card-header" role="tab" id="headingOne">
       <h5 class="mb-0">
         <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Collapsible Group Item #1
+          토글 가능한 그룹 항목 #1
         </a>
       </h5>
     </div>
 
     <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
       <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.
       </div>
     </div>
   </div>
@@ -88,13 +90,13 @@ Using the [card]({{ site.baseurl }}/docs/{{ site.docs_version }}/components/card
     <div class="card-header" role="tab" id="headingTwo">
       <h5 class="mb-0">
         <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Collapsible Group Item #2
+          토글 가능한 그룹 항목 #2
         </a>
       </h5>
     </div>
     <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
       <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.
       </div>
     </div>
   </div>
@@ -102,40 +104,40 @@ Using the [card]({{ site.baseurl }}/docs/{{ site.docs_version }}/components/card
     <div class="card-header" role="tab" id="headingThree">
       <h5 class="mb-0">
         <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Collapsible Group Item #3
+          토글 가능한 그룹 항목 #3
         </a>
       </h5>
     </div>
     <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
       <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.
       </div>
     </div>
   </div>
 </div>
 {% endexample %}
 
-You can also create accordions with custom markup. Add the `data-children` attribute and specify a set of sibling elements to toggle (e.g., `.item`). Then, use the same attributes and classes as shown above for connecting toggles to their associated content.
+사용자 맞춤 마크업으로 아코디언을 만들 수도 있습니다. `data-children` 속성을 추가하고 토글 할수있는 형제 요소셋을 지정하십시오 (예:`.item`). 그런 다음 토글을 관련 콘텐츠에 연결하기 위해 위에 표시된 것과 동일한 속성 및 클래스를 사용합니다.
 
 {% example html %}
 <div id="exampleAccordion" data-children=".item">
   <div class="item">
     <a data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion1" aria-expanded="true" aria-controls="exampleAccordion1">
-      Toggle item
+      토글 아이템
     </a>
     <div id="exampleAccordion1" class="collapse show" role="tabpanel">
       <p class="mb-3">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.
+        동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.
       </p>
     </div>
   </div>
   <div class="item">
     <a data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion2" aria-expanded="false" aria-controls="exampleAccordion2">
-      Toggle item 2
+      토글 아이템 2
     </a>
     <div id="exampleAccordion2" class="collapse" role="tabpanel">
       <p class="mb-3">
-        Donec at ipsum dignissim, rutrum turpis scelerisque, tristique lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus nec dui turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.
       </p>
     </div>
   </div>
@@ -144,29 +146,29 @@ You can also create accordions with custom markup. Add the `data-children` attri
 
 ## 접근성
 
-Be sure to add `aria-expanded` to the control element. This attribute explicitly conveys the current state of the collapsible element tied to the control to screen readers and similar assistive technologies. If the collapsible element is closed by default, the attribute on the control element should have a value of `aria-expanded="false"`. If you've set the collapsible element to be open by default using the `show` class, set `aria-expanded="true"` on the control instead. The plugin will automatically toggle this attribute on the control based on whether or not the collapsible element has been opened or closed (via JavaScript, or because the user triggered another control element also tied to the same collapsbile element).
+컨트롤 요소에 `aria-expanded`를 추가 해야합니다. 이 특성은 스크린리더 및 유사한 보조기술에 컨트롤에 연결된 토글 가능한 요소의 현재 상태를 명시적으로 전달합니다. 토글 가능한 요소가 기본적으로 닫히면 컨트롤 요소의 속성은 `aria-expanded="false"` 값을 가져야합니다. `show` class를 사용하여 토글 가능한 요소를 기본적으로 열도록 설정 한 경우, 컨트롤에 `aria-expanded="true"` 를 설정 하십시오. 이 플러그인은 토글 가능한 요소가 열리거나 닫혔는지 여부에 따라 컨트롤의 이 속성을 자동으로 토글합니다.(JavaScript를 통해, 또는 사용자가 다른 컨트롤 요소를 트리거하여 동일한 토글 가능한 요소에 연결했는지 여부)
 
-Additionally, if your control element is targeting a single collapsible element – i.e. the `data-target` attribute is pointing to an `id` selector – you may add an additional `aria-controls` attribute to the control element, containing the `id` of the collapsible element. Modern screen readers and similar assistive technologies make use of this attribute to provide users with additional shortcuts to navigate directly to the collapsible element itself.
+또한, 컨트롤 요소가 하나의 접을수 있는 요소를 타겟팅하는 경우 (즉, `data-target` 속성이 `id` 선택자를 가리키는 경우) `aria-controls` 속성을 컨트롤 요소에 추가 할 수 있습니다. 최신 스크린 리더 및 이와 유사한 보조 기술은 이 속성을 사용하여 접을 수 있는 요소 자체를 직접 탐색 할 수있는 추가 단축키를 사용자에게 제공합니다.
 
 ## 사용법
 
-The collapse plugin utilizes a few classes to handle the heavy lifting:
+컬랩스 플러그인은 다음과 같은 몇가지 클래스를 사용하여 열고/접기를 처리합니다.
 
-- `.collapse` hides the content
-- `.collapse.show` shows the content
-- `.collapsing` is added when the transition starts, and removed when it finishes
+- `.collapse`는 컨텐츠를 숨깁니다.
+- `.collapse.show`는 컨텐츠를 보여줍니다.
+- `.collapsing`은 전환이 시작될 때 추가되고 완료되면 제거됩니다.
 
-These classes can be found in `_transitions.scss`.
+이러한 클래스는 `_transitions.scss` 에서 찾을 수 있습니다.
 
-### Via data attributes
+### data 속성 방식
 
-Just add `data-toggle="collapse"` and a `data-target` to the element to automatically assign control of one or more collapsible elements. The `data-target` attribute accepts a CSS selector to apply the collapse to. Be sure to add the class `collapse` to the collapsible element. If you'd like it to default open, add the additional class `show`.
+`data-toggle="collapse"` 와 `data-target` 을 요소에 추가하면 하나 이상의 접을 수 있는 요소에 대한 제어가 자동으로 할당됩니다. `data-target` 속성은 열고/접기를 적용할 대상에 CSS 선택자를 허용합니다. 접을 수있는 요소에 `.collapse`를 추가 해야합니다. 기본으로 열린 상태를 원한다면 `.show`를 추가 하십시오.
 
-To add accordion-like group management to a collapsible area, add the data attribute `data-parent="#selector"`. Refer to the demo to see this in action.
+접을수 있는 영역에 아코디언과 같은 그룹 관리를 추가하려면 `data-parent="#selector"` 데이터 속성을 추가하십시오. 이것을 실제로 보려면 데모를 참조하십시오.
 
-### Via JavaScript
+### JavaScript 방식
 
-Enable manually with:
+수동으로 사용 설정 :
 
 {% highlight js %}
 $('.collapse').collapse()
@@ -174,15 +176,15 @@ $('.collapse').collapse()
 
 ### 옵션
 
-Options can be passed via data attributes or JavaScript. For data attributes, append the option name to `data-`, as in `data-parent=""`.
+옵션은 데이터 속성 또는 JavaScript를 통해 전달될 수 있습니다. 데이터 속성의 경우 `data-parent=""` 에서 처럼 `data-`에 옵션명을 추가하십시오.
 
 <table class="table table-bordered table-striped table-responsive">
   <thead>
     <tr>
-      <th style="width: 100px;">Name</th>
-      <th style="width: 50px;">Type</th>
-      <th style="width: 50px;">Default</th>
-      <th>Description</th>
+      <th style="width: 100px;">옵션명</th>
+      <th style="width: 50px;">타입</th>
+      <th style="width: 50px;">기본</th>
+      <th>설명</th>
     </tr>
   </thead>
   <tbody>
@@ -190,25 +192,25 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
       <td>parent</td>
       <td>selector | jQuery object | DOM element </td>
       <td>false</td>
-      <td>If parent is provided, then all collapsible elements under the specified parent will be closed when this collapsible item is shown. (similar to traditional accordion behavior - this is dependent on the <code>card</code> class). The attribute has to be set on the target collapsible area.</td>
+      <td>parent가 제공된 경우, 지정된 parent 아래의 모든 접을 수 있는 요소는 닫힙니다. (전통적인 아코디언 동작과 유사 - 이것은 <code>card</code> 클래스에 따라 달라집니다). 이 속성은 접을 수 있는 타겟 영역에 설정 해야합니다.</td>
     </tr>
     <tr>
       <td>toggle</td>
       <td>boolean</td>
       <td>true</td>
-      <td>Toggles the collapsible element on invocation</td>
+      <td>호출시 접이식 요소를 토글합니다.</td>
     </tr>
   </tbody>
 </table>
 
-### 메소드 Methods
+### 메서드 Methods
 
 {% capture callout-include %}{% include callout-danger-async-methods.md %}{% endcapture %}
 {{ callout-include | markdownify }}
 
 #### `.collapse(options)`
 
-Activates your content as a collapsible element. Accepts an optional options `object`.
+콘텐츠를 접을 수 있는 요소로 활성화합니다. 선택적 옵션 `object`를 수락합니다.
 
 {% highlight js %}
 $('#myCollapsible').collapse({
@@ -218,43 +220,43 @@ $('#myCollapsible').collapse({
 
 #### `.collapse('toggle')`
 
-Toggles a collapsible element to shown or hidden. **Returns to the caller before the collapsible element has actually been shown or hidden** (i.e. before the `shown.bs.collapse` or `hidden.bs.collapse` event occurs).
+접을 수 있는 요소를 표시하거나 숨깁니다. 접을 수 있는 요소가 실제로 표시되거나 숨겨지기 전에 호출자에게 반환됩니다. **(즉, `shown.bs.collapse` 또는 `hidden.bs.collapse` 이벤트가 발생하기 전에)**
 
 #### `.collapse('show')`
 
-Shows a collapsible element. **Returns to the caller before the collapsible element has actually been shown** (i.e. before the `shown.bs.collapse` event occurs).
+접을 수 있는 요소를 표시합니다. **접을 수있는 요소가 실제로 표시되기 전에 호출자에게 반환됩니다.** (즉, `shown.bs.collapse` 이벤트가 발생하기 전에)
 
 #### `.collapse('hide')`
 
-Hides a collapsible element. **Returns to the caller before the collapsible element has actually been hidden** (i.e. before the `hidden.bs.collapse` event occurs).
+접을 수 있는 요소를 숨깁니다. **접을 수있는 요소가 실제로 숨겨지기 전에 호출자에게 반환됩니다.** (즉,`hidden.bs.collapse` 이벤트가 발생하기 전에)
 
 ### 이벤트 Events
 
-Bootstrap's collapse class exposes a few events for hooking into collapse functionality.
+부트스트랩의 컬랩스 클래스는 접이식 기능에 연결하기 위해 몇가지 이벤트를 제공합니다.
 
 <table class="table table-bordered table-striped table-responsive">
   <thead>
     <tr>
-      <th style="width: 150px;">Event Type</th>
-      <th>Description</th>
+      <th style="width: 150px;">이벤트 타입</th>
+      <th>설명</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>show.bs.collapse</td>
-      <td>This event fires immediately when the <code>show</code> instance method is called.</td>
+      <td>이 이벤트는  <code>show</code> instance 메서드가 호출 될 때 즉시 발생됩니다.</td>
     </tr>
     <tr>
       <td>shown.bs.collapse</td>
-      <td>This event is fired when a collapse element has been made visible to the user (will wait for CSS transitions to complete).</td>
+      <td>이 이벤트는 collapse 요소가 사용자에게 표시될 때 발생됩니다 (CSS 전환이 완료 될 때까지 기다림).</td>
     </tr>
     <tr>
       <td>hide.bs.collapse</td>
-      <td>This event is fired immediately when the <code>hide</code> method has been called.</td>
+      <td>이 이벤트는 <code>hide</code> 메서드가 호출되면 즉시 발생됩니다.</td>
     </tr>
     <tr>
       <td>hidden.bs.collapse</td>
-      <td>This event is fired when a collapse element has been hidden from the user (will wait for CSS transitions to complete).</td>
+      <td>이 이벤트는 collapse 요소가 사용자에게 숨겨진 후에 발생됩니다 (CSS 전환이 완료 될 때까지 기다림).</td>
     </tr>
   </tbody>
 </table>
