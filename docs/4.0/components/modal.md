@@ -10,14 +10,14 @@ toc: true
 
 ## 작동 원리
 
-Before getting started with Bootstrap's modal component, be sure to read the following as our menu options have recently changed.
+Bootstrap의 모달 컴포넌트를 시작하기 전에, 메뉴 옵션이 최근에 변경 되었으므로 반드시 다음 사항을 읽으십시오.
 
-- Modals are built with HTML, CSS, and JavaScript. They're positioned over everything else in the document and remove scroll from the `<body>` so that modal content scrolls instead.
-- Clicking on the modal "backdrop" will automatically close the modal.
-- Bootstrap only supports one modal window at a time. Nested modals aren't supported as we believe them to be poor user experiences.
-- Modals use `position: fixed`, which can sometimes be a bit particular about its rendering. Whenever possible, place your modal HTML in a top-level position to avoid potential interference from other elements. You'll likely run into issues when nesting a `.modal` within another fixed element.
-- Once again, due to `position: fixed`, there are some caveats with using modals on mobile devices. [See our browser support docs]({{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/browsers-devices/#modals-and-dropdowns-on-mobile) for details.
-- Due to how HTML5 defines its semantics, [the `autofocus` HTML attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-autofocus) has no effect in Bootstrap modals. To achieve the same effect, use some custom JavaScript:
+- 모달은 HTML, CSS 및 JavaScript로 작성됩니다. 그것들은 문서의 다른 모든 요소 위에 배치되고 `<body>`에서 스크롤을 제거하므로 모달 컨텐츠가 대신 스크롤 됩니다.
+- 모달 "backdrop" 을 클릭하면 모달이 자동으로 닫힙니다.
+- 부트스트랩은 한 번에 하나의 모달 창만 지원합니다. 중첩된 모달은 사용자 경험이 좋지 않다고 생각하기 때문에 지원되지 않습니다.
+- 모달은 `position: fixed`를 사용하는데, 때로는 그 렌더링에 대해 약간의 차이가 있을 수 있습니다. 가능한 한 다른 요소로부터의 간섭을 방지하기 위해 모달 HTML을 최상위 위치(top-level)에 배치하세요 . 다른 고정된 요소 내에 `.modal`을 중첩 할 때 문제가 발생할 가능성이 높습니다.
+- 다시 한번, `position: fixed`으로 인해 모바일 디바이스에서 모달을 사용하는 경우 몇가지 주의사항이 있습니다. 자세한 내용은 [지원 브라우저]({{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/browsers-devices/#modals-and-dropdowns-on-mobile) 문서를 참조하십시오.
+- HTML5 시맨틱(semantic) 정의방식 때문에, [`autofocus` HTML 속성](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-autofocus)은 부트스트랩 모달에 영향을 미치지 않습니다. 동일한 효과를 얻으려면 맞춤 자바 스크립트를 사용하십시오.
 
 {% highlight js %}
 $('#myModal').on('shown.bs.modal', function () {
@@ -25,30 +25,30 @@ $('#myModal').on('shown.bs.modal', function () {
 })
 {% endhighlight %}
 
-Keep reading for demos and usage guidelines.
+데모 및 사용 가이드를 계속 읽으십시오.
 
 ## 예제
 
 ### 모달 컨포넌트
 
-Below is a _static_ modal example (meaning its `position` and `display` have been overridden). Included are the modal header, modal body (required for `padding`), and modal footer (optional). We ask that you include modal headers with dismiss actions whenever possible, or provide another explicit dismiss action.
+아래는 정적(_static_) 모달 예제 입니다 (`position` 및 `display`가 재설정 되었음을 의미). 모달 헤더, 모달 바디 (`padding` 적용에 필요) 및 모달 풋터(선택 사항)가 포함됩니다. 가능한 경우 언제든지 해제(dismiss) 조치를 취할 수 있는 모달 헤더를 포함 시키거나, 다른 명시적인 해제(dismiss) 조치를 제공할 것을 요구합니다.
 
 <div class="bd-example bd-example-modal">
   <div class="modal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Modal title</h5>
+          <h5 class="modal-title">모달 타이틀</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          <p>Modal body text goes here.</p>
+          <p>모달 본문 텍스트가 여기에 옵니다.</p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+          <button type="button" class="btn btn-primary">저장하기</button>
         </div>
       </div>
     </div>
@@ -60,17 +60,17 @@ Below is a _static_ modal example (meaning its `position` and `display` have bee
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
+        <h5 class="modal-title">모달 타이틀</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <p>Modal body text goes here.</p>
+        <p>모달 본문 텍스트가 여기에 옵니다.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Save changes</button>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">저장하기</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
       </div>
     </div>
   </div>
@@ -79,23 +79,23 @@ Below is a _static_ modal example (meaning its `position` and `display` have bee
 
 ### 라이브 데모
 
-Toggle a working modal demo by clicking the button below. It will slide down and fade in from the top of the page.
+아래의 버튼을 클릭하여 실제 데모 모달을 실행해 보세요. 모달이 페이지 상단에서 내려오고 페이드인(fade-in) 됩니다.
 
 <div id="exampleModalLive" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLiveLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLiveLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLiveLabel">모달 타이틀</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <p>Woohoo, you're reading this text in a modal!</p>
+        <p>야호, 여러분은 이 글을 모달에서 읽고 있습니다!</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        <button type="button" class="btn btn-primary">저장하기</button>
       </div>
     </div>
   </div>
@@ -103,14 +103,14 @@ Toggle a working modal demo by clicking the button below. It will slide down and
 
 <div class="bd-example">
   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLive">
-    Launch demo modal
+    데모 모달 실행
   </button>
 </div>
 
 {% highlight html %}
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
+  데모 모달 실행
 </button>
 
 <!-- Modal -->
@@ -118,7 +118,7 @@ Toggle a working modal demo by clicking the button below. It will slide down and
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel">모달 타이틀</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -127,23 +127,23 @@ Toggle a working modal demo by clicking the button below. It will slide down and
         ...
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        <button type="button" class="btn btn-primary">저장하기</button>
       </div>
     </div>
   </div>
 </div>
 {% endhighlight %}
 
-### Scrolling long content
+### 긴 컨텐츠 스크롤
 
-When modals become too long for the user's viewport or device, they scroll independent of the page itself. Try the demo below to see what we mean.
+모달이 사용자의 뷰포트 또는 디바이스에 비해 너무 길면, 페이지와는 독립적으로 모달은 스크롤 됩니다. 아래의 데모를 통해 우리가 의미하는 바를 확인하십시오.
 
 <div id="exampleModalLong" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">모달 타이틀</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -169,8 +169,8 @@ When modals become too long for the user's viewport or device, they scroll indep
         <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        <button type="button" class="btn btn-primary">저장하기</button>
       </div>
     </div>
   </div>
@@ -178,14 +178,14 @@ When modals become too long for the user's viewport or device, they scroll indep
 
 <div class="bd-example">
   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-    Launch demo modal
+    데모 모달 실행
   </button>
 </div>
 
 {% highlight html %}
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-  Launch demo modal
+  데모 모달 실행
 </button>
 
 <!-- Modal -->
@@ -193,7 +193,7 @@ When modals become too long for the user's viewport or device, they scroll indep
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">모달 타이틀</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -202,15 +202,15 @@ When modals become too long for the user's viewport or device, they scroll indep
         ...
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        <button type="button" class="btn btn-primary">저장하기</button>
       </div>
     </div>
   </div>
 </div>
 {% endhighlight %}
 
-### Tooltips and popovers
+### 툴팁과 팝오버
 
 [Tooltips]({{ site.baseurl }}/docs/{{ site.docs_version }}/components/tooltips/) and [popovers]({{ site.baseurl }}/docs/{{ site.docs_version }}/components/popovers/) can be placed within modals as needed. When modals are closed, any tooltips and popovers within are also automatically dismissed.
 
@@ -218,7 +218,7 @@ When modals become too long for the user's viewport or device, they scroll indep
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalPopoversLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalPopoversLabel">모달 타이틀</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -231,8 +231,8 @@ When modals become too long for the user's viewport or device, they scroll indep
         <p><a href="#" class="tooltip-test" title="Tooltip" data-container="#exampleModalPopovers">This link</a> and <a href="#" class="tooltip-test" title="Tooltip" data-container="#exampleModalPopovers">that link</a> have tooltips on hover.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        <button type="button" class="btn btn-primary">저장하기</button>
       </div>
     </div>
   </div>
@@ -240,7 +240,7 @@ When modals become too long for the user's viewport or device, they scroll indep
 
 <div class="bd-example">
   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalPopovers">
-    Launch demo modal
+    데모 모달 실행
   </button>
 </div>
 
